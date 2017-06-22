@@ -3,6 +3,21 @@
 <head>
   <style media="screen" type="text/css">
 
+.flex-header {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+}
+
+h2 { 
+   position: relative; 
+   top: -180;
+   left: 80;
+   width: 100%; 
+   font-size: 8vw;
+}
+
 .flex-grid {
   justify-content: center;
   display: flex;
@@ -26,16 +41,28 @@
   justify-content: center;  
 }
 
-.flex-header {
+.flex-heading {
   justify-content: center;
   display: flex;
   margin: auto;
   font-family: "Franklin Gothic Medium", sans-serif;
-  font-size: x-large;
+  font-size: 53;
   color: orange;
 }
 
-@media (max-width: 400px) {
+@media all and (max-width: 1060px) and (min-width: 600px) {
+
+.flex-heading {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 5vw;
+  color: orange;
+}
+}
+
+@media (max-width: 300px) {
   .flex-grid,
   .flex-grid-thirds {
     display: block;
@@ -82,34 +109,50 @@ html, body, form, fieldset, table, tr, td, img {
     background-color: #FAFAFA;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 </style>
 
 </head>
-<body>
 
-<body>
+  <body>
 
+<a name="introduction"></a>
+  
 <div class="flex-header">
-  <div class="header">Introduction</div>
+  <div class="heading"><img src="https://drive.google.com/uc?id=0B4SgpUNF21zANlFOUy1ITVgzZUk">
+    <h2> 
+  </div>
+</div>
+  
+<div class="flex-heading">
+  <div class="heading">Introduction</div>
 </div>
 
 <div class="flex-grid-thirds">
-  <div class="col"><img src="http://imgh.us/testIntroduction.jpg"> </div>
+  <div class="col"><img src="https://drive.google.com/uc?id=0B4SgpUNF21zAbnEzZV9fa0VkSXM"></div>
   <div class="col">
   
   <div class="container">
 <iframe src="https://www.youtube.com/embed/5K2BeSTZJSk" 
-frameborder="0" allowfullscreen class="video"></iframe>
+frameborder="0" allowfullscreen class="video"></iframe> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    See how it looks in the classroom.
+    
 </div>
     
   </div>
 </div>
 
-<div class="flex-header">
-  <div class="header">Pitch Review</div>
+<div class="flex-heading">
+  <div class="heading">Pitch Review</div>
 </div>
 
 <div class="flex-grid-thirds">
+  <div class="col"><img src="https://drive.google.com/uc?id=0B4SgpUNF21zAcnZMVHVEaFpkWEU"></div>
   <div class="col">
   
     <div class="container">
@@ -117,13 +160,51 @@ frameborder="0" allowfullscreen class="video"></iframe>
 frameborder="0" allowfullscreen class="video"></iframe>
 </div>
   </div>
-  <div class="col">This little piggy stayed home.</div>
+  
 
 </div>
 
-<div class="flex-header">
-  <div class="header">Planning: Pitch Introduction
+<div class="flex-heading">
+  <div class="heading">Planning: Pitch Introduction
   </div>
+</div>
+
+<div class="flex-grid-thirds">
+  <div class="col"><img src="https://drive.google.com/uc?id=0B4SgpUNF21zAdmRBVHYxN2Mxbmc">
+  </div>
+  <div class="col">
+    <div class="container">
+      <iframe src="https://www.youtube.com/embed/5K2BeSTZJSk" 
+      frameborder="0" allowfullscreen class="video">        
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<div class="flex-heading">
+  <div class="heading">Planning: Skit Writing
+  </div>
+</div>
+
+
+<div class="flex-grid-thirds">
+  <div class="col">
+  <img src="https://drive.google.com/uc?id=0B4SgpUNF21zAWXB1WGdyU3d4bkU">
+  </div>
+  <div class="col">
+    <div class="container">
+      <iframe src="https://www.youtube.com/embed/5K2BeSTZJSk" 
+      frameborder="0" allowfullscreen class="video">        
+      </iframe>
+    </div>
+  </div>
+  
+
+</div>
+
+</div>
+<div class="flex-heading">
+  <div class="heading">Pitches</div>
 </div>
 
 <div class="flex-grid-thirds">
@@ -137,53 +218,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
   </div>
 </div>
 
-<div class="flex-header">
-  <div class="header">Planning: Skit Writing
-  </div>
-</div>
 
-
-<div class="flex-grid-thirds">
-  <div class="col">
-    <div class="container">
-      <iframe src="https://www.youtube.com/embed/5K2BeSTZJSk" 
-      frameborder="0" allowfullscreen class="video">        
-      </iframe>
-    </div>
-  </div>
-  <div class="col">This little piggy stayed home.
-  </div>
-
-</div>
-
-</div>
-<div class="flex-header">
-  <div class="header">Pitches</div>
-</div>
-
-<div class="flex-grid-thirds">
-  <div class="col">This little piggy stayed home.</div>
-  <div class="col">
-    <div class="container">
-      <iframe src="https://www.youtube.com/embed/5K2BeSTZJSk" 
-      frameborder="0" allowfullscreen class="video">        
-      </iframe>
-    </div>
-  </div>
-</div>
-
-</div>
-<div class="flex-header">
-  <div class="header">Outro</div>
-</div>
-
-<div class="flex-grid-thirds">
-  <div class="col">This little piggy went to market.</div>
-  <div class="col">This little piggy stayed home.</div>
-
-</div>
+  <a href="#introduction">Click here</a>
 
 </body>
-
-</body>
-</html>
