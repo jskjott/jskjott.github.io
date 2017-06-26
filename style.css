@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Amplify;
+    src: url(amplifyxx-webfont.ttf);
+}
+
+.flex-header {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+}
+
+h2 { 
+   position: relative; 
+   top: -180;
+   left: 80;
+   width: 100%; 
+   font-size: 8vw;
+}
+
+.flex-grid {
+  justify-content: center;
+  display: flex;
+  
+}
+.flex-grid .col {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+   
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.flex-grid-thirds .col {
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;  
+}
+
+.flex-heading {
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-wrapper {
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: center;  
+}
+
+@media all and (max-width: 1060px) and (min-width: 600px) {
+
+.flex-heading {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 3vw;
+  color: orange;
+}
+}
+
+@media (max-width: 300px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  background: white;
+  padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+html, body, form, fieldset, table, tr, td, img {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #444444;
+    font-size: 9pt;
+    background-color: #FAFAFA;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+ overflow: hidden;
+ text-align: center;
+ font-family: "Amplify", sans-serif;
+ color: grey;
+
+}
+h1:before,
+h1:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
