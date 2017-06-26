@@ -1,5 +1,3 @@
-<body>
-
 <style>
  
 @font-face {
@@ -7,19 +5,21 @@
     src: url(amplifyxx-webfont.ttf);
 }
 
+@font-face {
+    font-family: AmplifyBold;
+    src: url(Amplify-Bold.ttf);
+}
+
+@font-face {
+    font-family: BentonSans;
+    src: url(BentonSans-Medium.ttf);
+}
+
 .flex-header {
   justify-content: center;
   display: flex;
   margin: auto;
-  max-width: 1000px;
-}
-
-h2 { 
-   position: relative; 
-   top: -180;
-   left: 80;
-   width: 100%; 
-   font-size: 8vw;
+  max-width: 960px;
 }
 
 .flex-grid {
@@ -43,6 +43,9 @@ h2 {
   width: 100%;
   max-width: 500px;
   justify-content: center;  
+  font-family: "Amplify", sans-serif; 
+  font-size: medium;
+  color: #666666
 }
 
 .flex-heading {
@@ -115,25 +118,42 @@ body {
 }
 }
 
-html, body, form, fieldset, table, tr, td, img {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    color: #444444;
-    font-size: 9pt;
-    background-color: #FAFAFA;
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+.imgcontainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+strong {
+   font-family: "AmplifyBold", sans-serif;
 }
 
 h1 {
  overflow: hidden;
  text-align: center;
  font-family: "Amplify", sans-serif;
- color: grey;
-
+ color: #333333;
 }
+
 h1:before,
 h1:after {
  background-color: #333;
@@ -152,19 +172,57 @@ h1:after {
  left: 0.5em;
  margin-right: -50%;
 }
+
+p {
+  font-family: "Amplify", sans-serif; 
+  font-size: medium;
+}
  
 </style>
 
 <a name="introduction"></a>
  
+<body>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<a name="introduction"></a>
+  
 
   
  
 <div class="flex-header">
-  <div class="header"><img src="https://drive.google.com/uc?id=0B4SgpUNF21zAcHlscFBlS3FjUk0">
+  <div class="header"><img src="headerimagev1.jpg">
   </div>
 </div>
 
+<div class="flex-grid-thirds">
+  <div class="col"> <p> <h3>Goodmorning!</h3> <br> It is the first lesson of the day which happens to be a ELA lesson based on the CKLA curriculum. This is the 7th lesson in the domain about Early American Civilizations of the First grade knowledge strand of CKLA. Students engage with stories about the Inca empire while connecting this knowledge to a broader history of the Americas. In doing this they develop the knowledge needed to foster good language skills. The lobular which is focussed on during this lesson is related to the knowledge the students engage with in different ways. </p>
+
+  </div>
+  <div class="col">
+    <div class= "flex-wrapper"> 
+      <div class="container">
+        <iframe src="https://www.youtube.com/embed/fHpE-kYb6cw?rel=0&amp;showinfo=0&vq=hd720" 
+          frameborder="0" allowfullscreen class="video">        
+        </iframe>
+      </div>
+        <br>
+
+        <h3>Core Vocabulary</h3>
+
+        <p> <strong>emperor, n. </strong> the ruler of an empire <br> Variation(s): emperors <br> <br>
+            <strong>empire, n. </strong> the people and the land controlled by one ruler <br> Variation(s): empires <br> <br>
+            <strong>palace, n. </strong> grand homes for kings queens or emperors <br> Variation(s): palaces <br> <br>
+            <strong>retreat, v. </strong> to move away from something or leave <br> Variation(s): retreats, retreated, retreating <br> <br>
+            <strong>wealth, n. </strong> valuable possessions <br> Variation(s): none
+         </p>
+    </div>
+  </div>
+</div>
 
 <div class=flex.heading>
   <h1>Introducing The Read-Aloud</h1>
@@ -175,12 +233,18 @@ h1:after {
   <div class="col">
     <div class= "flex-wrapper"> 
       <div class="container">
-        <iframe src="https://www.youtube.com/embed/v0X38NGPB4U" 
+        <iframe src="https://www.youtube.com/embed/v0X38NGPB4U?rel=0&amp;showinfo=0&vq=hd720" 
           frameborder="0" allowfullscreen class="video">        
         </iframe>
       </div>
+      <br>
+      <br>
+      <div class="imgcontainer">
+        <img src="mayanKing.png" style="width: 16em; height: auto;">
+      </div>
       <div class="col">
-        <img src="https://drive.google.com/uc?id=0B4SgpUNF21zAX3NaUkhLMXJLNVE">
+        <h3>Support</h3> 
+        <p> <strong> Image 3A-4: </strong> If students have trouble, refer back to the Civilization Chart: Maya and review the Mayan leaders.</p>
       </div>
     </div>
   </div>
@@ -196,12 +260,18 @@ h1:after {
   <div class="col">
     <div class= "flex-wrapper"> 
       <div class="container">
-        <iframe src="https://www.youtube.com/embed/NRLUo16AKJk" 
+        <iframe src="https://www.youtube.com/embed/NRLUo16AKJk?rel=0&amp;showinfo=0&vq=hd720" 
           frameborder="0" allowfullscreen class="video">        
         </iframe>
       </div>
+      <br>
+      <br>
+      <div class="imgcontainer">
+        <img src="incaKing.png" style="width: 20em; height: auto;">
+      </div>
       <div class="col">
-        <img src="https://drive.google.com/uc?id=0B4SgpUNF21zAX3NaUkhLMXJLNVE">
+        <p> <strong>Show image 7A-1: Moctezuma and his entourage</strong> 
+        [Point to Moctezuma in the picture] So, Moctezumawas teh emperor of a large empire.</p>
       </div>
     </div>
   </div>
@@ -218,12 +288,15 @@ h1:after {
   <div class="col">
     <div class= "flex-wrapper"> 
       <div class="container">
-        <iframe src="https://www.youtube.com/embed/uZKk8CRw1TA" 
+        <iframe src="https://www.youtube.com/embed/uZKk8CRw1TA?rel=0&amp;showinfo=0&vq=hd720" 
           frameborder="0" allowfullscreen class="video">        
         </iframe>
       </div>
       <div class="col">
-        <img src="https://drive.google.com/uc?id=0B4SgpUNF21zAX3NaUkhLMXJLNVE">
+        <h3>Support</h3> 
+        <p>If students have difficulty responding to questions, reread 
+        pertinent lines of the read-aloud and/or refer to specific images.
+        </p>
       </div>
     </div>
   </div>
@@ -239,12 +312,26 @@ h1:after {
   <div class="col">
     <div class= "flex-wrapper"> 
       <div class="container">
-        <iframe src="https://www.youtube.com/embed/UBDOO_8S7cw" 
+        <iframe src="https://www.youtube.com/embed/UBDOO_8S7cw?rel=0&amp;showinfo=0&vq=hd720" 
           frameborder="0" allowfullscreen class="video">        
         </iframe>
       </div>
-      <div class="col">
-        <img src="https://drive.google.com/uc?id=0B4SgpUNF21zAX3NaUkhLMXJLNVE">
+      <br>
+      <div class="iconcontainer">
+        <img src="speakingAndListening.png" style="width: 4em; height: 4em">
+      </div>
+      <div class="col"> 
+        <h3>Speaking and Listening</h3>
+        <p>
+        <strong>Emerging</strong> - Have students name their empire if they were an emperor/empress.
+        <br>
+        <strong>Expanding</strong> — Have students give a more detailed description of their empire if they were
+          an emperor/empress.
+        <br>
+        <strong>Bridging</strong> — Have students give a detailed description of their empire and their life if
+          they were an emperor/empress.
+        </p>
+
       </div>
     </div>
   </div>
@@ -259,12 +346,24 @@ h1:after {
   <div class="col">
     <div class= "flex-wrapper"> 
       <div class="container">
-        <iframe src="https://www.youtube.com/embed/tKpsL15mXbU" 
+        <iframe src="https://www.youtube.com/embed/tKpsL15mXbU?rel=0&amp;showinfo=0&vq=hd720" 
           frameborder="0" allowfullscreen class="video">        
         </iframe>
       </div>
+      <br>
+      <br>
+      <br>
+      <div class="imgcontainer">
+        <img src="moctezuma.png" style="width: 16em; height: auto;">
+      </div>
       <div class="col">
-        <img src="https://drive.google.com/uc?id=0B4SgpUNF21zAX3NaUkhLMXJLNVE">
+        <p style="text-align: center"> <strong>Show image card 10:</strong> Moctezuma </p>
+      </div>
+      <div class="imgcontainer">
+        <img src="techntitlan.png" style="width: 16em; height: auto;">
+      </div>
+      <div class="col">
+        <p style="text-align: center"> <strong>Show image card 11:</strong> Tenochtitlan </p>
       </div>
     </div>
   </div>
