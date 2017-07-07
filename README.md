@@ -1,2 +1,2 @@
-# ckla_lesson_preview
-Dive into a Lesson Pages
+# jskjott.github.io
+For now testing the Dive into a Lesson Pages
