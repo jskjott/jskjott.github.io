@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Amplify;
+    src: url("fonts/amplifyxx-webfont.ttf");
+}
+
+@font-face {
+    font-family: AmplifyBold;
+    src: url("fonts/Amplify-Bold.ttf");
+}
+
+@font-face {
+    font-family: BentonSans;
+    src: url("fonts/BentonSans-Medium.ttf");
+}
+
+* {
+  style= line-height: 1.5;
+}
+
+.flex-header {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  max-width: 960px;
+
+}
+
+.flex-grid {
+  justify-content: center;
+  display: flex;
+  style= line-height: 1.5;
+  
+}
+.flex-grid .col {
+  flex: 1;
+  align-items: center;
+  justify-content: center
+  line-height: 1.5;;
+   
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: center;
+  style= line-height: 1.5;
+}
+
+.flex-grid-thirds .col {
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;  
+  font-family: "Amplify", sans-serif; 
+  font-size: medium;
+  color: #666666
+  line-height: 1.5;
+}
+
+.flex-heading {
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  style= line-height: 1.5;
+}
+
+.heading {
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-wrapper {
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: center;  
+  style= line-height: 1.5;
+}
+
+@media all and (max-width: 1060px) and (min-width: 600px) {
+
+.flex-heading {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 3vw;
+  color: orange;
+}
+}
+
+@media (max-width: 300px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  style= line-height: 1.5;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  background: white;
+  padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imgcontainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+strong {
+   font-family: "AmplifyBold", sans-serif;
+}
+
+h1 {
+ overflow: hidden;
+ text-align: center;
+ font-family: "Amplify", sans-serif;
+ color: #333333;
+}
+
+h1:before,
+h1:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+h3 {
+ overflow: hidden;
+ font-family: "Amplify", sans-serif;
+ font-size: 20;
+}
+
+h4 {
+ overflow: hidden;
+ text-align: center;
+ font-family: "Amplify", sans-serif;
+ font-size: 20;
+}
+
+h4:before,
+h4:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h4:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h4:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+p {
+  font-family: "Amplify", sans-serif; 
+  font-size: medium;
+  line-height: 1.5;
+}
+
+
