@@ -29,7 +29,11 @@ document.getElementById('videoPlay').addEventListener('ended',function(){
     var s = document.getElementById('videoPlay').style;
     s.opacity = 1;
     (function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,100)})();
-    setTimeout(function(){fadeIn(document.getElementById("show").style.display ="block"); }, 10);
+    setTimeout(function(){
+    	let element = document.getElementById("show")
+    	element.style.display ="block"
+    	fadeIn(element);
+    }, 10);
   }, false);
 
 
@@ -135,7 +139,7 @@ var commentArray
 
  rectangleArray = [];
 
-setTimeout(function(){ 
+if(typeof commentList === 'string' ){ 
 	commentArray = commentList.split(',');
 	console.log(commentArray)
 	for (var i = 0; i < 20; i++) {
@@ -147,7 +151,7 @@ setTimeout(function(){
 	var text = commentArray[i]
 	rectangleArray.push(new Rectangle(x,y,dx,dy,r,text));
 }
-},1000);
+
 
 // rectangles
 
