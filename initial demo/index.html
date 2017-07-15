@@ -1,0 +1,42 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+	
+	<div class="parent">
+
+		<canvas style="position: absolute;" id="canvas"></canvas>
+
+		<video 
+			id="videoPlay" width="800" height="auto" id=v autoplay controls style="text-align: center;position: relative; z-index:1;">
+    		<source src="video/Veil Of Beauty-HD.mp4" type=video/mp4>
+		</video>
+
+		<form style="position: absolute;" onsubmit="postToSheet(message.value);" id="show" type="submit" method="POST" class="pure-form pure-form-stacked"
+		  action="">
+		    <!-- change the form action to your script url -->		
+
+		    <h2>If Learner Centered Education is the Answer <br> What is the Question?</h2>
+
+		    <fieldset class="pure-group">
+		      <label for="message"></label>
+		      <textarea id="message" name="message" rows="10"
+		      placeholder="Tell us what's on your mind..."></textarea>
+		    </fieldset>			
+
+		<script type="text/javascript"> document.getElementById("show").style.display="none"</script>		
+
+		    <button class="button-success pure-button button-xlarge">
+		      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>		
+
+		  </form>
+
+
+	</div>
+
+  
+	<script src="flow.js"></script>
+</body>
