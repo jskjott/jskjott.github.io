@@ -149,7 +149,7 @@ setTimeout(function(){
 	var r = 10;
 	var text = commentArray[i]
 	rectangleArray.push(new Rectangle(x,y,dx,dy,r,text));
-}}, 1000);
+}}, 10000);
 
 
 console.log(commentList)
