@@ -12,7 +12,6 @@ var c = canvas.getContext('2d');
 function fadeIn(element) {
     var op = 0;
     var timer = setInterval(function() {
-    	console.log(element)
         if (op >= 1) clearInterval(timer);
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
@@ -55,6 +54,7 @@ commentList = result
 console.log(commentList)
 });
 
+console.log(commentList)
 
 
 
@@ -139,9 +139,8 @@ var commentArray
 
  rectangleArray = [];
 
-if(typeof commentList === 'string' ){ 
+setTimeout(function(){ 
 	commentArray = commentList.split(',');
-	console.log(commentArray)
 	for (var i = 0; i < 20; i++) {
 	var x = Math.random() * innerWidth;
 	var y = Math.random() * innerHeight;
@@ -150,21 +149,18 @@ if(typeof commentList === 'string' ){
 	var r = 10;
 	var text = commentArray[i]
 	rectangleArray.push(new Rectangle(x,y,dx,dy,r,text));
-}
+}}, 1000);
 
+
+console.log(commentList)
 
 // rectangles
 
 
 
-
-console.log(rectangleArray)
-
-
 function animate() {
 	
 	requestAnimationFrame(animate);
-
 	c.clearRect(0, 0, innerWidth,innerHeight)
 
 	for (var i = 0; i < rectangleArray.length; i++) {
