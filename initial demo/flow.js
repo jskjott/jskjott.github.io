@@ -1,5 +1,7 @@
 // create canvas
 
+window.googleDocCallback = function () { return true; };
+
 var canvas = document.querySelector('canvas')
 
 canvas.width = window.innerWidth;
@@ -49,7 +51,7 @@ fadeIn(videoPlay)
 
 var commentList
 
-$.ajax("https://docs.google.com/spreadsheets/d/1mY0ih_rAWPoXApvCq4N-x2V3u_ibSm4MGEwM7nzhItE/pub?&gid=0&range=F1&output=csv").done(function(result){
+$.ajax("https://docs.google.com/spreadsheets/d/1mY0ih_rAWPoXApvCq4N-x2V3u_ibSm4MGEwM7nzhItE/pub?&gid=0&range=F1&output=csv&callback=googleDocCallback").done(function(result){
 commentList = result
 console.log(commentList)
 });
@@ -187,15 +189,9 @@ $(document).ready(function(){
     }); 
 })
 
-$.ajax({
-            url: Auto_Complete_Link, 
-            type: "GET",   
-            dataType: 'jsonp',
-            cache: false,
-            success: function(response){                          
-                alert(response);                   
-            }           
-        }); 
+
+
+
 
 //		c.fillRect(x, y, 20,20)
 //	//
