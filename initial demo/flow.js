@@ -7,7 +7,6 @@ var canvas = document.querySelector('canvas')
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-
 var c = canvas.getContext('2d');
 
 // fade beginning
@@ -119,8 +118,10 @@ function Rectangle(x, y, dx, dy, r, text) {
 			if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && 
 				mouse.y - this.y < 50 && mouse.y - this.y > -50) {
 
+			// text for each answer
+
 			c.font = "20px Arial";
-			c.fillText(this.text,this.x,(this.y + 50));
+			c.fillText(this.text,(this.x -60),(this.y + 50));
 
 			}
 				//(this.r += 1) 
