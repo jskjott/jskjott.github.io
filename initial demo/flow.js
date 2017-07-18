@@ -152,6 +152,8 @@ setTimeout(function(){
 }}, 10000);
 
 
+
+
 console.log(commentList)
 
 // rectangles
@@ -184,6 +186,16 @@ $(document).ready(function(){
         event.preventDefault(); 
     }); 
 })
+
+$.ajax({
+            url: Auto_Complete_Link, 
+            type: "GET",   
+            dataType: 'jsonp',
+            cache: false,
+            success: function(response){                          
+                alert(response);                   
+            }           
+        }); 
 
 //		c.fillRect(x, y, 20,20)
 //	//
