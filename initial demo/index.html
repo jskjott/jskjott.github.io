@@ -4,7 +4,7 @@
 	</script>
 </head>
 
-<body>
+<body bgcolor="grey">
 	
 	<div class="parent">
 
@@ -15,7 +15,7 @@
     		<source src="video/Veil Of Beauty-HD.mp4" type=video/mp4>
 		</video>
 
-		<form style="position: absolute;" onsubmit="postToSheet(message.value);" id="show" type="submit" method="POST" class="pure-form pure-form-stacked"
+		<form style="position: absolute;" width = 500px onsubmit="postToSheet(message.value);" id="show" type="submit" method="POST" class="pure-form pure-form-stacked"
 		  action="">
 		    <!-- change the form action to your script url -->		
 
@@ -23,9 +23,15 @@
 
 		    <fieldset class="pure-group">
 		      <label for="message"></label>
-		      <textarea id="message" name="message" rows="10"
-		      placeholder="Tell us what's on your mind..."></textarea>
-		    </fieldset>			
+		      <textarea id="message" name="Your thoughts" rows="4"
+		      placeholder="Share you thoughts on whar you think the question we should consider is..."></textarea>
+		    </fieldset>		
+
+		   	<fieldset class="pure-group">
+		      <label for="color"></label>
+		      <textarea id="color" name="Share are ressource" rows="1"
+		      placeholder="Share a ressource you think relate to the question" maxlength="50"></textarea>
+		    </fieldset>		
 
 		<script type="text/javascript"> document.getElementById("show").style.display="none"</script>		
 
