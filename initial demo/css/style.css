@@ -9,10 +9,12 @@ p {
     color: green;
 }
 
-.ticket{
-    position: absolute;
-	border-radius: 50%;
-	width: 20px;
-	height: 20px; 
-     background: #F90;
- }
+#show {
+
+	width: 300px;
+
+}
+
+#c { 
+	background-color: "black"; 
+}
