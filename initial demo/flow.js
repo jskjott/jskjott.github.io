@@ -53,12 +53,13 @@ var commentList
 
 $.ajax("https://docs.google.com/spreadsheets/d/1mY0ih_rAWPoXApvCq4N-x2V3u_ibSm4MGEwM7nzhItE/pub?&gid=0&range=F1&output=csv&callback=googleDocCallback").done(function(result){
 commentList = result
-console.log(commentList)
 });
 
-console.log(commentList)
 
-
+$.ajax("https://docs.google.com/spreadsheets/d/1mY0ih_rAWPoXApvCq4N-x2V3u_ibSm4MGEwM7nzhItE/pub?&gid=0&range=H1&output=csv&callback=googleDocCallback").done(function(result){
+linkList = result
+console.log(linkList)
+});
 
 var mouse = {
 	x: undefined,
@@ -83,7 +84,7 @@ window.addEventListener('mousemove',
 
 
 
-function Rectangle(x, y, dx, dy, r, text) {
+function Rectangle(x, y, dx, dy, r, text, link) {
 	this.x = x;
 	this.y = y;
 	this.dx = dx;
@@ -91,6 +92,7 @@ function Rectangle(x, y, dx, dy, r, text) {
 	this.r = r;
 	this.text = text
 	this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
+	this.link = link
 
 	this.draw = function () {
 		c.fillStyle = this.color
@@ -123,6 +125,8 @@ function Rectangle(x, y, dx, dy, r, text) {
 			c.font = "20px Arial";
 			c.fillText(this.text,(this.x -60),(this.y + 50));
 
+			console.log(this.link)
+
 			}
 				//(this.r += 1) 
 			//console.log(inputArray[i])
@@ -145,6 +149,7 @@ var commentArray
 
 setTimeout(function(){ 
 	commentArray = commentList.split(',');
+	linkArray = linkList.split(',');
 	for (var i = 0; i < 20; i++) {
 	var x = Math.random() * innerWidth;
 	var y = Math.random() * innerHeight;
@@ -152,6 +157,7 @@ setTimeout(function(){
 	var dy = (Math.random() -0.5)/5;
 	var r = 10;
 	var text = commentArray[i]
+	var link = linkArray[i]
 	rectangleArray.push(new Rectangle(x,y,dx,dy,r,text));
 }}, 10000);
 
