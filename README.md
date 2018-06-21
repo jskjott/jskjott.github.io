@@ -1,2 +1,5 @@
-# jskjott.github.io
-For now testing the Dive into a Lesson Pages
+# jskjot.github.io
+
+This page is a personal portfolio page for Jonathan Skjott
+
+https://unitedintime.com/jskjot.github.io/

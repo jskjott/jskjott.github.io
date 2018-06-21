@@ -1,0 +1,36 @@
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<title>Slitscan</title>
+</head>
+
+<style type="text/css">
+body {
+    font :14px  arial;
+    text-align : center;
+}
+h2 {
+    color : white;
+}
+canvas {
+    border : 10px white solid;
+    cursor : pointer;
+}
+a {
+  color : #F93;
+}
+.mute {
+    cursor : pointer;
+    display: initial;   
+}
+</style>
+
+<h2>Basic Slit scan Video Example</h2>
+
+<canvas id="videoCanvas" width = "532" height ="300" ></canvas><br>
+<h3><div id = "playPause">Loading content.</div></h3>
+<div class="mute"></div><br>
+
+<canvas id="slitscanCanvas" width = "1200" height ="900" ></canvas>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js" type="module"></script>
