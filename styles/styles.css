@@ -1,28 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 @import url('https://fonts.googleapis.com/css?family=Yatra+One');
 
+*{
+  background-color: #FFFFFF;
+  background-image: url("concrete-wall.png");
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body{
-   	font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono', monospace;
 }
 
 h1{
 	font-family: 'Yatra One', cursive;
-	line-height: 1px;
+line-height: 1px;
   font-size: 25pt;
+}
+
+h2 {
+  font-family: 'Yatra One', cursive;
+  color: #000;
+  margin: 2rem 0 .5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h3{
   font-family: 'Space Mono', sans-serif;
-  font-size: 16pt;
-  line-height: 1px;
-  color:grey;
+  font-size: 10pt;
+  color:black;
+  overflow-wrap: break-word;
   
 }
 
 p{
 	font-family: 'Space Mono', sans-serif;
 	font-size: 10pt;
-	line-height: 1.5;
+	overflow-wrap: break-word;
 }
 
 section{
@@ -41,6 +58,13 @@ img.displayed{
     display: block;
     margin-left: auto;
     margin-right: auto 
+}
+
+img {
+  display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
 }
 
 video.displayed{
@@ -87,18 +111,13 @@ video.displayed{
   background-color: white;
 }
 
-.experience { 
-  
-  flex-grow: 1
-  flex-basis: 50%
-  flex-direction: column;
-  height: 20%
-   }
+.colorfade{
+	-webkit-animation:colorchange 80s infinite alternate;
+  	-webkit-transition: all .8s ease-in-out; 
+}
 
-
-
-a {
-    color: #000;
+.alinkfade{
+	color: #000;
   	text-decoration: none;
     font-family: 'Space Mono', monospace;
     background-image: linear-gradient(to right, #b5b3b2 50%, transparent 50%);
@@ -107,7 +126,16 @@ a {
   	background-size: 6px 3px;
   	font-size: 11pt;
 	line-height: 1.5;
+    -webkit-animation:colorchange 80s infinite alternate;
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  	-webkit-transition: all .8s ease-in-out; 
 }
+
+a {
+  color: #000;
+  text-decoration: none; /* no underline */
+    }
+
 a:visited {
     color: #000;
   	text-decoration: none;
@@ -118,5 +146,184 @@ a:visited {
   	background-size: 6px 3px;
   	font-size: 11pt;
 	line-height: 1.5;
+    
 }
 
+.mapImage{
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+
+/***************************           Cards            *******************************/
+
+.cardsHeader {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(750px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 1rem;
+  padding: 8rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.cardsTop {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+  padding: 8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+}
+
+.cardTwo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+  padding: 8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+  padding: 8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.card {
+  /*height: 200px;*/
+  /*background: red;*/
+  border-radius: 4px;
+  padding: .5rem;
+  display: flex;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .8s ease-in-out; 
+} /* li item */
+
+.cardColour {
+  /*height: 200px;*/
+  /*background: red;*/
+  border-radius: 4px;
+  padding: .5rem;
+  display: flex;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+  filter: gray; /* IE5+ */
+} /* li item */
+
+.thumbnail img {
+  fill: #c7c4c4;
+  height: auto;
+  opacity: .75;
+  padding: 0.25rem;
+}
+
+.card-content {
+    font-size: .75rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-wrap: break-word;
+}
+
+.panel.card-panel .panel-header {
+    background-color: #ffffff;
+    font-size: .75rem;
+    font-weight: 400;
+    height: 25px !important;
+}
+
+.panel.card-panel .panel-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+    .card:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+	a:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
