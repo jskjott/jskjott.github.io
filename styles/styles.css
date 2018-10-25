@@ -116,6 +116,10 @@ video.displayed{
   	-webkit-transition: all .8s ease-in-out; 
 }
 
+.purecolor{
+  -webkit-animation:colorchange 80s infinite alternate;
+}
+
 .alinkfade{
 	color: #000;
   	text-decoration: none;
@@ -173,8 +177,15 @@ a:visited {
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 1rem;
   padding: 8rem;
-  padding-top: 0.5rem;
+  padding-top: 0rem;
   padding-bottom: 0rem;
+}
+
+.cardTitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32em
 }
 
 .cardTwo {
@@ -187,6 +198,15 @@ a:visited {
   padding-bottom: 1rem;
 }
 
+.cardTwoTitle {
+  display: grid;
+  width: 100%;
+  grid-gap: 1rem;
+  padding: 8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* see notes below */
@@ -196,6 +216,23 @@ a:visited {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
+
+.cardNoPadding {
+  /*height: 200px;*/
+  /*background: red;*/
+  border-radius: 4px;
+  padding-left: .5rem;
+  display: flex;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .8s ease-in-out; 
+} /* li item */
 
 .card {
   /*height: 200px;*/
@@ -227,6 +264,7 @@ a:visited {
   position: relative;
   color: #5d5e5e;
   filter: gray; /* IE5+ */
+  padding-bottom: 0rem;
 } /* li item */
 
 .thumbnail img {
@@ -275,55 +313,55 @@ a:visited {
 @-webkit-keyframes colorchange {
       0% {
         
-        color: blue;
+        color: #4669ff;
       }
       
       10% {
         
-        color: #8e44ad;
+        color: #ff5946;
       }
       
       20% {
         
-        color: #1abc9c;
+        color: #ff9d21;
       }
       
       30% {
         
-        color: #d35400;
+        color: #ff46a0;
       }
       
       40% {
         
-        color: blue;
+        color: #38d292;
       }
       
       50% {
         
-        color: #34495e;
+        color: #ff5946;
       }
       
       60% {
         
-        color: blue;
+        color: #ff9d21;
       }
       
       70% {
         
-        color: #2980b9;
+        color: #4669ff;
       }
       80% {
      
-        color: #f1c40f;
+        color: #ff46a0;
       }
       
       90% {
      
-        color: #2980b9;
+        color: #38d292;
       }
       
       100% {
         
-        color: pink;
+        color: #ff5946;
       }
     }

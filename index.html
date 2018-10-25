@@ -7,23 +7,25 @@
  </head>
  <body>
 
-  <section class="cardsHeader">
-    <article class="card">
+
+  <section class="cardTwoTitle">
+    <article class="cardColour">
       <div class="card-content">
-        <h1 style="color:black;">JONATHAN SKJ&#216;TT</h1>
-        <p style="color:grey; ">currently: history, media, and computer science @ Minerva Schools at KGI</p>
-     </div><!-- .card-content -->
+        <div>
+          <p style="color: black; font-size: 26"> <b style="font-family: 'Yatra One', cursive;">JONATHAN SKJ&#216;TT</b> is a media prototyper with relative strengths in film and data visualisation. He brings a researcher's mindset to design and storytelling <b class="purecolor">&#9644;</b>
+        </p>
+      </div>
+      </div>
     </article>
   </section>
 
-	<section class="cardsHeader">
-    <article class="card">
+  <section class="cardsHeader">
+    <article class="cardNoPadding">
       <div class="card-content">
         <hr align="left" width="5%" height="5px">
      </div><!-- .card-content -->
     </article>
-	</section>
-
+  </section>
 
 <!--   card card card -->
 
@@ -52,7 +54,7 @@
     <div class="card-content">
       <h3>Media & Art</h3>
       <p>
-          <a class="alinkfade" href="short_films.html">Film Portfolio</a>
+          <a class="alinkfade" href="films.html">Film Portfolio</a>
           <br/>
           <a class="alinkfade" href="art.html">Art Portfolio</a>
           <br>
@@ -84,10 +86,8 @@
 
 </section>
 
-
-
   <section class="cardsHeader">
-    <article class="card">
+    <article class="cardNoPadding">
       <div class="card-content">
         <hr align="left" width="5%" height="5px">
      </div><!-- .card-content -->
@@ -157,7 +157,7 @@
 </section>
 
   <section class="cardsHeader">
-    <article class="card">
+    <article class="cardNoPadding">
       <div class="card-content">
         <hr align="left" width="5%" height="5px">
      </div><!-- .card-content -->
@@ -169,8 +169,7 @@
       <div class="card-content">
           <img id= mapImage src="media/map/Minerva.svg" width= "90%" height= "auto";/>
           <div class="experience" id="experience" >
-          2015 -> present <br> <br> Double Major in Computational Sciences and Arts & Humanities. I am currently working on my bachelor thesis which is a spatial analysis of a Danish history journal. <br> <br> Expected graduation: May 2019, current GPA: 3.73 
-        </div id= mapdiv>
+          <h3> Minerva Schools at KGI, San Francisco, USA </h3> 2015 -> present <br> <br> Double Major in Computational Sciences and Arts & Humanities. I am currently working on my bachelor thesis which is a spatial analysis of a Danish history journal. <br> <br> Expected graduation: May 2019, current GPA: 3.73
         </div> 
      </div><!-- .card-content -->
     </article>
@@ -214,6 +213,10 @@
   
   </section>
 
+   <!-- 
+   <form style=" #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/jskjott" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/jskjott', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">I write a <a href="https://tinyletter.com/jskjott/archive">letter</a> on my explorations</label></p><p><input type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form>
+  -->
+
   <section class="cardsHeader">
     <article class="card">
       <div class="card-content">
@@ -222,46 +225,49 @@
     </article>
   </section>
 
+
+         
+
 <script type="text/javascript">
 
    minerva.onmouseover = function(){
     mapImage.src = "media/map/Minerva.svg"
-    document.getElementById('experience').innerHTML = "2015 -> present <br> <br> Double Major in Computational Sciences and Arts & Humanities. I am currently working on my bachelor thesis which is a spatial analysis of a Danish history journal. <br> <br> Expected graduation: May 2019, current GPA: 3.73 " 
+    document.getElementById('experience').innerHTML = " <h3> Minerva Schools at KGI, San Francisco, USA </h3> 2015 -> present <br> <br> Double Major in Computational Sciences and Arts & Humanities. I am currently working on my bachelor thesis which is a spatial analysis of a Danish history journal. <br> <br> Expected graduation: May 2019, current GPA: 3.73 " 
    };
    uwc.onmouseover = function(){
     mapImage.src = "media/map/UWC.svg"
-    document.getElementById('experience').innerHTML = "2013 -> 2015 <br> <br> My higher level subjects were Visual Arts, Biology, and Psychology. <br> Standard levels of Spanish ab initio, Math standard level, and English language and literature <br> <br> International Baccalaureate Diploma"
+    document.getElementById('experience').innerHTML = " <h3> United World College Costa Rica, Santa Ana, Costa Rica </h3> 2013 -> 2015 <br> <br> My higher level subjects were Visual Arts, Biology, and Psychology. <br> Standard levels of Spanish ab initio, Math standard level, and English language and literature <br> <br> International Baccalaureate Diploma"
    };
    dcLabs.onmouseover = function(){
     mapImage.src = "media/map/DC_Labs.svg"
-    document.getElementById('experience').innerHTML = "July 2018 -> Sep 2018 <br> <br> Design research on improvement of agricultural research methodology. I went to Kenya to do field testing of both paper and experience prototypes. <br> <br> see project page <a class=\"alinkfade\" href=\"dclabs.html\"> here </a>"
+    document.getElementById('experience').innerHTML = " <h3> Research Intern to Sebastian Deterding & Jeske Van der Gevel </h3> July 2018 -> Sep 2018 <br> <br> Design research on improvement of agricultural research methodology. I went to Kenya to do field testing of both paper and experience prototypes. <br> <br> see project page <a class=\"alinkfade\" href=\"dclabs.html\"> here </a>"
    };
    fabLab.onmouseover = function(){
     mapImage.src = "media/map/Fablab.svg"
-    document.getElementById('experience').innerHTML = "Oct 2017 -> Dec 2017 <br> <br> At FabLab Seoul I planned and produced video content for the lab. I also learn digital fabrication methods and completed a range of projects using laser cutting and Arduinos. <br> <br> "
+    document.getElementById('experience').innerHTML = " <h3> Media Production and Digital Fabrication Intern </h3> Oct 2017 -> Dec 2017 <br> <br> At FabLab Seoul I planned and produced video content for the lab. I also learn digital fabrication methods and completed a range of projects using laser cutting and Arduinos. <br> <br> "
    };
    amplify.onmouseover = function(){
     mapImage.src = "media/map/Amplify.svg"
-    document.getElementById('experience').innerHTML = "May 2016 -> Aug 2017 <br> <br> At Amplify Education in New York I worked in a range of areas relating to the companys CKLA curriculum. My tasks included producing marketing videos and performing data analysis. <br> <br> see portfolio page <a class=\"alinkfade\" href=\"amplify.html\"> here </a>"
+    document.getElementById('experience').innerHTML = " <h3> Media and Product Intern </h3> May 2016 -> Aug 2017 <br> <br> At Amplify Education in New York I worked in a range of areas relating to the companys CKLA curriculum. My tasks included producing marketing videos and performing data analysis. <br> <br> see portfolio page <a class=\"alinkfade\" href=\"amplify.html\"> here </a>"
    };
    kiron.onmouseover = function(){
     mapImage.src = "media/map/Kiron.svg"
-    document.getElementById('experience').innerHTML = "Sept 2016 -> Feb 2017 <br> <br> At Kiron Open Higher Education I worked with a small team to design and develop Kiron's first MOOC produced inhouse. Wrote a 100+ page long curriculum, interviewed a dozen students for this project. <br> <br> See portfolio page <a class=\"alinkfade\" href=\"kiron.html\"> here </a>"
+    document.getElementById('experience').innerHTML = " <h3> MOOC Production Intern </h3> Sept 2016 -> Feb 2017 <br> <br> At Kiron Open Higher Education I worked with a small team to design and develop Kiron's first MOOC produced inhouse. Wrote a 100+ page long curriculum, interviewed a dozen students for this project. <br> <br> See portfolio page <a class=\"alinkfade\" href=\"kiron.html\"> here </a>"
    };
 
    producer.onmouseover = function(){
     mapImage.src = "media/map/producer.svg"
-    document.getElementById('experience').innerHTML = "Sept 2016 -> Dec 2016 <br> <br> As a visual media producer I was responsible for creating photo and video content for both internal and external use. In this role I also helped with the development of the magazine Aventine. <br> <br> "
+    document.getElementById('experience').innerHTML = " <h3> Visual Media Producer </h3> Sept 2016 -> Dec 2016 <br> <br> As a visual media producer I was responsible for creating photo and video content for both internal and external use. In this role I also helped with the development of the magazine Aventine. <br> <br> "
    };
 
    hia.onmouseover = function(){
     mapImage.src = "media/map/HIA.svg"
-    document.getElementById('experience').innerHTML = "June 2016 -> July 2016 <br> <br> As a Humanity in Action fellow I learnt about and engaged with human rights issues in Denmark and abroad with a batch of other students. I worked with Copenhagen Pride to assess the degree of collaboration between different organisations advocating for the LGBTQ community in Denmark."
+    document.getElementById('experience').innerHTML = " <h3> Humanity In Action </h3> June 2016 -> July 2016 <br> <br> As a Humanity in Action fellow I learnt about and engaged with human rights issues in Denmark and abroad with a batch of other students. I worked with Copenhagen Pride to assess the degree of collaboration between different organisations advocating for the LGBTQ community in Denmark."
    };
 
    edsurge.onmouseover = function(){
     mapImage.src = "media/map/Amplify.svg"
-    document.getElementById('experience').innerHTML = "May 2017 -> Aug 2017 <br> <br> As a summer fellow I was part of a community of students passionate about education. A part of the fellowship I wrote articles and drew a comic for EdSurge Independent. <br> <br> "
+    document.getElementById('experience').innerHTML = " <h3> EdSurge Independent </h3> May 2017 -> Aug 2017 <br> <br> As a summer fellow I was part of a community of students passionate about education. A part of the fellowship I wrote articles and drew a comic for EdSurge Independent. <br> <br> "
    };
 
 </script>
