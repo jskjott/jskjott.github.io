@@ -52,7 +52,6 @@ html, body {
   });
 
 function addGeoJSONLayer(filepath, layerName, objectName, sensitivity = 100){
-
   objectName = new L.GeoJSON.AJAX(filepath,{
                                   middleware:function(data){
                                       return L.geoJson(data, {
@@ -62,7 +61,6 @@ function addGeoJSONLayer(filepath, layerName, objectName, sensitivity = 100){
                                       })
                                   }
                               });
-  
 }
 
 const year_1859_to_1870 = L.layerGroup([]);
