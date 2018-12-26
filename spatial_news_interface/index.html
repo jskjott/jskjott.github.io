@@ -5,17 +5,30 @@
 	</head>
 	<body>
   <div class="padding">
+
+  <section class="cardTwoTitle">
+    <article class="cardColour">
+      <div class="card-content">
+        <div>
+          <h2> Welcome to the spatial news aggregator which gives you news based on world populations. When you push the search button the area of each country on the map will be resized to reflect the number of articles provided to you. Click on a country multiple times to prioritise it in the search.
+        </h2>
+      </div>
+      </div>
+    </article>
+  </section>
+
 		<div id="legendholder" style="position: absolute;">
-		  <h1 id="title" style="position: absolute;"> test </h1>
+		  <h1 id="title" style="position: absolute;"> Hover over a country to see it's name! </h1>
 		</div> 
 		  
 		<div id="map-wrapper"></div>
 
 		<div class="buttonPanel" id="buttons">
     			
-		  <button id="click_to_run" onclick="do_update()">View by Population</button>
-		  <button id="click_to_normal" onclick="do_normal()">View Normal</button>
-		  <button id="click_to_recompute" onclick="reCompute()" class="wrapper" style="margin-right: auto; margin-left: auto">Search</button>
+		  <!-- <button id="click_to_run" onclick="do_update()">View by Population</button>
+		  <butt on id="click_to_normal" onclick="do_normal()">View Normal</button>
+		  -->
+		  <button id="click_to_recompute" onclick="reCompute()" class="wrapper" style="margin-right: auto; margin-left: auto">Aggregate News</button>
 		  <button id="moreFocus" onclick="more()" style="float: right; background: lightgreen">more</button>
 		  <button id="lessFocus" onclick="less()" style="float: right;">less</button>
 		</div>
