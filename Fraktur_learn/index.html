@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
+
+
+<body>
+
+	<section style="display: flex; align-items: center; height: 100%">
+		<button onclick="changeContent(-1)" style="font-size: 2em">⭅</button>
+	</section>
+
+	<section style="display: flex; align-items: center; flex-direction: column;">
+		<section style="margin: auto;">
+		<section id="vueHeader">
+			<h2 style="margin-top: 0;"> Hello there! 🖌 </h2>  
+			<p>
+				This site was made for anyone who wants to learn how <span style="float: right"> Select the font you want to practice with: </span><br> 
+				to read and work with text printed or written in <span style="font-family: 'printed fraktur'"> Fraktur </span>. <select v-model="selected" v-on:change="changeFont()" style="float: right;">
+			    <option>printed fraktur</option>
+			    <option>handwritten fraktur</option>
+			    <option>handwritten fraktur variation</option>
+			</select>
+			</p> 
+		</section>
+
+		<section class="inputField" id="vueMain">
+			<template v-for='letter in sentenceList'>
+				<span v-bind:class="letter.status" >
+					<span>{{ letter.letter === ' ' ? '&nbsp' : letter.letter }}</span> 
+					<span v-if="incorrect(letter)" class="tooltip">{{ letter.letter }}</span>
+				</span>
+			</template>
+		</section>
+		</section>
+	</section>
+
+	<section style="display: flex; align-items: center; justify-content: flex-end">
+		<button onclick="changeContent(1)" style="font-size: 2em">⭆</button>
+	</section>
+</body>
+
+<!--  
+<audio id="sounds" loop= "false" volume = "60">
+    <source src="sounds/clap.wav" id="typewriter" type="audio/wav">
+</audio>
+--> 
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="index.js"></script>
