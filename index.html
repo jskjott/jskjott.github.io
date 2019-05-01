@@ -1,320 +1,34 @@
-<html>
- <head>
- 	<link rel="stylesheet" href="styles/styles.css">
- 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <title>Jonathan Skj&#248;tt</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
- <body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="padding">
+<body>
+    <section class="titleContainer">
+        <section class="title">
+            <b style="font-family: 'Yatra One', cursive;">JONATHAN SKJ&#216;TT</b> is a media prototyper excited about film and data visualisation. He brings a researcher's mindset to design and storytelling.
+        </section>    
+    </section>
 
-  <section class="cardTwoTitle">
-    <article class="cardColour">
-      <div class="card-content">
-        <div>
-          <p style="color: black; font-size: 26"> <b style="font-family: 'Yatra One', cursive;">JONATHAN SKJ&#216;TT</b> is a media prototyper excited about film and data visualisation. He brings a researcher's mindset to design and storytelling <b class="purecolor">&#9644;</b>
-        </p>
-      </div>
-      </div>
-    </article>
-  </section>
+    <section class="header" id="header">
+            <button class="btn active" onclick="filterSelection('visual')"> Visual</button>/<button class="btn" onclick="filterSelection('storytelling')">Storytelling</button>/<button class="btn" onclick="filterSelection('design')">Design</button>/<button class="btn" onclick="filterSelection('all')">All</button> <button class="btn" onclick="window.location.href = 'aftryk/index.html';" style="float: right;" ><b class="purecolor">◴◵⧖◶◷</b></button>
+    </section>  
 
-  <section class="cardsHeader">
-    <article class="cardNoPadding">
-      <div class="card-content">
-        <hr align="left" width="5%" height="5px">
-     </div><!-- .card-content -->
-    </article>
-  </section>
+    <section id="vue" class="card-container">
+        <template v-for="item in items">
+            <a v-bind:href="item.link" v-bind:class="item.class">
+            <article v-bind:class="item.class">
+                <img :src="item.image">  
+                <main class="card__description">
+                    <p><b>{{item.title}}</b> -> {{item.text}}</p>
+                </main>
+            </article>
+        </template>
+    </section>
 
-<!--   card card card -->
+    <section class="footer">
+        <p style="text-align: right;"> Jonathan Skjøtt (2019)</p>
+    </section>
+</body>
 
-<section class="cardsTop">
-<!--   card 1 -->
-  <article class="card">
-    
-    <div class="card-content">
-      <h3>Programming</h3>
-      <p>
-      <a class="alinkfade" href="spatial_news_interface/index.html">Spatially Conscious News</a>
-      <br/>
-      <a class="alinkfade" href="assets/pdfs/Receipt_Printer_Typewriter.pdf">Portable Typewriter</a>
-      <br/>
-      <a class="alinkfade" href="film_colour_simulation/index.html">Modeling Color in Film</a>
-      <br>
-      <a class="alinkfade" href="mother/index.html">Mother</a> video art using three.js
-        <br/>
-      Slitscan <a class="alinkfade" href="https://vimeo.com/263361334">Timelines</a> and <a class="alinkfade" href="https://vimeo.com/263167206">videos</a>
-
-      </p>
-   </div><!-- .card-content -->
-
-  </article>
-
-  <!--   card 2 -->
-  <article class="card">
-    
-    <div class="card-content">
-      <h3>Media & Art</h3>
-      <p>
-          <a class="alinkfade" href="films.html">Film Portfolio</a>
-          <br/>
-          <a class="alinkfade" href="art.html">Art Portfolio</a>
-          <br>
-          <a class="alinkfade" href="tuktuk.html">Auto Rickshaw Documentary Project</a>
-          <br>
-          <a class="alinkfade" href="https://www.indiegogo.com/projects/united-in-time-a-work-in-progress--2#/">United in Time</a> documentary in proccess
-          </p>
-   </div><!-- .card-content -->
-
-  </article>
-
-  <!--   card 3 -->
-  <article class="card">
-    
-    <div class="card-content">
-      <h3>History</h3>
-      <p>
-            
-          <a class="alinkfade" href="assets/pdfs/The Spatial History of a History Journal.pdf">The Spatial History of a History Journal</a> See map prototype <a class="alinkfade" href="spatial_history_map_prototype/index.html">here</a>
-          <br>
-            <a class="alinkfade" href="metro_global.html">Metro Global: Uncovering the Tracks</a>
-            <br>
-            <a class="alinkfade" href="Joseonjok.html">Joseonjok of Daerim-dong</a>
-            
-          </p>
-   </div><!-- .card-content -->
-
-  </article>
-
-</section>
-
-  <section class="cardsHeader">
-    <article class="cardNoPadding">
-      <div class="card-content">
-        <h2> <b class="purecolor">&#9644;</b> Projects </h2>
-     </div><!-- .card-content -->
-    </article>
-  </section>
-
-  <section class="cards">
-<!--   card 1 -->
-    <a href="dclabs.html">
-    <article class="card">
-
-    <div class="card-content">
-      <h3 class="colorfade" >Service Design for Participatory Science - 2018</h3>
-      <p>Prototyping forms and social dynamics.</p>
-      <picture class="thumbnail">
-         <img src="assets/photos/paperwork_5.jpg" />
-    </picture>
-   </div><!-- .card-content -->
-
-   </article>
-   </a>
-
-  </article>
-<!--   card 2 -->
-  <a href="tuktuk.html">
-  <article class="card">
-    
-    <div class="card-content">
-      <h3 class="colorfade" >Auto Rickshaw Families in a Changing City - 2018</h3>
-      <p>A rich insight into the life of Hyderabadi Auto rickshaw drivers. </p>
-      <picture class="thumbnail">
-         <img src="assets/photos/tuktuk.jpg" alt="" />
-    </picture>
-   </div><!-- .card-content -->
-
-  </article>
-  </a>
-<!--   card 3 -->
-  <a href="amplify.html">
-  <article class="card">
-    
-    <div class="card-content">
-      <h3 class="colorfade" >Amplify Education - 2017</h3>
-      <p>Curriculum development for english language learners.</p>
-      <picture class="thumbnail">
-         <img src="assets/photos/amplify.jpg" alt="" />
-    </picture>
-   </div><!-- .card-content -->
-
-
-  </article>
-   </a>
-<!--   card 4 -->
-<a href="kiron.html">
-  <article class="card">
-    
-    <div class="card-content">
-      <h3 class="colorfade" >A Mooc Introducing Refugees to Online Learning - 2017</h3>
-      <p> A MOOC which provides access to higher education for refugees.</p>
-      <picture class="thumbnail">
-         <img src="assets/photos/kiron.jpg" alt="" />
-    </picture>
-   </div><!-- .card-content -->
-  </article>
-  </a>
-
-</section>
-
-  <section class="cardsHeader">
-    <article class="cardNoPadding">
-      <div class="card-content">
-        <h2> <b class="purecolor">&#9644;</b> Experience </h2>
-     </div><!-- .card-content -->
-    </article>
-  </section>
-
-  <section class="cardTwo">
-    <article class="cardColour">
-      <div class="card-content">
-          <img id= mapImage src="assets/map/Minerva.svg" width= "90%" height= "auto";/>
-          <div class="experience" id="experience" >
-          <h3> Minerva Schools at KGI, San Francisco, USA </h3> 2015 -> present <br> <br> Double Major in Computational Sciences and Arts & Humanities. I am currently working on my bachelor thesis which is a spatial analysis of a Danish history journal. <br> <br> Expected graduation: May 2019, current GPA: 3.73
-        </div> 
-     </div><!-- .card-content -->
-    </article>
-
-    <article class="cardColour">
-      <div class="card-content">
-        <div class="secondcolumn"> 
-          <h3>Education</h3>
-          <div id="minerva" class="purecolor" style="filter: grayscale(0%)">
-          <p>Minerva Schools at KGI, San Francisco, USA</p>
-          </div>
-          <div id="uwc" class="purecolor" style="filter: grayscale(100%)">
-          <p>United World College Costa Rica, Santa Ana, Costa Rica</p>
-          </div>
-          <br>
-          <h3>Work Experience</h3>
-          <div id="dcLabs" class="purecolor" style="filter: grayscale(100%)">
-          <p>Research Intern to Sebastian Deterding & Jeske Van der Gevel</p>
-          </div>
-          <div id="fabLab" class="purecolor" style="filter: grayscale(100%)">
-          <p>Media Production and Digital Fabrication Intern</p>
-          </div>
-          <div id="amplify" class="purecolor" style="filter: grayscale(100%)">
-          <p>Media and Product Intern</p>
-          </div>
-          <div id="kiron" class="purecolor" style="filter: grayscale(100%)">
-          <p>MOOC Production Intern</p>
-          </div>
-          <div id="producer" class="purecolor" style="filter: grayscale(100%)">
-          <p>Visual Media Producer</p>
-          </div>
-          <div id="edsurge" class="purecolor" style="filter: grayscale(100%)">
-          <p>EdSurge Independent</p>
-          </div>
-          <div id="hia" class="purecolor" style="filter: grayscale(100%)">
-          <p>Humanity In Action</p>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
-      </div>
-     </div><!-- .card-content -->
-    </article>
-  
-  </section>
-
-   <!-- 
-   <form style=" #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/jskjott" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/jskjott', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">I write a <a href="https://tinyletter.com/jskjott/archive">letter</a> on my explorations</label></p><p><input type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p></p></form>
-  -->
-
-  <section class="cardsHeader">
-    <article class="card">
-      <div class="card-content">
-        <p> Jonathan Skj&#248;tt (2018) <a class="alinkfade" href="https://www.linkedin.com/in/jonathan-skjott-010010001">linkedin</a>, <a class="alinkfade" href="https://twitter.com/jskjott">twitter</a>, <a class="alinkfade" href="https://github.com/jskjott">github</a> 
-     </div><!-- .card-content -->
-    </article>
-  </section>
-
-</div>
-         
-
-<script type="text/javascript">
-
-   minerva.onmouseover = function(){
-    mapImage.src = "assets/map/Minerva.svg"
-    document.getElementById('experience').innerHTML = " <h3> Minerva Schools at KGI, San Francisco, USA </h3> 2015 -> present <br> <br> Double Major in Computational Sciences and Arts & Humanities. I am currently working on my bachelor thesis which is a spatial analysis of a Danish history journal. <br> <br> Expected graduation: May 2019, current GPA: 3.73 ";
-    ["uwc","dcLabs","fabLab","kiron","amplify","producer","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-    document.getElementById("minerva").style.filter = "grayscale(0%)";
-   }); 
-   };
-   uwc.onmouseover = function(){
-    mapImage.src = "assets/map/UWC.svg"
-    document.getElementById('experience').innerHTML = " <h3> United World College Costa Rica, Santa Ana, Costa Rica </h3> 2013 -> 2015 <br> <br> My higher level subjects were Visual Arts, Biology, and Psychology. <br> Standard levels of Spanish ab initio, Math standard level, and English language and literature <br> <br> International Baccalaureate Diploma";
-    ["minerva","dcLabs","fabLab","kiron","amplify","producer","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-    document.getElementById("uwc").style.filter = "grayscale(0%)";
-   });
-   };
-   dcLabs.onmouseover = function(){
-    mapImage.src = "assets/map/DC_Labs.svg"
-    document.getElementById('experience').innerHTML = " <h3> Research Intern to Sebastian Deterding & Jeske Van der Gevel </h3> July 2018 -> Sep 2018 <br> <br> Design research on improvement of agricultural research methodology. I went to Kenya to do field testing of both paper and experience prototypes. <br> <br> see project page <a class=\"alinkfade\" href=\"dclabs.html\"> here </a>";
-    ["minerva","uwc","fabLab","kiron","amplify","producer","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-    document.getElementById("dcLabs").style.filter = "grayscale(0%)";
-   });
-   };
-   fabLab.onmouseover = function(){
-    mapImage.src = "assets/map/Fablab.svg"
-    document.getElementById('experience').innerHTML = " <h3> Media Production and Digital Fabrication Intern </h3> Oct 2017 -> Dec 2017 <br> <br> At FabLab Seoul I planned and produced video content for the lab. I also learn digital fabrication methods and completed a range of projects using laser cutting and Arduinos. <br> <br> ";
-    ["minerva","uwc","dcLabs","kiron","amplify","producer","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-      document.getElementById("fabLab").style.filter = "grayscale(0%)";
-   });
-   };
-   amplify.onmouseover = function(){
-    mapImage.src = "assets/map/Amplify.svg"
-    document.getElementById('experience').innerHTML = " <h3> Media and Product Intern </h3> May 2016 -> Aug 2017 <br> <br> At Amplify Education in New York I worked in a range of areas relating to the companys CKLA curriculum. My tasks included producing marketing videos and performing data analysis. <br> <br> see portfolio page <a class=\"alinkfade\" href=\"amplify.html\"> here </a>";
-    ["minerva","uwc","dcLabs","fabLab","kiron","producer","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-      document.getElementById("amplify").style.filter = "grayscale(0%)";
-});
-   };
-   kiron.onmouseover = function(){
-    mapImage.src = "assets/map/Kiron.svg"
-    document.getElementById('experience').innerHTML = " <h3> MOOC Production Intern </h3> Sept 2016 -> Feb 2017 <br> <br> At Kiron Open Higher Education I worked with a small team to design and develop Kiron's first MOOC produced inhouse. Wrote a 100+ page long curriculum, interviewed a dozen students for this project. <br> <br> See portfolio page <a class=\"alinkfade\" href=\"kiron.html\"> here </a>";
-    ["minerva","uwc","dcLabs","fabLab","amplify","producer","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-      document.getElementById("kiron").style.filter = "grayscale(0%)";
-   });
-    }
-
-   producer.onmouseover = function(){
-    mapImage.src = "assets/map/producer.svg"
-    document.getElementById('experience').innerHTML = " <h3> Visual Media Producer </h3> Sept 2016 -> Dec 2016 <br> <br> As a visual media producer I was responsible for creating photo and video content for both internal and external use. In this role I also helped with the development of the magazine Aventine. <br> <br> ";
-    ["minerva","uwc","dcLabs","fabLab","kiron","amplify","edsurge","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-      document.getElementById("producer").style.filter = "grayscale(0%)";
-   });
-   };
-
-   hia.onmouseover = function(){
-    mapImage.src = "assets/map/HIA.svg"
-    document.getElementById('experience').innerHTML = " <h3> Humanity In Action </h3> June 2016 -> July 2016 <br> <br> As a Humanity in Action fellow I learnt about and engaged with human rights issues in Denmark and abroad with a batch of other students. I worked with Copenhagen Pride to assess the degree of collaboration between different organisations advocating for the LGBTQ community in Denmark.";
-    ["minerva","uwc","dcLabs","fabLab","kiron","amplify","producer","edsurge",].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-      document.getElementById("hia").style.filter = "grayscale(0%)";
-   });
-   };
-
-   edsurge.onmouseover = function(){
-    mapImage.src = "assets/map/Amplify.svg"
-    document.getElementById('experience').innerHTML = " <h3> EdSurge Independent </h3> May 2017 -> Aug 2017 <br> <br> As a summer fellow I was part of a community of students passionate about education. A part of the fellowship I wrote articles and drew a comic for EdSurge Independent. <br> <br> ";
-    ["minerva","uwc","dcLabs","fabLab","kiron","amplify","producer","hia"].forEach(function(element) {
-      document.getElementById(element).style.filter = "grayscale(100%)";
-      document.getElementById("edsurge").style.filter = "grayscale(0%)";
-   });
-   };
-
-</script>
-
- </body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="index.js"></script>

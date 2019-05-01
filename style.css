@@ -1,0 +1,170 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Yatra+One');
+
+/* layouting */
+
+.titleContainer {
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+     .title {
+        border-bottom: 1px solid black;
+        padding: 0 0 0.5rem 0;
+     }
+
+.header {
+    padding: 0.5 1rem 0rem 1rem;
+}
+
+    .btn {
+      border: none;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      background-color: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn:hover {background: #eee;}
+
+ .card-container {
+    display: grid;
+    padding: 0.5rem 1rem 1rem 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+    .card {
+        display: grid;
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all .3s ease-in-out; 
+    }
+
+        .card__description {
+            padding: .5rem;
+            line-height: 1.6em;
+        }
+
+    .card:hover {
+        filter: none;
+          -webkit-filter: grayscale(0);
+        }
+
+.footer{
+    padding: 1rem;
+}
+
+/* styling */
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+*{
+  background-color: #FFFFFF;
+  background-image: url("concrete-wall.png");
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+    padding-top: 5%;
+    max-width: 850px;
+    margin: auto;
+}
+
+p{
+    margin: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+a:hover {
+    color:black;
+    text-decoration:none;
+}
+
+h4 {
+    margin:0;
+}
+
+ul,li {
+   list-style:none;
+   margin:0;
+   padding:0;
+}
+
+img{
+    border-radius: 2px;
+    border: 1px solid;
+    width: 100%;
+    margin:0;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.purecolor{
+  -webkit-animation:colorchange 80s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: #4669ff;
+      }
+      
+      10% {
+        
+        color: #ff5946;
+      }
+      
+      20% {
+        
+        color: #ff9d21;
+      }
+      
+      30% {
+        
+        color: #ff46a0;
+      }
+      
+      40% {
+        
+        color: #38d292;
+      }
+      
+      50% {
+        
+        color: #ff5946;
+      }
+      
+      60% {
+        
+        color: #ff9d21;
+      }
+      
+      70% {
+        
+        color: #4669ff;
+      }
+      80% {
+     
+        color: #ff46a0;
+      }
+      
+      90% {
+     
+        color: #38d292;
+      }
+      
+      100% {
+        
+        color: #ff5946;
+      }
+    }
