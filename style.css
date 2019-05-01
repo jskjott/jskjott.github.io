@@ -85,6 +85,11 @@ p{
     vertical-align: top;
 }
 
+a {
+    color:black;
+    text-decoration:none;
+}
+
 a:hover {
     color:black;
     text-decoration:none;
