@@ -98,7 +98,6 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2; 
-        place-self: center;
         height:90vh;
         width: 100%;
     }
