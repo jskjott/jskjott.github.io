@@ -1,6 +1,7 @@
 var vue = new Vue({
   el: "#vue",
   data: {
+    mainArea: 'projects',
     items: [
       { 
         title: "Digital Historiography",
@@ -78,17 +79,24 @@ if (typeof HTMLCollection.prototype.forEach === "undefined") {
 }
 
 function filterSelection(c) {
-  let cards = document.getElementsByClassName("card");
-  if (c == "all")
-    {cards.forEach(ele => ele.style.display = "grid")
-  } else{
-    cards.forEach(ele => ele.style.display = "none")
-    cards.forEach(ele => {
-      if (ele.className.split(" ")[1] == c){
-        document.getElementsByClassName(ele.className).forEach(element => {
-          element.style.display = "grid"
-        });
-      }
-    })
-  }
+    console.log(c)
+    if (c === 'about') {
+        vue.mainArea = 'about'
+        vue.mainAreaClass = 'about'
+        } else {
+            vue.mainArea = 'projects'
+            let cards = document.getElementsByClassName("card")
+            if (c == "all")
+                {cards.forEach(ele => ele.style.display = "grid")
+            } else{
+                cards.forEach(ele => ele.style.display = "none")
+                cards.forEach(ele => {
+                if (ele.className.split(" ")[1] == c){
+                    document.getElementsByClassName(ele.className).forEach(element => {
+                    element.style.display = "grid"
+                });
+              }
+            })
+        }
+    }
 }
