@@ -5,13 +5,21 @@
 <body>
     <section class="titleContainer">
         <section class="title">
-            <div> <b style="font-family: 'Yatra One', cursive; font-size: 2.1em;">JONATHAN SKJ&#216;TT</b></div>
+            <div> 
+                <b style="font-family: 'Yatra One', cursive; font-size: 2.1em;">JONATHAN SKJ&#216;TT</b>
+            </div>
             <div> a media prototyper playing with film, history, and programming. </div> 
         </section>    
     </section>
 
     <section class="header" id="header">
-            <button class="btn active" onclick="filterSelection('visual')"> Research</button>/<button class="btn" onclick="filterSelection('storytelling')">Storytelling</button>/<button class="btn" onclick="filterSelection('design')">Design</button>/<button class="btn" onclick="filterSelection('all')">All</button> <button class="btn" onclick="filterSelection('about')" style="float: right;" ><b class="purecolor">About</b></button>
+        <span v-if="renderProjectMenu">
+            <button class="btn active" onclick="filterSelection('visual')"> Research</button>/<button class="btn" onclick="filterSelection('storytelling')">Storytelling</button>/<button class="btn" onclick="filterSelection('design')">Design</button>/<button class="btn" onclick="filterSelection('all')">All</button> 
+        </span> 
+        <span v-if="!renderProjectMenu">
+            <button class="btn" onclick="filterSelection('all')">Projects</button> 
+        </span>
+            <button class="btn" onclick="filterSelection('about')" style="float: right;" ><b class="purecolor">About</b></button>
     </section>
 
     <section v-bind:class="mainArea" id="vue">
@@ -25,6 +33,16 @@
             </article>
         </template>
         <template v-if="mainArea === 'about'" >
+            <div class="imageColumn"><img src="img/portrait.jpg"></div>
+            <div class="aboutColumn"> 
+                I am currently preparing to tackle my technical curiosity and strengthen my creative practice at <a href="http://www.recurse.com">Recurse Center</a>.
+                <br> <br>
+                In the past I did service design at <a href="http://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware and film at <a href="http://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="http://www.kiron.ngo">Kiron Open Higher Education</a>.
+                <br> <br>
+                I recently finished my studies in History and Computational Sciences at <a href="http://www.minerva.kgi.edu">Minerva Schools at KGI</a>.
+            </div>
+        </template>
+        <template v-if="mainArea === 'films'" >
             <div class="imageColumn"><img src="img/portrait.jpg"></div>
             <div class="aboutColumn"> 
                 I am currently preparing to tackle my technical curiosity and strengthen my creative practice at <a href="http://www.recurse.com">Recurse Center</a>.
