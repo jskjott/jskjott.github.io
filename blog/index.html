@@ -1,0 +1,19 @@
+<meta charset="utf8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<header>
+	To help me keep track ❤️
+</header>
+
+<main id="vue">
+	<template v-for=" { title, date, post } in posts">
+		<div class="postHeader">
+			<span style="font-size: 1.6em"> {{title}} </span> <span style="color: grey;"> {{date}} </span>
+		</div>
+		<vue-markdown> {{post}} </vue-markdown>
+	</template>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-markdown@2.2.4/dist/vue-markdown.js"></script>
+<script src="index.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">

@@ -1,8 +1,0 @@
-#historyschools historicize the intellectual influences and legacies of historical scholarship in its changing political, social, and cultural contexts.
-#historicalarguments  craft and evaluate the historiographical contributions of evidence-based interpretive arguments about the past.
-#historicalnarrative  craft, and analyze the elements of, compelling historical narratives.
-#digitalhistory  identify and evaluate the use-value of new digital methods to find, analyze, and present historical sources and narratives.
-#historyandspace use spatial history methodologies to craft and analyze how space and place interrelates with historical dimensions
-#historyviz apply spatial mapping tools to analyze historical datasets.
-#computationalmethodreview judge the quality of applied computational methods for humanities research.
-#optimalalgorithm be able to discuss the relative merits of several algorithms or data structures that accomplish the same goal, and choose the best option given constraints.

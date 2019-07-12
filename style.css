@@ -1,7 +1,7 @@
 /* fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
 @import url('https://fonts.googleapis.com/css?family=Yatra+One');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
 
 /* layouting */
 
@@ -12,24 +12,36 @@
      .title {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        border-bottom: 1px solid black;
         padding: 0 0 0.5rem 0;
+     }
+
+     #oneLiner {
+      padding-left: 1rem;
+      padding-right: 0.5rem;
+      margin-bottom: 0.5rem;
      }
 
 .header {
     padding: 0.5 1rem 0rem 1rem;
+    background-color: black;
+    margin-bottom: 1rem;
 }
 
     .btn {
+      color: white;
       border: none;
       padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-      background-color: inherit;
+      background-color: black;
       font-size: 0.8rem;
       cursor: pointer;
       display: inline-block;
+      margin: 0rem 0.2rem 0rem 0.2rem;
     }
 
-    .btn:hover {background: #eee;}
+    .btn:hover {
+      color: black;
+      background: white;
+    }
 
  .projects {
     display: grid;
@@ -41,6 +53,7 @@
     .card {
         display: grid;
         filter: gray; /* IE5+ */
+        cursor: pointer
 
     }
 
@@ -53,6 +66,10 @@
         filter: none;
           
         }
+
+.page {
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
 
 .about {
   display: grid;
@@ -78,7 +95,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -94,7 +111,6 @@ p{
 }
 
 a {
-    color:black;
     text-decoration:none;
 }
 
@@ -107,15 +123,8 @@ h4 {
     margin:0;
 }
 
-ul,li {
-   list-style:none;
-   margin:0;
-   padding:0;
-}
 
 img{
-    border-radius: 2px;
-    border: 1px solid;
     width: 100%;
     margin:0;
     object-fit: contain;
@@ -123,8 +132,13 @@ img{
 }
 
 .purecolor{
-  -webkit-animation:colorchange 80s infinite alternate;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: black;
 }
+  .purecolor:hover {
+        color: black;
+        background: white;
+      }
 
 @-webkit-keyframes colorchange {
       0% {
