@@ -14,6 +14,18 @@ let vue = new Vue({
     },
     items: [
         { 
+            title: "Git for Filmmakers",
+            text: "A version control tool.",
+            image: "img/git_for_filmmakers.png",
+            class: "card programming",
+            contentLink: "git_for_filmmakers.md",
+        },{ 
+            title: "Visualise Communities",
+            text: "An explorable network visualisation",
+            image: "img/community_network_project.png",
+            class: "card programming design",
+            contentLink: "community_network_project.md",
+        },{ 
             title: "Make Citizen Science more Participatory",
             text: "A service design research project.",
             image: "img/service_design_research.png",
@@ -22,7 +34,7 @@ let vue = new Vue({
         },{ 
             title: "Introduce Refugees to Online Learning",
             text: "An interactive learning experience.",
-            image: "img/kiron_mooc.png",
+            image: "img/kiron_alternative.png",
             class: "card design",
             contentLink: "kironMOOC.md",
         },{ 
