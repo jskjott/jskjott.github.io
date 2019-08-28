@@ -80,6 +80,15 @@
 
 .footer{
     padding: 1rem;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    grid-template-columns: 1fr 60px 30px;
+}
+
+.footerItem {
+  align-self: center;
+  justify-self: center;
 }
 
 /* styling */
