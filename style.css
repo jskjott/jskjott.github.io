@@ -138,6 +138,7 @@ img{
     margin:0;
     object-fit: contain;
     max-width: 100%;
+    filter: saturate(50%);
 }
 
 .purecolor{
