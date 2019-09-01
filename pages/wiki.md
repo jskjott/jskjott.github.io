@@ -1,4 +1,6 @@
-## TARGETS 🌀
+```A scratchpad that wants to be a wiki... I am using markdown until the wiki is manifested ~```
+
+## Targets
 
 **Internal Targets** goals dealing with personal growth
 
@@ -13,17 +15,17 @@
 
 ## Quotes
 
-**HERBERT SIMON** (in The Sciences of the Artificial)
+**Herbert Simon** - The Sciences of the Artificial
 
 > All mathematics exhibits in its conclusions only what is already implicit in its premises… Hence all mathematical derivation can be viewed simply as chase in representation, making evident what was previously true but obscure.
 
 > This view can be extended to all of problem solving-solving a problem simply means repenting it so as to make the solution transparent. If the problem solving could actually be organised in these terms, the issue of representation would indeed become central. But even if it cannot-if this is too exaggerated a view-a deeper understanding of how representations are created and how they contribute to the solution of problems will become an essential component of the future theory of design.
 
-**ENGELBART**
+**Engelbart** - quoted in The Dream Machine
 
-> Manipulating words seemed like thoe obvious place to start because it was a way to manipulate your ideas.
+> Manipulating words seemed like the obvious place to start because it was a way to manipulate your ideas.
 
-**DEVINE**
+**Devine** - 
 
 > Optimizing toward the need for less revenue has yielded better results than optimizing toward the generation of more.
 
@@ -45,7 +47,7 @@
 
 - Get to know people
 
-## Books which have inspired me deeply
+## Books Which Have Inspired Me
 
 - Seeing Like a State - James C. Scott
 - The Visual Presentation of Quantitative Information - Edward Tufte
@@ -55,7 +57,7 @@
 - How Children Fail - John Holt
 - The Dream Machine: J.C.R. Licklider and the Revolution That Made Computing Personal - Mitchell Waldrop
 
-## Reading list
+## Reading List
 
 2019:
 
