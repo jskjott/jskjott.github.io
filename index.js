@@ -20,6 +20,12 @@ let vue = new Vue({
             class: "card programming",
             contentLink: "git_for_filmmakers.md",
         },{ 
+            title: "Printing Process as Time-based Media",
+            text: "A media study",
+            image: "img/midi_plotter.png",
+            class: "card programming design",
+            contentLink: "The_Printing_Process_as_Time-based_Media.md",
+        },{ 
             title: "Visualise Communities",
             text: "An explorable network visualisation",
             image: "img/community_network_project.png",
