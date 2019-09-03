@@ -22,8 +22,14 @@
             /
               <button class="btn" onclick="filterSelection('all')">All</button> 
         </span> 
-            <button class="btn" onclick="filterSelection('about')" style="float: right;" >About</button>
-            <button class="btn" onclick="vue.hashChange('wiki.md')" style="float: right;" >Wiki</button>
+        <span style="color: white; background-color: black;">
+            <div style="float: right; color: white; background-color: black;">
+            <button class="btn" onclick="filterSelection('wiki')" >Wiki</button>
+            \
+            <button class="btn" onclick="filterSelection('about')" >About</button>
+            </div>
+            
+        </span>
     </section>
 
     <section v-bind:class="mainArea" id="vue">
@@ -37,6 +43,19 @@
                 </article>
             </div>
         </template>
+        <div v-if="mainArea === 'wiki'">
+            <p> A scratchpad that wants to be a wiki... I am using markdown until the wiki is manifested ~ </p>
+            <br>
+            <template  v-for="page in wiki">
+                <div>
+                    <article @click="hashChange(page.contentLink)" class="wikiEntry">
+                        <div>
+                            <p><b>{{page.title}}</b></p> <p style="color: grey;">{{page.text}}</p>
+                        </div>
+                    </article>
+                </div>
+            </template>
+        </div>
         <template v-if="mainArea === 'page' && !isProcessing">
             <div id="page">
                 <vue-markdown> {{pageContent}} </vue-markdown>    

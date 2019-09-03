@@ -12,6 +12,25 @@ let vue = new Vue({
             route: window.location.hash,
         }
     },
+    wiki: [
+        {
+            title: "quotes",
+            text: "condensed powerful ideas",
+            contentLink: "quotes.md",
+        },{
+            title: "library",
+            text: "longform.",
+            contentLink: "library.md",
+        },{
+            title: "space",
+            text: "creating space for myself",
+            contentLink: "space.md",
+        },{
+            title: "targets",
+            text: "reflections on values",
+            contentLink: "targets.md",
+        },
+    ],
     items: [
         { 
             title: "Git for Filmmakers",
@@ -162,9 +181,11 @@ let vue = new Vue({
   },
   created: function(){
     if (window.location.hash) {
-        if (window.location.hash === '#about') {
-            this.mainArea = 'about'
-            this.mainAreaClass = 'about'
+        if (window.location.hash === '#about' || window.location.hash === '#wiki') {
+            const area = window.location.hash.substring(1)
+            console.log(area)
+            this.mainArea = area
+            this.mainAreaClass = area
         } else {
             this.getPageContent(window.location.hash.replace('#',''))    
         }
@@ -186,11 +207,11 @@ if (typeof HTMLCollection.prototype.forEach === "undefined") {
 }
 
 function filterSelection(c) {
-    if (c === 'about') {
-        vue.mainArea = 'about'
-        vue.mainAreaClass = 'about'
-        window.location.hash = 'about'
-        } 
+    if (c === 'about' || c === 'wiki') {
+        vue.mainArea = c
+        vue.mainAreaClass = c
+        window.location.hash = c
+        }
     else {
         vue.mainArea = 'projects'
         history.pushState("", document.title, window.location.pathname)
@@ -213,12 +234,14 @@ function filterSelection(c) {
 }
 
 window.addEventListener('hashchange', function() {
-    if (window.location.hash === '#about') {
-        vue.mainArea = 'about'
-        vue.mainAreaClass = 'about'
+    if (window.location.hash === '#about' || window.location.hash === '#wiki') {
+        const area = window.location.hash.substring(1)
+        vue.mainArea = area
+        vue.mainAreaClass = area
     } else if (window.location.hash) {
         if (vue.mainArea === 'projects' || 
-            vue.mainArea === 'about') {
+            vue.mainArea === 'about' ||
+            vue.mainArea === 'wiki') {
             vue.mainArea = 'page'
         }
         vue.setActivePage(window.location.hash.replace('#',''))
