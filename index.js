@@ -14,13 +14,21 @@ let vue = new Vue({
     },
     media: [
         { 
+            title: "Video",
+            pages: [
+                {
+                    title: "Static Representions of Time-based Media",
+                    contentLink: "slitscan_experiments.md",
+                }
+            ],
+        },{ 
             title: "Printing",
             pages: [
                 {
                     title: "Printing Process as Time-based Media",
                     contentLink: "The_Printing_Process_as_Time-based_Media.md"
                 },{
-                    title: "Lower the Barrier of Print Publishing",
+                    title: "Portable Print Publishing",
                     contentLink: "portable_typewriter.md"
                 },
             ],
@@ -109,7 +117,7 @@ let vue = new Vue({
             class: "card programming",
             contentLink: "portfolio_site.md",
         },{ 
-            title: "Lower The Barrier Of Print Publishing",
+            title: "Portable Print Publishing",
             text: "A first experiment in electronics.",
             image: "img/portable_typewriter.png",
             class: "card design programming",
