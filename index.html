@@ -24,6 +24,8 @@
         </span> 
         <span style="color: white; background-color: black;">
             <div style="float: right; color: white; background-color: black;">
+            <button class="btn" onclick="filterSelection('media')" >Media Studies</button>
+            \
             <button class="btn" onclick="filterSelection('wiki')" >Wiki</button>
             \
             <button class="btn" onclick="filterSelection('about')" >About</button>
@@ -43,8 +45,33 @@
                 </article>
             </div>
         </template>
+        <template v-if="mainArea === 'page' && !isProcessing">
+            <div id="page">
+                <vue-markdown> {{pageContent}} </vue-markdown>    
+            </div>
+        </template>
+        <div v-if="mainArea === 'media'">
+            <p>These studies are works in progress // please share comments on desired channels.</p>
+            <br>
+            <template v-for="medium in media">
+                <div class="medium">
+                    <div>
+                        <p><b>{{medium.title}}</b></p>
+                    </div>
+                    <div>
+                        <template v-for="page in medium.pages">
+                            <article @click="hashChange(page.contentLink)">
+                                <div class="study">
+                                    <p>{{page.title}}</p>
+                                </div>
+                            </article>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
         <div v-if="mainArea === 'wiki'">
-            <p> A scratchpad that wants to be a wiki... I am using markdown until the wiki is manifested ~ </p>
+            <p> A scratchpad that wants to be a wiki // I am using markdown until the wiki is manifested ~ </p>
             <br>
             <template  v-for="page in wiki">
                 <div>
@@ -56,11 +83,6 @@
                 </div>
             </template>
         </div>
-        <template v-if="mainArea === 'page' && !isProcessing">
-            <div id="page">
-                <vue-markdown> {{pageContent}} </vue-markdown>    
-            </div>
-        </template>
         <template v-if="mainArea === 'about'" >
             <div class="imageColumn"><img src="img/portrait.jpg"></div>
             <div class="aboutColumn"> 

@@ -12,10 +12,32 @@ let vue = new Vue({
             route: window.location.hash,
         }
     },
+    media: [
+        { 
+            title: "Printing",
+            pages: [
+                {
+                    title: "Printing Process as Time-based Media",
+                    contentLink: "The_Printing_Process_as_Time-based_Media.md"
+                },{
+                    title: "Lower the Barrier of Print Publishing",
+                    contentLink: "portable_typewriter.md"
+                },
+            ],
+        }, { 
+            title: "Annotation",
+            pages: [
+                {
+                    title: "Annotation Design",
+                    contentLink: "annotation_design.md"
+                },
+            ],
+        }
+    ],
     wiki: [
         {
             title: "quotes",
-            text: "condensed powerful ideas",
+            text: "snippets containing powerful ideas",
             contentLink: "quotes.md",
         },{
             title: "library",
@@ -23,11 +45,11 @@ let vue = new Vue({
             contentLink: "library.md",
         },{
             title: "space",
-            text: "creating space for myself",
+            text: "creating space of various kinds",
             contentLink: "space.md",
         },{
             title: "targets",
-            text: "reflections on values",
+            text: "trying to define my values",
             contentLink: "targets.md",
         },
     ],
@@ -40,13 +62,13 @@ let vue = new Vue({
             contentLink: "git_for_filmmakers.md",
         },{ 
             title: "Printing Process as Time-based Media",
-            text: "A media study",
+            text: "A media study.",
             image: "img/midi_plotter.png",
             class: "card programming design",
-            contentLink: "The_Printing_Process_as_Time-based_Media.md",
+            contentLink: "The_Printing_Process_as_Time-based_Media.md"
         },{ 
             title: "Visualise Communities",
-            text: "An explorable network visualisation",
+            text: "An explorable network visualisation.",
             image: "img/community_network_project.png",
             class: "card programming design",
             contentLink: "community_network_project.md",
@@ -181,7 +203,7 @@ let vue = new Vue({
   },
   created: function(){
     if (window.location.hash) {
-        if (window.location.hash === '#about' || window.location.hash === '#wiki') {
+        if (window.location.hash === '#about' || window.location.hash === '#wiki' || window.location.hash === '#media') {
             const area = window.location.hash.substring(1)
             console.log(area)
             this.mainArea = area
@@ -207,7 +229,7 @@ if (typeof HTMLCollection.prototype.forEach === "undefined") {
 }
 
 function filterSelection(c) {
-    if (c === 'about' || c === 'wiki') {
+    if (c === 'about' || c === 'wiki' || c === 'media') {
         vue.mainArea = c
         vue.mainAreaClass = c
         window.location.hash = c
@@ -234,14 +256,15 @@ function filterSelection(c) {
 }
 
 window.addEventListener('hashchange', function() {
-    if (window.location.hash === '#about' || window.location.hash === '#wiki') {
+    if (window.location.hash === '#about' || window.location.hash === '#wiki' || window.location.hash === '#media') {
         const area = window.location.hash.substring(1)
         vue.mainArea = area
         vue.mainAreaClass = area
     } else if (window.location.hash) {
         if (vue.mainArea === 'projects' || 
             vue.mainArea === 'about' ||
-            vue.mainArea === 'wiki') {
+            vue.mainArea === 'wiki' ||
+            vue.mainArea === 'media') {
             vue.mainArea = 'page'
         }
         vue.setActivePage(window.location.hash.replace('#',''))
