@@ -13,6 +13,15 @@ let vue = new Vue({
         }
     },
     media: [
+        {
+            title: "Text",
+            pages: [
+                {
+                    title: "The Power of Text",
+                    contentLink: "text.md"
+                }
+            ]
+        },
         { 
             title: "Video",
             pages: [
