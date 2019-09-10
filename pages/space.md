@@ -9,7 +9,7 @@
 
 - Having a list of what I am currently focussing on
 
-
 **Social**
 
 - Get to know people
+- Build community

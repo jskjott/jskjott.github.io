@@ -58,7 +58,7 @@ let vue = new Vue({
             contentLink: "quotes.md",
         },{
             title: "library",
-            text: "longform.",
+            text: "longform",
             contentLink: "library.md",
         },{
             title: "space",
@@ -68,6 +68,10 @@ let vue = new Vue({
             title: "targets",
             text: "trying to define my values",
             contentLink: "targets.md",
+        },{
+            title: "biking",
+            text: "freedom",
+            contentLink: "biking.md",
         },
     ],
     items: [
