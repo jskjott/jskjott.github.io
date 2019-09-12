@@ -5,7 +5,7 @@
 <body>
     <section class="titleContainer">
         <section class="title">
-            <div> 
+            <div id="yatraTitle"> 
                 <b style="font-family: 'Yatra One', cursive; font-size: 2.1em;">JONATHAN SKJ&#216;TT</b>
             </div>
             <div id="oneLiner"> a media prototyper playing with film, history, and programming. </div> 
@@ -40,7 +40,7 @@
                 <article @click="hashChange(item.contentLink)" v-bind:class="item.class">
                     <img :src="item.image" style="border-radius: 2px; border: 1px solid;">
                     <main class="card__description">
-                        <p><b>{{item.title}}</b></p> <p style="color: grey;">{{item.text}}</p>
+                        <p style="font-family: 'Inter UI', sans-serif;">{{item.title}}</p> <p style="color: grey;">{{item.text}}</p>
                     </main>
                 </article>
             </div>
