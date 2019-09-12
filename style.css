@@ -93,17 +93,20 @@
   cursor: pointer;
 }
 
-.wiki {
+.manifestations {
   padding: 0.5rem 1.5rem 1rem 1.5rem;
 }
 
-  .wikiEntry {
+  .entry {
     margin: 0.5rem 0 0.5rem 0;
     padding: 0.5rem 0 0.5rem 0.5rem;
     border: 1px dashed rgba(0, 0, 0, .5);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: 20em;
   }
 
-  .wikiEntry:hover {
+  .entry:hover {
     cursor: pointer;
   }
 
@@ -127,7 +130,22 @@
   justify-self: center;
 }
 
-/* styling */
+#index {
+  display: grid;
+  grid-auto-columns: fit-content(30px);
+  grid-auto-flow: column;
+  grid-gap: 10px;
+}
+
+#manifestationHeader {
+  display: grid;
+  font-size: 2em;
+  margin: 0 0 0.5rem -0.8rem;
+  padding: 0 0 0 0.5rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  justify-items: center; 
+}
 
 html {
     font-size: 16px;

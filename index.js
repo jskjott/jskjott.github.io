@@ -35,7 +35,7 @@ let vue = new Vue({
             pages: [
                 {
                     title: "Printing Process as Time-based Media",
-                    contentLink: "The_Printing_Process_as_Time-based_Media.md"
+                    contentLink: "The_Printing_Process_as_Time_based_Media.md"
                 },{
                     title: "Portable Print Publishing",
                     contentLink: "portable_typewriter.md"
@@ -51,7 +51,7 @@ let vue = new Vue({
             ],
         }
     ],
-    wiki: [
+    manifestations: [
         {
             title: "quotes",
             text: "snippets containing powerful ideas",
@@ -86,7 +86,7 @@ let vue = new Vue({
             text: "A media study.",
             image: "img/midi_plotter.png",
             class: "card programming design",
-            contentLink: "The_Printing_Process_as_Time-based_Media.md"
+            contentLink: "The_Printing_Process_as_Time_based_Media.md"
         },{ 
             title: "Visualise Communities",
             text: "An explorable network visualisation.",
@@ -198,10 +198,14 @@ let vue = new Vue({
         this.activePage = contentLink
     },
     getPageContent: async function(contentLink){
-        this.mainArea = 'page'
+        if (this.mainArea !== 'manifestations') {
+            this.mainArea = 'page'
+        }
+
         const pageContent = await fetch(`pages/${contentLink}`)
                             .then(response => response.text())
                             .then((data) => data)
+
         this.pageContent = pageContent
         this.isProcessing = false
     },
@@ -213,7 +217,7 @@ let vue = new Vue({
         }
     },
     activePage: function(){
-        if (this.mainArea === 'page') {
+        if (this.mainArea === 'page' || this.mainArea === 'manifestations') {
             this.getPageContent(this.activePage)
             this.isProcessing = true
         }
@@ -224,9 +228,16 @@ let vue = new Vue({
   },
   created: function(){
     if (window.location.hash) {
-        if (window.location.hash === '#about' || window.location.hash === '#wiki' || window.location.hash === '#media') {
+        if (window.location.hash.match('-')) {
+
+            const page = window.location.hash.split('-')[1]
+            this.setActivePage(page)
+
+            this.mainArea = 'manifestations'
+            this.mainAreaClass = 'manifestations'
+
+        } else if (window.location.hash === '#about' || window.location.hash === '#manifestations' || window.location.hash === '#media') {
             const area = window.location.hash.substring(1)
-            console.log(area)
             this.mainArea = area
             this.mainAreaClass = area
         } else {
@@ -250,7 +261,7 @@ if (typeof HTMLCollection.prototype.forEach === "undefined") {
 }
 
 function filterSelection(c) {
-    if (c === 'about' || c === 'wiki' || c === 'media') {
+    if (c === 'about' || c === 'manifestations' || c === 'media') {
         vue.mainArea = c
         vue.mainAreaClass = c
         window.location.hash = c
@@ -277,21 +288,33 @@ function filterSelection(c) {
 }
 
 window.addEventListener('hashchange', function() {
-    if (window.location.hash === '#about' || window.location.hash === '#wiki' || window.location.hash === '#media') {
-        const area = window.location.hash.substring(1)
-        vue.mainArea = area
-        vue.mainAreaClass = area
-    } else if (window.location.hash) {
-        if (vue.mainArea === 'projects' || 
-            vue.mainArea === 'about' ||
-            vue.mainArea === 'wiki' ||
-            vue.mainArea === 'media') {
-            vue.mainArea = 'page'
-        }
-        vue.setActivePage(window.location.hash.replace('#',''))
+    const hash = window.location.hash
+    vue.pageContent = null
+
+    if (window.location.hash.match('-')) {
+
+        const [newBaseHash, contentLink] = hash.split('-')
+        window.location.hash = `${newBaseHash}-${contentLink}`
+
+        vue.setActivePage(contentLink)
     } else {
-        vue.mainArea = 'projects'
-        vue.activePage = null
+
+        if (hash === '#about' || hash === '#manifestations' || hash === '#media') {
+            const area = hash.substring(1)
+            vue.mainArea = area
+            vue.mainAreaClass = area
+        } else if (hash) {
+            if (vue.mainArea === 'projects' || 
+                vue.mainArea === 'about' ||
+                vue.mainArea === 'manifestations' ||
+                vue.mainArea === 'media') {
+                vue.mainArea = 'page'
+            }
+            vue.setActivePage(hash.replace('#',''))
+        } else {
+            vue.mainArea = 'projects'
+            vue.activePage = null
+        }
     }
 }, false);
 
