@@ -2,7 +2,6 @@ Aalborg, Denmark
 
 jonathan\_at\_jskjott.com – [github.com/jskjott](github.com/jskjott)
 
-<br>
 
 #### EXPERIENCE
 
@@ -50,21 +49,17 @@ An explorable visualisation of the social network of a university cohort.
 
 
 #### SKILLS
-<br>
 
 **Programming Languages:** proficient in Javascript / used Python in school / started learning Rust at Recurse Center
 
 **Frameworks and Tools:** Node, Typescript, Vue.js, Electron, Git, Jest, Istanbul
 
-<br>
 
 #### EDUCATION
-<br>
 
 **Minerva Schools at KGI – San Francisco, California**
 
 BSc, History & Computational Sciences, June 2019
-<br>
 
 **United World College Costa Rica**
 

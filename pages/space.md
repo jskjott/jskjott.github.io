@@ -1,38 +1,55 @@
 ## Creating Space
 
 *This section is dedicated to exploring ideas that relate to spaces created by and with people.*
-<br>
 
-#### Physical
+### An Ode to the Spaces I Want to Create
 
-- Keeping my living space tidy
-- Keeping my body healthy
+*During the summer of 2019 I was inspired to try to state what kinds of spaces I would like to create.*
 
-#### Mental
+[This ode is a work in progress]
 
-- Having a list of what I am currently focussing on
+___
 
-#### Social
+>I wanna create spaces where people grow
 
-- Get to know people
-- Build community
+>places of kindness
+
+>and trust
+
+>play
+
+___
+
+>where richness comes with inclusivity
+
+>and people can feel at home
+
+>immerse themselves
+
+>learn
+
+___
+
+>with others: decentralised and transparent
+
+>environments not lectures
+
+>give people ownership
+
+>co-create
+
 
 ### On The Recurse Center 
 
 *In the summer of 2019 I went to the Recurse Center. At the end of my time there I wrote the following about the space we were part of / co-created there.*
-<br>
 
 [This is the first draft of this writing and will change in the coming days]
-<br>
 
-Before I came to Recurse Center I was impressed to the point of suspicion about the great things people say about the place. Many speak of the space as changing their unlook not just on programming but also on learning, community, and perhaps life. Being exposed to these ideas and essays, as someone who had not been in the space, I felt intrigued, but I also felt that I did not quite have a sense of what this space was like or why it ended up having such profound impact on many people.
-<br>
+Before I came to Recurse Center I was impressed to the point of suspicion about the great things people say about the place. Many speak of the space as changing their outlook not just on programming but also on learning, community, and perhaps life. Being exposed to these ideas and essays, as someone who had not been in the space, I felt intrigued, but I also felt that I did not quite have a sense of what this space was like or why it ended up having such profound impact on many people.
 
 Being at Recurse Center now I feel like I understand a little more about why it is described as it is. It can be hard to express something for which one does not have words to describe. I surely feel like I have gained insights from going to the Recurse Center that I might not be able to describe for quite a while.
-<br>
 
 However, like many others, I will try to express the ways in which this space made a big impression on me.
-<br>
 
 One thing which is central to Recurse Center as a space is the social rules:
 
@@ -42,25 +59,18 @@ One thing which is central to Recurse Center as a space is the social rules:
 - No subtle -isms
 
 I warmly encourage you to have a look at how they are described in the Recurse Center [Manual](recurse.com)!
-<br>
 
 What is powerful about the social rules is how concise they are. One of effect this briefness is that they become easier to think about and thus put into practice. I feel like the rules are present in the space in a way that would be impossible if they were described in a long essay. 
-<br>
 
 Also, their briefness do not necessailry take a lot away from their richness. I was talking about this with another recurser yesterday: **the social rules address subtle things which often go unnoticed in other spaces and the effect of that is the initiation of reflection on many other subtleties in how we act**. So despite being brief they uncover a lot of things which remain unaddressed in many spaces.
-<br>
 
 Another important aspect is the physical space. Having spent the last couple of months at the space I feel that it is one of the most well-designed physical spaces I have ever encountered. This really hit me during my first week at RC. I come into the space in the morning and find a table which can be raised, being 191cm I usually have to hunch down at tables which are standard size, I realized I forgot my headphones and realized that it is okay because there are headphones available that I can borrow, I am tired in the afternoon and realize that there is a space for me to take a nap, I want to receive a package and RC allow people to send packages to the space, there is a printer available for everyone to use... The list goes on and on. I also feel that the space has been designed to make it possible for a large variety of people to feel at home: for example, a baby attended Recurse Center with both of their parents for the first week of my batch. What allowed for this was accomodations such as a wellness room. **A lot of the bugs which exist in normal spaces have been addressed at Recurse Center, this makes the experience of being in the space seemless, pleasant, and welcoming to a wide variety of people**. It is my impression that the current design of the space has grown out of a years-long process in which the facilitators have been receptive to the feedback of the people who came to use the space.
-<br>
 
 One effect of this is that recursers start to feel an ownership of the space. Something that made me feel that the center was my space is the how I and all the other participants have 24 / 7 access to all the facilities. It is amazing to observe what happens when communities are given access to spaces and resources. The [folk-high-school](https://www.danishfolkhighschools.com/about-folk-high-schools/what-is-a-folk-high-school/) inspired [boarding school](https://www.oeu.dk) I went to when I was 15 was similar. The motto of the school was "freedom with responsability". This motto was actionised by having all of the schools facilites remain unlocked at all times. Students were free to use the film cameras in the media workshop or the paints in the studio. The result of that was an explosion of creativity and projects as well as a highly responsible student body. We knew that if the cameras break the school would not have money to replace them. So we took care of the space. There is a similar dynamic at Recurse Center. The policy which gives people access demonstrates how at Recurse Center trust is put before control.
-<br>
 
 One project I worked on while at Recurse Center was a [webring](http://jskjott.com/webring/) meant to inspire other members of the community to build homes for themselves online. A webring is a collection of websites traditionally linked together by a circular structure. A website which is part of a webring will have an icon on its site linking either to the central webring or another site which is part of the ring.
-<br>
 
 When I was making the ring I was unsure of the extent to which the ring could be associated with the Recurse Center brand. Having just graduated from a school in which you might receive an angry email if you used the school's logo without asking for permission I was surprised to find out that Recursers are encouraged to associate their projects with RC. So, I ended up using the RC logo and registering an RC subdomain for the project. I love this! The community is the brand is the community.
-<br>
 
 So, I was provided with a lot of ways to feel part of the space and the community. It is was done in a way that made me feel a part and welcome from a very early stage. This brings me to the perhaps most central concept which Recurse Center has allowed me to rework: Learning.
 
@@ -72,6 +82,5 @@ RC has
 4. made me keen on sharing as much I can with others
 
 In most schools we let others tell us what to learn. Over time we get used to being fed knowledge without question why those particular pieces of knowledge where seen to be essential while others we disregarded. When I came to RC I was already on my way to taking back control: for the last year of college I had spend more time doing independent projects than coursework. At Recurse Center each participant needs to decide on what to make of their time. This is hard. All of a sudden you have access to more learning opportunities related to computation than ever before and you have to prioritise what kinds of things you want to learn while also finding projects which will allow you to learn those concepts. However, after two months of doing that I feel empowered and responsible for my own learning. 
-<br>
 
-Now it is time to leave Recurse Center. I feel the sandcorns of time trickle through my fingers: what seemed like a long time has passed in the blink of an eye. I am left in awe at how many incredible friends I have made in only two months. Friends who, despite perhaps not knowing everything about me, has made me feel seen, appreciated, and at home <3
+Now it is time to leave Recurse Center. I feel the sandcorns of time trickle through my fingers: what seemed like a long time has passed in the blink of an eye. I am left in awe at how many incredible friends I have made in only two months. Friends who, despite perhaps not knowing everything about me, have made me feel seen, appreciated, and at home <3

@@ -13,12 +13,9 @@
     <td><b>TOOLS</b></td>
     <td> Vue.js, Typescript, Electron </td>
   </tr>
-</table> <br>
+</table>
 
-<p>
 Many creative professions have no high quality version control systems. Film-making is one profession in which the majority of practitioners use only very limited systems for version control. The lack of version control makes collaboration hard as there are many barriers to share, explore, and merge projects.
-</p>
-<br>
 
 ![alt text](img/git_for_filmmakers_aug21.png)
 

@@ -23,37 +23,29 @@ Annotation can be condensing/curating/commenting/elaborating. Annotation systems
 #### Zeros + Ones by Sadie Plant
 
 <a href="http://beforebefore.net/digitalstudio/s18/media/01sadieplant.pdf">source</a>
-<br>
 
 "When Ada wrote her footnotes to Menabrea's text, her work was implicitly supposed to be reinforcing these hierarchical divisions between centers and margins, authors and scribes. Menabrea's memoir was the leading article; Ada's work was merely a compilation of supporting detail, secondary commentary, material intended to back the author up. But her notes made enormous leaps of both quantity and quality beyond a text which turned out merely to be providing the occasion for her work.
 
 Only when digital networks arranged themselves in threads and links did footnotes begin to walk all over what had once been the bodies of organized texts. Hypertext programs and the Net are webs of footnotes without central points, organizing principles, hierarchies. Such networks are unprecedented in terms of their scope, complexity, and the pragmatic possibilities of their use. And yet they are also--and have always been--immanent to all and every piece of written work."
 
-<br>
 
 #### Visual Analysis Comics Class by Nick Sousanis
 
 <a href="http://spinweaveandcut.com/visual-analysis-unfurling/">source</a>
-<br>
 
 Its format is open – students trace, redraw, photocopy, layer over the page they analyze with acetate – anything in which they engage with the work in an intimate and visual way. Drawing directly on the page is key! This active interaction with the composition invites them to start noticing everything the author(s) employs to construct meaning. After students move their hand and eyes over a page for an extended period – I suggest at least half an hour – so much spills out as they discover all sorts of things about the maker’s choices and creative decisions not previously apparent. They find every square inch invested in meaning. Students develop their own coding strategies, diagram, work in multiple layers – the results are frequently this beautiful and insightful explosion of thinking. It’s not that doing analysis solely in writing can’t be extremely insightful (of course it can), but in my experience, this direct engagement of hand and eyes opens students to seeing in ways they couldn’t otherwise. (They can always turn their annotations into essays afterwards if so desired, but the thinking is in that direct spatial engagement.)"
-<br>
 
 <img src="http://spinweaveandcut.com/wp-content/uploads/2019/08/vis-analysis-12.jpg" height="500">
 
-<br>
-<br>
 
 #### Annotated Portfolios by Bill Gaver & John Bowers 
 
 <a href="https://www.uio.no/studier/emner/matnat/ifi/INF5591/h16/pensumliste/gaver-and-bowers---2012---annotated-portfolios-copy.pdf">source</a>
-<br>
 
 designs need to be annotated if they are to make clear and accountable contributions to research. Such annotations not only point to salient features of an artifact but also bridge between the artifact and issues of concern to the research community. Insofar as such issues include conceptual ones, annotated artifacts can be seen to serve some of the same roles as theoretical statements, identifying activities and qualities deemed important for research and suggesting ways these might be addressed.
 
 Annotations have an indexical relationship to the artifacts they are relevant to. Annotations depend on traceable connections to design for their significance, just as designs are illuminated through annotation.
 
-<br>
 
 #### ~
 

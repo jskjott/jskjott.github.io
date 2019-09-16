@@ -12,8 +12,8 @@
     <td><b>TOOLS</b></td>
     <td>Javascript, vuejs</td>
   </tr>
-</table> <br>
+</table>
 
-It has been fun to gradually turn this site into something I love. <br><br>
+It has been fun to gradually turn this site into something I love.
 
 I encourage you to look around or check out the [repo](https://github.com/jskjott/jskjott.github.io) :)

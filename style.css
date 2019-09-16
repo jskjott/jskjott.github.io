@@ -194,10 +194,10 @@ body {
 }
 
 p{
-    margin: 0;
     text-align: left;
     vertical-align: top;
     font-family: 'Inter UI Light', sans-serif;
+    line-height: 1.5em;
 }
 
 a {

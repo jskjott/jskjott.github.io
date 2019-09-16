@@ -15,13 +15,9 @@ But, how do we really unlock the power that text has. The first realization I ha
 Recently I have been exploring how we inteface with text on the internet. 95% of the internet content, except for the various input fields, does not afford rich text editing. 
 
 The browser offers very weak interface with text. The majority of textual webcontent is made to appear static. The text we see on the internet does not allow us to place a caret (the vertical cursor we find in input fields or text editors) or to change its appearance with highlights or underlining.
-<br>
+
 I am currently working on a browser extension which allow rich text editing of all online text-based content. The first feature I am trying to add is multi-caret selection:
 
-<br>
-
 ![alt text](img/multiple_cursors.gif)
-
-<br>
 
 Having multiple carets allow selection and manipulation of multiple parts of a text document. Coupled with good pattern matching enables a plethora of actions such as data formating, effective selective text copying, and rapid soritng of ideas and concepts.

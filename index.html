@@ -52,7 +52,6 @@
         </template>
         <div v-if="mainArea === 'media'">
             <p>These studies are works in progress // please share comments on desired channels.</p>
-            <br>
             <template v-for="medium in media">
                 <div class="medium">
                     <div>
@@ -72,23 +71,20 @@
         </div>
         <div v-if="mainArea === 'manifestations'">
             <p> A collection of personal displays / demonstrations / professions / exhibitions / indications / illustrations / exemplifications / declarations / expressions </p>
-            <br>
             <div id="index">
                 <div id="manifestationHeader">
                     <b> MANIFESTATIONS </b>
                 </div>
                 <template  v-for="page in manifestations">
-                    <div>
                         <article @click="hashChange(`manifestations-${ page.contentLink}`)" class="entry">
                             <div>
-                                <p><b>{{page.title}}</b></p> <p style="color: grey;">{{page.text}}</p>
+                                <p style="margin: 0 5px 0 0"><b>{{page.title}}</b></p> <p style="color: grey; margin: 0">{{page.text}}</p>
                             </div>
                         </article>
-                    </div>
                 </template>
             </div>
             <div v-if="pageContent" id="page">
-                <vue-markdown> {{ pageContent }} </vue-markdown>    
+                <vue-markdown id="content"> {{ pageContent }} </vue-markdown>    
             </div>
         </div>
         <template v-if="mainArea === 'about'" >
@@ -103,7 +99,6 @@
                 </ul>
 
                 In the past I did service design at <a href="http://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware and film at <a href="http://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="http://www.kiron.ngo">Kiron Open Higher Education</a>.
-                <br> <br>
                 I recently finished my studies in Computational Sciences and History at <a href="http://www.minerva.kgi.edu">Minerva Schools at KGI</a>.
             </div>
         </template>

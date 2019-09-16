@@ -13,12 +13,9 @@
     <td><b>TOOLS</b></td>
     <td>D3.js, Vue.js, Typescript </td>
   </tr>
-</table> <br>
+</table>
 
-<p>
 I created an <a href="http://community-network-project.surge.sh/">explorable</a> for people to engage with the network research conducted by a group of students at college. 
-</p>
-<br>
 
 ![alt text](img/community_network_project.gif)
 

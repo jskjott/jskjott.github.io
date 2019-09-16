@@ -244,6 +244,9 @@ let vue = new Vue({
             this.getPageContent(window.location.hash.replace('#',''))    
         }
     }
+  },
+  updated: function () {
+    document.getElementById("content").scrollIntoView()    
   }
 })
 

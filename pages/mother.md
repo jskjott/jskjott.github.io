@@ -11,4 +11,4 @@
     <td><b>TOOLS</b></td>
     <td>Pen & paper, Illustrator, Premiere Pro </td>
   </tr>
-</table> <br>
+</table>
