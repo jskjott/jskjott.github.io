@@ -15,3 +15,7 @@
 > Optimizing toward the need for less revenue has yielded better results than optimizing toward the generation of more.
 
 > The goal is to build a catalog of exciting things to wake up to the next day and to experiment with.
+
+**Katherine Ye** - on Twitter
+
+> When you make your own tools, you tend to mold them to fit your hands. So they may fit others' poorly. Other people who tried "part of speech" told me that the experience felt dehumanizing, that the conversation partner's responses felt irrelevant and jarring. I feel that too.
