@@ -39,11 +39,49 @@ ___
 >co-create
 
 
-### On The Recurse Center 
+### Return Statement
 
-*In the summer of 2019 I went to the Recurse Center. At the end of my time there I wrote the following about the space we were part of / co-created there.*
+*In the summer of 2019 I went to the Recurse Center. At the end of my time there I wrote the following about the space we were part of / co-created.*
 
 [This is the first draft of this writing and will change in the coming days]
+
+My time at the Recurse Center was a period of deep immersion and close-knit community which gave rise to an explosion of passion and productivity. 
+
+Now that the batch is coming to an end I have an urge to try to describe what I learned.
+
+Most of my time at RC was spent engaging in a **learning-based projecting** process. The learning aspect of the process was conserned with mastering programming and the projecting aspect was focussed on exploring media.
+
+The outcome of this process is a range of prototypes most of which are incomplete: 
+
+- A git-based [version control tool for filmmakers](https://github.com/jskjott/git-for-filmmakers)  meant to enable more collaboration by providing access to powerful representations of the time-based medium.
+- An [audio sequencer](https://github.com/jskjott/casette) implemented to explore the building of custom music sequencers.
+- A [realtime midi sound visualisation tool](https://github.com/jskjott/midi-plotter) exploring printing as a timed-based medium.
+- A [browser extension](https://github.com/jskjott/manoeuvre) meant to enable rich-text editing in the browser, the prototype mostly explores multi-caret text manipulation.
+- A [command line tool](https://github.com/jskjott/chasmic) meant to help me keep track of my ideas. A simple practice in creating tools-for-thought.
+
+In the process of making these tools I learnt about:
+
+- How to use Vue-CLI with Typescript and Electron
+- Some of the inner workings of Git 
+- Vue component model
+- Midi protocol basics
+- The Rust programming language
+	- Ownership
+	- Number types, eg u32, i8, float
+	- Multi-threading by using asynchronous channels 
+- HPGL pen-plotter basics
+- How to create a browser extension from scratch
+- How to use Typescript in a variety of different dev setups
+- Emacs org-mode
+- graphics basics
+- tailwindcss
+- Glitch!
+
+These projects have served as great vehicles for learning and exploration!
+
+Alongside my projecting I did a fair amount of pair programming and a community oriented project: the [webring](https://github.com/jskjott/webring) which was meant to encourage recursers to create homes for themselves online. I also made countless changes to my [personal site](jskjott.com).
+
+The other aspect of my experinece which is perhaps as immense as my projecting is the social experience of being at the Recurse Center.
 
 Before I came to Recurse Center I was impressed to the point of suspicion about the great things people say about the place. Many speak of the space as changing their outlook not just on programming but also on learning, community, and perhaps life. Being exposed to these ideas and essays, as someone who had not been in the space, I felt intrigued, but I also felt that I did not quite have a sense of what this space was like or why it ended up having such profound impact on many people.
 
