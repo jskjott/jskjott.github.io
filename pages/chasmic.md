@@ -52,6 +52,30 @@ ___
 
 *In Danish, when you cannot stop listening to a song in your head we call it "to have a song on the brain". I want to explore what tools could generate documentation of the process of having things on your brain.*
 
-#### Chasmic - a tool for documenting ideas inspired by emacs org-mode.
+#### Chasmic - a tool for documenting ideas
 
+I have been really inspired by people who made their own time-tracking tools for a while. The first system which inspired my was Devine Lu Linvega's [xxiivv](https://wiki.xxiivv.com/#about) project. This monday I stumbled upon Blinry's [habitctl](https://github.com/blinry/habitctl) project.
+
+Blinry's project is written in Rust and seeing how straigtforward it can be I decided to make my own little CLI time-tracker: Chasmic.
+
+I ended up creating a simple system which makes it possible for me to keep a list of the ideas which are currently on top of my head and a log system which makes it possible for me to log thoughts I have about certain ideas.
+
+![](../img/chasmic_log.png)
+
+This system works decently well. I even made an ambient visualisation of the amount of log statements per topic over time (the lines in the bottom of the photo above).
+
+Whereas I like the tool as the product of an exploration, I don't think I will use it to actually keep track of my ideas. Mostly because I don't have a vision for how I want to work with the ideas that I document.
+
+Just when I finished my tool I got into a conversation with [Ryan](https://ryanprior.com) who suggested that I look at org-mode (commonly used as part of Emacs) for inspiration. This turned out to be a wonderful suggestion. Thank you Ryan!
+
+#### Org-mode!
+
+Org-mode is a powerful environment for working with ideas, and for organising your projects.
+
+When I heard of it I became incredibly excited and luckily there were many people who were willing to teach me a bit about how to use emacs and org-mode.
+
+After two days of learning and exploration I am starting to organise my life with org-mode. At the moment I mostly use the standard formatting together with the agenda and the capture interface.
+
+![](../img/org-mode.gif)
+A little sneak peak of my .org file
 
