@@ -16,4 +16,4 @@ Inspired by Wesley's project I decided to do my own exploration by writing a [pr
 
 ![alt text](https://raw.githubusercontent.com/jskjott/midi-plotter/master/midi-plotter.gif)
 
-![alt text](img/blocks.png)
+![alt text](img/midi-plotter-eli-cropped.png)

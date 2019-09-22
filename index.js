@@ -86,11 +86,17 @@ let vue = new Vue({
             class: "card programming",
             contentLink: "git_for_filmmakers.md",
         },{ 
-            title: "Printing Process as Time-based Media",
-            text: "A media study.",
+            title: "Building Community Online",
+            text: "A webring for the Recurse Center.",
+            image: "img/webring.png",
+            class: "card programming design",
+            contentLink: "webring.md",
+        },{ 
+            title: "Midi Plotter",
+            text: "A program drawing real-time visualisations.",
             image: "img/midi_plotter.png",
             class: "card programming design",
-            contentLink: "The_Printing_Process_as_Time_based_Media.md"
+            contentLink: "midi_plotter.md"
         },{ 
             title: "Visualise Communities",
             text: "An explorable network visualisation.",
@@ -152,13 +158,14 @@ let vue = new Vue({
             class: "card programming design",
             contentLink: "spatially_concious_news.md",
         }
+        ,{ 
+            title: "Joseonjok of Daerim-dong, Seoul",
+            text: "The making of a historical audio-tour.",
+            image: "img/daerim_dong.png",
+            class: "card storytelling",
+            contentLink: "joseonjok.md",
+        }
         //,{ 
-            //title: "Josenjok of Daerim-dong",
-            //text: "A walking tour on Chinese Korean community.",
-            //image: "img/daerim_dong.png",
-            //class: "card storytelling",
-            //contentLink: "joseonjok.md",
-        //},{ 
             //title: "Metro Global",
             //text: "A exploration of what is behind metro systems.",
             //image: "img/metro_global.png",
