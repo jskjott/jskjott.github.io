@@ -76,6 +76,10 @@ let vue = new Vue({
             title: "chasmic",
             text: "deep work",
             contentLink: "chasmic.md",
+        },{
+            title: "urgency",
+            text: "developing a praxis",
+            contentLink: "urgency.md",
         },
     ],
     items: [
