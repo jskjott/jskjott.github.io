@@ -28,7 +28,9 @@
             \
             <button class="btn" onclick="filterSelection('manifestations')" >Manifestations</button>
             \
-            <button class="btn" onclick="filterSelection('about')" >About</button>
+            <button class="btn" onclick="filterSelection('process')" >Process</button>
+            <!-- \
+            <button class="btn" onclick="filterSelection('about')" >About</button> -->
             </div>
             
         </span>
@@ -102,6 +104,67 @@
                 I recently finished my studies in Computational Sciences and History at <a href="http://www.minerva.kgi.edu">Minerva Schools at KGI</a>.
             </div>
         </template>
+        <div v-if="mainArea === 'process'">
+            <p style="margin-left: 1.5rem;"> This section serves is my process scratchpad: this is where I track tasks, set goals, and document my knowledge. </p>
+            <div id="org">
+            </div>
+            <link rel="stylesheet" href="process/org-style.css">
+            <script type="module">
+              import init, { parse } from '/process/pkg/org_parser.js'
+              import { parseToDomElement } from '/process/parser.js'
+
+              async function run() {
+                await init()
+
+                let text
+
+                await fetch('https://raw.githubusercontent.com/jskjott/process.org/master/process.org', {
+                  headers: new Headers({
+                    'User-agent': 'Mozilla/4.0 Custom User Agent'
+                  })
+                })
+                .then(response => response.text())
+                .then(data => {
+                  text = data
+                })
+                .catch(error => console.error(error))
+
+                const result = parse(text);
+
+                const dom = parseToDomElement(result, 0)
+
+                dom.className = "tree"
+
+                const space = document.querySelector('#org')
+
+                space.appendChild(dom)
+
+                if (space.childNodes.length == 2) {
+                    space.removeChild(space.childNodes[0])
+                }
+
+                const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+
+                elements.forEach(node => {
+                  const childNodes = node.parentNode.childNodes
+                  node.addEventListener("click", () => {
+                    childNodes.forEach((childNode, i) => {
+                      if (i !== 0) {
+                        if (childNode.style.display === 'none') {
+                          childNode.style.display = 'block'
+                        } else {
+                          childNode.style.display = 'none'
+                        }
+                      }
+                    })
+                  })
+                })
+
+              }
+
+              run();
+            </script>
+        </div>
     </section>
 
     <section class="footer">

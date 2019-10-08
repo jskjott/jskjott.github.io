@@ -1,0 +1,446 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="space">        
+    </div>
+
+    <script type="module">
+      import init, { parse } from '/pkg/org_parser.js';
+
+      async function run() {
+        await init();
+
+        const result = parse(`#+TITLE: ~ Life REPO (*^^*) ~
+#+AUTHOR: Jonathan
+#+DATE: <2019-09-19 Thu>
+
+* Ideas On Top of My Mind
+** Manipulating ideas by manipulating text
+** Tools for thinking about collaborative processes
+** Documentation
+*** What does it mean for something to be self-documenting?
+*** How does documentation tools
+** time-based <--> static media 
+** The code is the interface is the code
+** Creating Spaces
+* Projects
+** Futurice - Fork Visualiser
+*** DONE brainstorm and feasibility study
+    :LOGBOOK:
+    CLOCK: [2019-09-19 Thu 10:40]--[2019-09-19 Thu 11:27] =>  0:47
+    :END:
+*** DONE project setup
+    :LOGBOOK:
+    CLOCK: [2019-09-19 Thu 12:26]--[2019-09-19 Thu 13:31] =>  1:05
+    :END:
+*** DONE clean up and make initial commit
+    :LOGBOOK:
+    CLOCK: [2019-09-21 Sat 09:18]--[2019-09-21 Sat 09:40] =>  0:22
+    :END:
+*** DONE add menu 
+    :LOGBOOK:
+    CLOCK: [2019-09-21 Sat 10:30]--[2019-09-21 Sat 10:43] =>  0:13
+    CLOCK: [2019-09-21 Sat 09:40]--[2019-09-21 Sat 10:24] =>  0:44
+    :END:
+*** DONE add visualisation
+    :LOGBOOK:
+    CLOCK: [2019-09-21 Sat 10:51]--[2019-09-21 Sat 13:10] =>  2:19
+    :END:
+*** TODO size network nodes relative to repo size
+*** TODO provide repo info on node hover
+*** TODO migrate visual.vue from js to ts
+*** TODO add project to Glitch 
+    DEADLINE: <2019-09-25 Wed>
+    :LOGBOOK:
+    CLOCK: [2019-09-25 Wed 14:13]--[2019-09-25 Wed 15:35] =>  1:22
+    :END:
+** Chasmic
+*** DONE org-mode exploration
+    SCHEDULED: <2019-09-21 Sat>
+
+*** Rust cli exploration
+**** DONE DEADLINE: <2019-09-20 Fri> write about Chasmic 0.1
+** Manoeuvre
+** Org-Wiki
+*** DONE figure out minimum viable way of generating org-like wiki format on your website
+    DEADLINE: <2019-09-29 Sun>
+    - wrote tutorial markdown parser
+    - will build out my org file parser based on this boilerplate
+*** TODO parse this file and generate some HTML with your parser
+    Deadline: <2019-10-02 Wed>
+* Habits
+** reflect on top ideas   <2019-09-20 Fri +1d>
+* Collaborations
+** Parthiv
+*** Eye
+**** DONE make pull request to eye
+    DEADLINE: <2019-09-21 Sat>
+    :LOGBOOK:
+    CLOCK: [2019-09-21 Sat 17:11]--[2019-09-21 Sat 18:24] =>  1:13
+    CLOCK: [2019-09-21 Sat 16:26]--[2019-09-21 Sat 16:58] =>  0:32
+    :END:
+**** authentication
+    :LOGBOOK:
+     CLOCK: [2019-09-29 Sun 18:17]--[2019-09-29 Sun 19:35] =>  1:18
+     CLOCK: [2019-09-27 Fri 10:46]--[2019-09-27 Fri 11:23] =>  0:37
+     CLOCK: [2019-09-27 Fri 09:49]--[2019-09-27 Fri 10:16] =>  0:27
+     :END:
+** Xiaofan
+*** continue work on network visual
+SCHEDULED: <2019-09-27 Fri>
+**** DONE sent Xiaofan a reminder.
+** Eli
+*** continue work on map 
+    SCHEDULED: <2019-09-24 Tue>
+** Webring
+*** come up with ideas for extending the project 
+    SCHEDULED: <2019-09-30 Mon>
+** Ryan
+*** look into conferences
+    SCHEDULED: <2019-10-06 Sun>
+*** DONE work on something tangible relating to org-mode tranformations
+    SCHEDULED: <2019-09-29 Sun>
+    - started writing my parser
+*** TODO show Ryan your initial parser project
+    SCHEDULED: <2019-10-03 Thu>
+* To Remember
+** Cherry mx-blues keys are great!
+* To-Learn
+** TODO org-mode <2019-09-20 Fri>
+*** _General_
+
+C / undo
+
+this is *bold*
+this is /italic/
+this is _underline_
+this is +strikethrough+
+this is a link [[http://jskjott.com][my site]]
+
+*** _Caret_
+
+tab local cycling
+shift-tab global cycling
+
+C-a move to beginning of line
+C-e move to end of line
+alt-left/right arrow move by word
+alt-up/down move section up/down in doc
+
+C-c C-e run line before caret
+C Shift Backspace kill whole line
+
+C-c C-p previous heading
+C-c C-f next heading
+
+C-= expand selection
+
+C-w cut
+M-w copy
+C-y paste
+
+*** _Agenda_
+
+M - x org-agenda
+
+C-c . place new date
+C-c C-d insert new deadline
+C-c C-s insert schedule item
+
+C-c C-c run code block
+
+C-c C-x C-r produce clock report
+
+*** _File actions_
+
+C-c C-s save current buffer
+
+** TODO learn about workaround for lack of 'tail call optimization' in JS [[https://gist.github.com/Gozala/1697037][relevant example]]
+   DEADLINE: <2019-09-24 Tue>
+** TODO Read about [[https://orgmode.org/worg/dev/org-syntax.html][org-mode syntax]] 
+   SCHEDULED: <2019-09-26 Thu>
+** TODO learn RC list of front-end topics [[https://github.com/recursecenter/wiki/wiki/Interview-Prep:-Front-End-Topics][front-end topics]] 
+   SCHEDULED: <2019-09-25 Wed>
+   :LOGBOOK:
+   CLOCK: [2019-09-27 Fri 11:35]--[2019-09-27 Fri 11:41] =>  0:06
+   :END:
+* Todo
+** DONE share bun recipe
+** DONE Apply to Interactive Things 
+   DEADLINE: <2019-09-22 Sun>
+*** DONE write cover letter
+*** DONE update portfolio
+    :LOGBOOK:
+    CLOCK: [2019-09-22 Sun 17:10]--[2019-09-22 Sun 17:54] =>  0:44
+    CLOCK: [2019-09-22 Sun 13:16]--[2019-09-22 Sun 14:44] =>  1:28
+    :END:
+*** DONE update resume
+    :LOGBOOK:
+    CLOCK: [2019-09-23 Mon 23:55]--[2019-09-24 Tue 00:16] =>  0:21
+    :END:
+** DONE Call Valdemar 
+   DEADLINE: <2019-09-25 Wed>
+** TODO apply to [[http://webresidencies-solitude-zkm.com/][solitude and ZKM]] web residency
+   DEADLINE: <2019-10-18 Fri>
+** TODO create _Modes of Text_
+*** Haggai's book is a treasure throve for getting started!
+*** 'Early writing provides the reader with conspicuous help for situating himself imaginatively.' - Orality and Literacy
+* Ideas
+** building two scaffolds next to each other:  
+*** one scaffold is the systems which enable expressionthe other 
+*** the other the actual pieces of media and imagining
+`);
+
+        function tillEqualNextAsterisk(tokenList, length){
+          let tokens = []
+
+          let asterisk = false
+          let i = 1
+
+          while (tokenList[i] && !asterisk && tokenList[i].token.token_type !== 'EOF') {
+            if (tokenList[i].token.token_type === 'Asterisk' && tokenList[i].token.lexeme.length === length) {
+              asterisk = true
+            } else {
+              tokens.push(tokenList[i])
+            }
+
+            i++
+          }
+
+          return(tokens)
+        }
+
+        const tokenParsers = {
+          Title: function(token){
+            return { class: 'title'}
+          },
+          Author: function(token){
+            return { class: 'author'}
+          },
+          InitiationDate: function(token){
+            return { class: 'author'}
+          },
+          Date: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'date'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Done: function(token) {
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'done'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Link: function(token){
+            const innerElement = document.createElement('a')
+            
+            let regex = new RegExp(/\[\[(?<url>[^\]]+)\]\[(?<text>[^\]]+)\]\]/)
+
+            let match = token.lexeme.match(regex)
+
+            innerElement.setAttribute('href', match.groups.url)
+            innerElement.innerHTML = match.groups.text
+            innerElement.className = 'link'
+
+            return innerElement
+          },
+          String: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Todo: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'todo'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Deadline: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'deadline'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Scheduled: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'scheduled'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Timestamp: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'timestamp'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Duration: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'duration'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Underline: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'underline'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Strikethrough: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'strikethrough'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Bold: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'bold'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Italic: function(token){
+            const innerElement = document.createElement('span')
+
+            innerElement.className = 'italic'
+            innerElement.textContent = token.lexeme
+
+            return innerElement
+          },
+          Clock: function(token){
+            return { class: 'clock'}
+          },
+          LogBook: function(token){
+            return { class: 'clock'}
+          },
+          End: function(token){
+            return { class: 'clock'}
+          },
+          EOF: function(token){
+            return { class: 'end'}
+          }
+        }
+
+        function parseDomElement(content, indent){
+
+          let element = document.createElement('div')
+          let divElements = []
+
+          let active = -1
+          let line = 1
+
+          content.forEach((token, i) => {
+            if (i > active) {
+              if (token.token.token_type === "Asterisk") {
+                //&& token.token.lexeme.length >= indent
+
+                const innerContent = tillEqualNextAsterisk(content.slice(i), token.token.lexeme.length)
+                const innerIndent = token.token.lexeme.length
+
+                if (i + innerContent.length > active) {
+                  active = i + innerContent.length
+                }
+
+                const header = document.createElement(`H${token.token.lexeme.length}`)
+
+                const innerElement = document.createElement(`div`)
+
+                let z = 0
+
+                while (innerContent[z] && innerContent[z].token.line === token.token.line) {
+                  const space = document.createElement('span')
+                  space.textContent = ' '
+
+                  header.appendChild(tokenParsers[innerContent[z].token.token_type](innerContent[z].token))
+                  header.appendChild(space)
+                  z++
+                }
+
+                innerElement.appendChild(header)
+                let children = parseDomElement(innerContent.slice(z), innerIndent)
+                children.className = `indent-${token.token.lexeme.length}`
+                innerElement.appendChild(children)
+
+                divElements.push(innerElement)
+
+              } else {
+
+                const innerElement = document.createElement(`div`)
+
+                while (content[i] && content[i].token.line === token.token.line) {
+                  const space = document.createElement('span')
+                  space.textContent = ' '
+                  let parsed = tokenParsers[content[i].token.token_type](content[i].token)
+                  if (parsed.class) {
+                    innerElement.className = parsed.class
+                  } else {
+                    innerElement.appendChild(parsed)
+                    innerElement.appendChild(space)  
+                  }
+                  
+                  i++
+                }
+
+                active = i - 1
+
+                divElements.push(innerElement)
+              }
+            }
+          })
+
+            divElements.forEach(div => element.appendChild(div))
+
+            return element
+        }
+
+        const dom = parseDomElement(result, 0)
+
+        const space = document.querySelector('#space')
+        space.appendChild(dom)
+
+        const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+
+        elements.forEach(node => {
+          const childNodes = node.parentNode.childNodes
+          node.addEventListener("click", () => {
+            childNodes.forEach((childNode, i) => {
+              if (i !== 0) {
+                if (childNode.style.display === 'none') {
+                  childNode.style.display = 'block'
+                } else {
+                  childNode.style.display = 'none'
+                }
+              }
+            })
+          })
+        })
+      }
+
+      run();
+    </script>
+  </body>
+</html>

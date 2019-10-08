@@ -1,0 +1,79 @@
+h4 {
+	margin: 1rem;
+}
+
+.heading {
+	font-size: 2rem;
+}
+
+.author {
+	font-size: 1.5rem;
+}
+
+.initiationDate {
+	font-size: 1.5rem;
+}
+
+.date {
+	background-color: palegoldenrod;
+}
+
+.done {
+	background-color: lightgreen;
+}
+
+.todo {
+	background-color: lightpink;
+}
+
+.deadline {
+	background-color: lightpink;
+}
+
+.scheduled {
+	background-color: lightpink;
+}
+
+.timestamp {
+	background-color: lightblue;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.strikethrough {
+	text-decoration: line-through;;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.duration {
+	color: crimson;
+}
+
+.indent-1 {
+    margin-left: 30px;
+}
+
+.indent-2 {
+    margin-left: 30px;
+}
+
+.indent-3 {
+    margin-left: 30px;
+}
+
+.indent-4 {
+    margin-left: 30px;
+}
+
+.indent-5 {
+    margin-left: 30px;
+}

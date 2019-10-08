@@ -21,7 +21,9 @@
   font-style: light;
 }
 
-
+#org {
+  margin-left: 1.5rem;
+}
 
 .titleContainer {
     padding: 1rem 1rem 0rem 1rem;

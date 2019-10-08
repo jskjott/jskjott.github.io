@@ -232,7 +232,8 @@ let vue = new Vue({
         }
     },
     activePage: function(){
-        if (this.mainArea === 'page' || this.mainArea === 'manifestations') {
+        if (this.mainArea === 'page' || this.mainArea === 'manifestations' 
+            || this.mainArea === 'process') {
             this.getPageContent(this.activePage)
             this.isProcessing = true
         }
@@ -251,7 +252,8 @@ let vue = new Vue({
             this.mainArea = 'manifestations'
             this.mainAreaClass = 'manifestations'
 
-        } else if (window.location.hash === '#about' || window.location.hash === '#manifestations' || window.location.hash === '#media') {
+        } else if (window.location.hash === '#about' || window.location.hash === '#manifestations' 
+            || window.location.hash === '#media' || window.location.hash === '#process') {
             const area = window.location.hash.substring(1)
             this.mainArea = area
             this.mainAreaClass = area
@@ -279,7 +281,12 @@ if (typeof HTMLCollection.prototype.forEach === "undefined") {
 }
 
 function filterSelection(c) {
-    if (c === 'about' || c === 'manifestations' || c === 'media') {
+    const space = document.querySelector(".tree")
+    console.log('space', space)
+    if (space) {
+        space.style.display = "none"
+    }
+    if (c === 'about' || c === 'manifestations' || c === 'media' || c === 'process') {
         vue.mainArea = c
         vue.mainAreaClass = c
         window.location.hash = c
@@ -317,7 +324,8 @@ window.addEventListener('hashchange', function() {
         vue.setActivePage(contentLink)
     } else {
 
-        if (hash === '#about' || hash === '#manifestations' || hash === '#media') {
+        if (hash === '#about' || hash === '#manifestations' 
+            || hash === '#media' || hash === '#process') {
             const area = hash.substring(1)
             vue.mainArea = area
             vue.mainAreaClass = area
@@ -325,6 +333,7 @@ window.addEventListener('hashchange', function() {
             if (vue.mainArea === 'projects' || 
                 vue.mainArea === 'about' ||
                 vue.mainArea === 'manifestations' ||
+                vue.mainArea === 'process' ||
                 vue.mainArea === 'media') {
                 vue.mainArea = 'page'
             }
