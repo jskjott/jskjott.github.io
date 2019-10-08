@@ -5,8 +5,6 @@
 - Silencing the Past: Power and the Production of History - Michel Trouillot
 - Understanding Media - Marshall Mcluhan
 - Mindstorms - Seymour Papert
-- How Children Fail - John Holt
-- The Dream Machine: J.C.R. Licklider and the Revolution That Made Computing Personal - Mitchell Waldrop
 
 ## Reading List
 
@@ -27,3 +25,8 @@
 - The Dispossed - Ursula Le Guin
 - Things That Make Us Smart: Defending Human Attributes in the Age of The Machine
 - The Dream Machine: J.C.R. Licklider and the Revolution That Made Computing Personal - Mitchell Waldrop
+- The Art of Doing Science and Engineering: Learning How to Learn - Richard Hamming
+- Design For the Real World - Victor Papanek
+- The Book of Tea - Okakura Kakuzō
+- Deschooling Society - Ivan Illich
+- Orality and Literacy - Walter J. Ong
