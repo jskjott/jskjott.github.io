@@ -4,8 +4,8 @@ function tillEqualNextAsterisk(tokenList, length) {
   let asterisk = false
   let i = 1
 
-  while (tokenList[i] && !asterisk && tokenList[i].token.token_type !== 'EOF') {
-    if (tokenList[i].token.token_type === 'Asterisk' && tokenList[i].token.lexeme.length === length) {
+  while (tokenList[i] && !asterisk && tokenList[i].token_type !== 'EOF') {
+    if (tokenList[i].token_type === 'Asterisk' && tokenList[i].lexeme.length === length) {
       asterisk = true
     } else {
       tokens.push(tokenList[i])
@@ -159,34 +159,35 @@ export function parseToDomElement(content, indent){
 
   content.forEach((token, i) => {
     if (i > active) {
-      if (token.token.token_type === "Asterisk") {
-        //&& token.token.lexeme.length >= indent
 
-        const innerContent = tillEqualNextAsterisk(content.slice(i), token.token.lexeme.length)
-        const innerIndent = token.token.lexeme.length
+      if (token.token_type === "Asterisk") {
+        //&& token.lexeme.length >= indent
+
+        const innerContent = tillEqualNextAsterisk(content.slice(i), token.lexeme.length)
+        const innerIndent = token.lexeme.length
 
         if (i + innerContent.length > active) {
           active = i + innerContent.length
         }
 
-        const header = document.createElement(`H${token.token.lexeme.length + 1}`)
+        const header = document.createElement(`H${token.lexeme.length + 1}`)
 
         const innerElement = document.createElement(`div`)
 
         let z = 0
 
-        while (innerContent[z] && innerContent[z].token.line === token.token.line) {
+        while (innerContent[z] && innerContent[z].line === token.line) {
           const space = document.createElement('span')
           space.textContent = ' '
 
-          header.appendChild(tokenParsers[innerContent[z].token.token_type](innerContent[z].token))
+          header.appendChild(tokenParsers[innerContent[z].token_type](innerContent[z]))
           header.appendChild(space)
           z++
         }
 
         innerElement.appendChild(header)
         let children = parseToDomElement(innerContent.slice(z), innerIndent)
-        children.className = `indent-${token.token.lexeme.length}`
+        children.className = `indent-${token.lexeme.length}`
         innerElement.appendChild(children)
 
         divElements.push(innerElement)
@@ -195,10 +196,10 @@ export function parseToDomElement(content, indent){
 
         const innerElement = document.createElement(`div`)
 
-        while (content[i] && content[i].token.line === token.token.line) {
+        while (content[i] && content[i].line === token.line) {
           const space = document.createElement('span')
           space.textContent = ' '
-          let parsed = tokenParsers[content[i].token.token_type](content[i].token)
+          let parsed = tokenParsers[content[i].token_type](content[i])
           if (parsed.class) {
             innerElement.className = parsed.class
           } else {
