@@ -20,6 +20,28 @@ const tokenParsers = {
     const innerElement = document.createElement('span')
 
     innerElement.className = 'done'
+    innerElement.textContent = '✓'
+
+    return innerElement
+  },
+  Image: function(token){
+
+    let regex = new RegExp(/\[\((?<source>[^\]]+)\)\]/)
+    let match = token.lexeme.match(regex)
+
+    var image = new Image()
+    image.height = 200
+    image.src = match.groups.source
+
+    return image
+  },
+  Comment: function(token){
+    const innerElement = document.createElement('span')
+
+    let regex = new RegExp(/\[(?<source>[^\]]+)\]/)
+    let match = token.lexeme.match(regex)
+
+    innerElement.className = 'sidenote'
     innerElement.textContent = token.lexeme
 
     return innerElement
@@ -72,7 +94,8 @@ const tokenParsers = {
     const innerElement = document.createElement('span')
 
     innerElement.className = 'timestamp'
-    innerElement.textContent = token.lexeme
+    innerElement.textContent = token.lexeme.replace(/[\[|\]]/, '').replace(/[\[|\]]/, '')
+    innerElement.class = 'datestamp'
 
     return innerElement
   },
@@ -135,11 +158,11 @@ export function parseToDomElement(content){
   let element = document.createElement('div')
   element.style.marginLeft = '30px'
 
-  let innerElement 
+  let innerElement
 
   if (content.data.length > 0 && content.data[0].token_type === 'Asterisk') {
-    innerElement = document.createElement(`h${content.data[0].lexeme.length + 1}`)
-    content.data.shift()
+    const elementType = (content.data[0].lexeme.length + 1) > 4 ? 'h4' : `h${content.data[0].lexeme.length + 1}`
+    innerElement = document.createElement(elementType)
   } else {
     innerElement = document.createElement(`div`)
   }
@@ -148,11 +171,15 @@ export function parseToDomElement(content){
 
     const space = document.createElement('span')
     space.textContent = ' '
+    
+    if (token.token_type === 'Asterisk') return
+
     let parsed = tokenParsers[token.token_type](token)
 
     if (parsed.class) {
       innerElement.className = parsed.class
-    } else {
+    }
+    if (parsed instanceof HTMLElement) {
       innerElement.appendChild(parsed)
       innerElement.appendChild(space)  
     }
