@@ -66,11 +66,12 @@ In the process of making these tools I learnt about:
 - Vue component model
 - Midi protocol basics
 - The Rust programming language
-	- Ownership
+	- Ownership & memory management
 	- Number types, eg u32, i8, float
 	- Multi-threading by using asynchronous channels 
 - HPGL pen-plotter basics
 - How to create a browser extension from scratch
+- GSFL data stream apis
 - How to use Typescript in a variety of different dev setups
 - Emacs org-mode
 - graphics basics
@@ -79,7 +80,25 @@ In the process of making these tools I learnt about:
 
 These projects have served as great vehicles for learning and exploration!
 
-Alongside my projecting I did a fair amount of pair programming and a community oriented project: the [webring](https://github.com/jskjott/webring) which was meant to encourage recursers to create homes for themselves online. I also made countless changes to my [personal site](jskjott.com).
+I also learnt a lot about how to work with others and contribute by doing some different activities:
+
+**Pair Programming**:
+
+This was one of my main insecurities when I joined the Recurse Center: I was simply insecure about my ability to collaborate on writing code with others. However, during my time at RC it became one of my favorite activities.
+
+Pairing is a social activity in which each person is bringing their knowledge and viewpoints. As there are often multiple ways of solving different challenges the discussion naturally becomes about style and how to think.
+
+**Creating a Webring for the Recurse Center Community**: 
+
+One of the most meaningful things I did at RC was contributing to the building of community by creating a [webring](https://github.com/jskjott/webring) to encourage recursers to create homes for themselves online. 
+
+A webring is a collection of websites traditionally linked together by a circular structure. A website which is part of a webring will have an icon on its site linking either to the central webring or another site which is part of the ring.
+
+The process of doing a project for the community makes you more part of the community. In the end, multiple people ended up working on the webring, it became a meeting space for some of us.
+
+**Creating a Home for Myself Online**
+
+I also made countless changes to my [personal site](jskjott.com)
 
 The other aspect of my experinece which is perhaps as immense as my projecting is the social experience of being at the Recurse Center.
 
@@ -106,9 +125,7 @@ Another important aspect is the physical space. Having spent the last couple of 
 
 One effect of this is that recursers start to feel an ownership of the space. Something that made me feel that the center was my space is the how I and all the other participants have 24 / 7 access to all the facilities. It is amazing to observe what happens when communities are given access to spaces and resources. The [folk-high-school](https://www.danishfolkhighschools.com/about-folk-high-schools/what-is-a-folk-high-school/) inspired [boarding school](https://www.oeu.dk) I went to when I was 15 was similar. The motto of the school was "freedom with responsability". This motto was actionised by having all of the schools facilites remain unlocked at all times. Students were free to use the film cameras in the media workshop or the paints in the studio. The result of that was an explosion of creativity and projects as well as a highly responsible student body. We knew that if the cameras break the school would not have money to replace them. So we took care of the space. There is a similar dynamic at Recurse Center. The policy which gives people access demonstrates how at Recurse Center trust is put before control.
 
-One project I worked on while at Recurse Center was a [webring](http://jskjott.com/webring/) meant to inspire other members of the community to build homes for themselves online. A webring is a collection of websites traditionally linked together by a circular structure. A website which is part of a webring will have an icon on its site linking either to the central webring or another site which is part of the ring.
-
-When I was making the ring I was unsure of the extent to which the ring could be associated with the Recurse Center brand. Having just graduated from a school in which you might receive an angry email if you used the school's logo without asking for permission I was surprised to find out that Recursers are encouraged to associate their projects with RC. So, I ended up using the RC logo and registering an RC subdomain for the project. I love this! The community is the brand is the community.
+When I was making the ring I was unsure of the extent to which the ring could be associated with the Recurse Center brand. Having just graduated from a school in which you might receive an angry email if you used the school's logo without asking for permission I was surprised to find out that Recursers are encouraged to associate their projects with RC. So, I ended up using the RC logo and registering an RC subdomain for the project. I love this! **The community is the brand is the community**.
 
 So, I was provided with a lot of ways to feel part of the space and the community. It is was done in a way that made me feel a part and welcome from a very early stage. This brings me to the perhaps most central concept which Recurse Center has allowed me to rework: Learning.
 

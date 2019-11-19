@@ -210,11 +210,20 @@ let vue = new Vue({
         window.location.hash = contentLink
     },
     setActivePage: function(contentLink){
+        this.activePage = null
         this.activePage = contentLink
+        if (contentLink === 'about') {
+            this.getPageContent(this.activePage)
+            this.isProcessing = true
+        }
     },
     getPageContent: async function(contentLink){
-        if (this.mainArea !== 'manifestations') {
+        if (this.mainArea !== 'manifestations' || this.mainArea !== 'about') {
             this.mainArea = 'page'
+        }
+
+        if (contentLink === 'about') {
+            contentLink = 'about.md'
         }
 
         const pageContent = await fetch(`pages/${contentLink}`)
@@ -252,13 +261,15 @@ let vue = new Vue({
             this.mainArea = 'manifestations'
             this.mainAreaClass = 'manifestations'
 
-        } else if (window.location.hash === '#about' || window.location.hash === '#manifestations' 
+        } else if (window.location.hash === '#manifestations' 
             || window.location.hash === '#media' || window.location.hash === '#process') {
             const area = window.location.hash.substring(1)
             this.mainArea = area
             this.mainAreaClass = area
+        } else if (window.location.hash === '#about') {
+            this.getPageContent('about.md')
         } else {
-            this.getPageContent(window.location.hash.replace('#',''))    
+            this.getPageContent(window.location.hash.replace('#',''))
         }
     }
   },
@@ -282,7 +293,6 @@ if (typeof HTMLCollection.prototype.forEach === "undefined") {
 
 function filterSelection(c) {
     const space = document.querySelector(".tree")
-    console.log('space', space)
     if (space) {
         space.style.display = "none"
     }
@@ -323,8 +333,7 @@ window.addEventListener('hashchange', function() {
 
         vue.setActivePage(contentLink)
     } else {
-
-        if (hash === '#about' || hash === '#manifestations' 
+        if (hash === '#manifestations' 
             || hash === '#media' || hash === '#process') {
             const area = hash.substring(1)
             vue.mainArea = area

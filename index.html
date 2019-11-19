@@ -1,3 +1,4 @@
+<!DOCTYPE>
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,11 +29,10 @@
             \
             <button class="btn" onclick="filterSelection('manifestations')" >Manifestations</button>
             \
-            <button class="btn" onclick="filterSelection('process')" >Process</button>
-            <!-- \
-            <button class="btn" onclick="filterSelection('about')" >About</button> -->
+            <!-- <button class="btn" onclick="filterSelection('process')" >Process</button>
+            \ -->
+            <button class="btn" onclick="filterSelection('about')" >About</button>
             </div>
-            
         </span>
     </section>
 
@@ -90,21 +90,11 @@
             </div>
         </div>
         <template v-if="mainArea === 'about'" >
-            <div class="imageColumn"><img src="img/portrait.jpg"></div>
-            <div class="aboutColumn"> 
-                I am currently in programmingland at <a href="http://www.recurse.com">Recurse Center</a>. So far I have created:
-                <ul>
-                  <li>A git-based <a href="https://github.com/jskjott/git-for-filmmakers">version control tool for filmmakers</a> using Electron, Typescript, and Vue.js.</li>
-                  <li>An <a href="https://github.com/jskjott/casette">audio sequencer</a> to use with live coding environments such as TidalCycles or VCV Rack. I connected my sequencer to these tools with web MIDI and OSC (open sound control).</li>
-                  <li>A <a href="https://github.com/jskjott/webring">webring</a> to encourage recursers to create homes for themselves.</li>
-                  <li>A realtime <a href="https://github.com/jskjott/midi-plotter">midi sound visualisation tool</a> with Rust. The code has a multithreaded structure in which one thread listens for midi input, and another thread draws what is received.</li>
-                </ul>
-
-                In the past I did service design at <a href="http://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware and film at <a href="http://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="http://www.kiron.ngo">Kiron Open Higher Education</a>.
-                I recently finished my studies in Computational Sciences and History at <a href="http://www.minerva.kgi.edu">Minerva Schools at KGI</a>.
+            <div id="about">
+                <vue-markdown id="content"> {{pageContent}} </vue-markdown>    
             </div>
         </template>
-        <div v-if="mainArea === 'process'">
+        <!-- <div v-if="mainArea === 'process'">
             <p style="margin-left: 1.5rem;"> This section serves is my process scratchpad: this is where I track tasks, set goals, and document my knowledge. </p>
             <div id="org">
             </div>
@@ -131,7 +121,7 @@
 
                 const result = parse(text);
 
-                const dom = parseToDomElement(result, 0)
+                const dom = parseToDomElement(result.children.Projects, 0)
 
                 dom.className = "tree"
 
@@ -164,7 +154,7 @@
 
               run();
             </script>
-        </div>
+        </div> -->
     </section>
 
     <section class="footer">

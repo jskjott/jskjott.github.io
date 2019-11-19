@@ -5,6 +5,7 @@
 - Silencing the Past: Power and the Production of History - Michel Trouillot
 - Understanding Media - Marshall Mcluhan
 - Mindstorms - Seymour Papert
+- The Field Study Handbook
 
 ## Reading List
 
@@ -20,6 +21,7 @@
 - Lifelong Kindergarten - Mitchell Resnick
 - How to Do Nothing - Jenny Odell
 - The Light Fantastic - Terry Pratchett
+- Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character - Richard P. Feynman
 - Palaces for the People - Eric Klinenberg
 - The Japanese Art of Decluttering and Organizing - Marie Kondo
 - The Dispossed - Ursula Le Guin
@@ -30,3 +32,7 @@
 - The Book of Tea - Okakura Kakuzō
 - Deschooling Society - Ivan Illich
 - Orality and Literacy - Walter J. Ong
+- Notes on the Synthesis of Form - Cristopher W. Alexander
+- Speculative Everything - Anthony Dunne & Fiana Raby
+- Ser du Månen, Daniel - Puk Damsgård
+- The Field Study Handbook - Jan Chipchase
