@@ -2,14 +2,16 @@
 
 @font-face {
   font-family: 'Inter UI';
-  src: url('assets/Inter_UI_Regular.woff') format('woff');
+  src: url('assets/Inter-Regular.woff') format('woff'),
+    url('assets/Inter-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Inter UI Bold';
-  src: url('assets/Inter_UI_Bold.woff') format('woff');
+  src: url('assets/Inter-Bold.woff') format('woff'),
+    url('assets/Inter-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: bold;
 }
