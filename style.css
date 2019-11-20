@@ -73,7 +73,7 @@
 
  .projects {
     display: grid;
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

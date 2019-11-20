@@ -45,7 +45,7 @@
                 <article @click="hashChange(item.contentLink)" v-bind:class="item.class">
                     <img :src="item.image" :alt="item.altText" style="border-radius: 2px; border: 1px solid;">
                     <main class="card__description">
-                        <p style="font-family: 'Inter UI', sans-serif; margin-bottom: 0;">{{item.title}}</p> <p style="color: grey; margin-top: 0;">{{item.text}}</p>
+                        <span style="font-family: 'Inter UI Bold', sans-serif; margin-bottom: 0;">{{item.title}}</span> <br> <span style="font-family: 'Inter UI' margin-top: 0; padding-top: -2rem;">{{item.text}}</span>
                     </main>
                 </article>
             </div>
