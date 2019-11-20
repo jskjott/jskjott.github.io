@@ -10,10 +10,10 @@ The [pen plotter](https://en.wikipedia.org/wiki/Plotter) is a piece of technolog
 
 Several people have made use of this to do exactly this: Wesley Aptekar-Cassels did a playful and insightful exploration by using the plotter printing area as the interface for a [flappy bird game](https://github.com/WesleyAC/plotty-bird).
 
-![alt text](img/plotty_bird.png)
+![a photo of the pen plotter plotty bird game](img/plotty_bird.png)
 
 Inspired by Wesley's project I decided to do my own exploration by writing a [program](https://github.com/jskjott/midi-plotter) which draws a visualisation of what you play on the piano realtime:
 
-![alt text](https://raw.githubusercontent.com/jskjott/midi-plotter/master/midi-plotter.gif)
+![a gif animation of the midi plotter in action](https://raw.githubusercontent.com/jskjott/midi-plotter/master/midi-plotter.gif)
 
-![alt text](img/midi-plotter-eli-cropped.png)
+![a photo of a visualisation produced by the midi plotter program](img/midi-plotter-eli-cropped.png)

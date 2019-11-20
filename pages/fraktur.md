@@ -22,6 +22,6 @@ This was a personal project. I first did a precedent analysis of the ways this s
 2. The learner’s degree of mastery must be legible.
 3. There must be a learning curve with appropriate difficulty at all times.
 
-![](img/fraktur.png)
+![a GUI screenshot](img/fraktur.png)
 
 When I had a working prototype tested it with several history students who needed to learn difficult-to-read primary sources and iterated upon the design based on my observations.

@@ -18,6 +18,6 @@ The browser offers very weak interface with text. The majority of textual webcon
 
 I am currently working on a browser extension which allow rich text editing of all online text-based content. The first feature I am trying to add is multi-caret selection:
 
-![alt text](img/multiple_cursors.gif)
+![a gif animation showing multiple cursors selecting text](img/multiple_cursors.gif)
 
 Having multiple carets allow selection and manipulation of multiple parts of a text document. Coupled with good pattern matching enables a plethora of actions such as data formating, effective selective text copying, and rapid soritng of ideas and concepts.

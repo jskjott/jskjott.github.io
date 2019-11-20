@@ -6,4 +6,4 @@ An example of a media where this is not the case is video - as a time-based medi
 
 One way of statically representing a video is by creating a slitscan of it. In a slitscan every column of pixels is taken from a different frame of the source video. The resulting image is a collage of pixels taken from varying timestamps and varying visual coordinates. However, this representation of the time-based medium is rather coarse:
 
-![alt text](img/slitscan_video.png)
+![an example slitscan photograph created from a video](img/slitscan_video.png)

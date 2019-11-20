@@ -35,7 +35,7 @@ Only when digital networks arranged themselves in threads and links did footnote
 
 Its format is open – students trace, redraw, photocopy, layer over the page they analyze with acetate – anything in which they engage with the work in an intimate and visual way. Drawing directly on the page is key! This active interaction with the composition invites them to start noticing everything the author(s) employs to construct meaning. After students move their hand and eyes over a page for an extended period – I suggest at least half an hour – so much spills out as they discover all sorts of things about the maker’s choices and creative decisions not previously apparent. They find every square inch invested in meaning. Students develop their own coding strategies, diagram, work in multiple layers – the results are frequently this beautiful and insightful explosion of thinking. It’s not that doing analysis solely in writing can’t be extremely insightful (of course it can), but in my experience, this direct engagement of hand and eyes opens students to seeing in ways they couldn’t otherwise. (They can always turn their annotations into essays afterwards if so desired, but the thinking is in that direct spatial engagement.)"
 
-<img src="https://spinweaveandcut.com/wp-content/uploads/2019/08/vis-analysis-12.jpg" height="500">
+<img alt="a visual analysis of a comic book page" src="https://spinweaveandcut.com/wp-content/uploads/2019/08/vis-analysis-12.jpg" height="500">
 
 
 #### Annotated Portfolios by Bill Gaver & John Bowers 
@@ -50,6 +50,6 @@ Annotations have an indexical relationship to the artifacts they are relevant to
 #### ~
 
 
-<img src="https://d2w9rnfcy7mm78.cloudfront.net/2573278/original_375da73d37d4ee36a4390682819a6fd7.jpg?1534687304" height="400">
+<img alt="an opened book showing annotations of its content" src="https://d2w9rnfcy7mm78.cloudfront.net/2573278/original_375da73d37d4ee36a4390682819a6fd7.jpg?1534687304" height="400">
 
 

@@ -24,15 +24,15 @@ In this project, I looked at how historians write about the history of their dis
 
 One of the aims of this project was to build a bridge between historiography and the parts of the humaities which already engages with digital or computational tools. 
 
-![](img/digital_humanities.png)
+![a drawing illustring a bridge being built between the digital humanities and historigraphy](img/digital_humanities.png)
 
 In the second part of my project, I explore how digital tools might augment the research process. The most appealing reason for me is how historiography can be debiased and renewed by scrutinizing and probing the discipline with digital tools and methodologies.
 With digital historiography we can include the long tail of research which never becomes part of the mainstream historiographical conscious.
 
-![](img/prominence.png)
+![a line chart illustraing how normally only the most prominent historical soruces are used in research](img/prominence.png)
 
 Computational tools allow historians to consider thousands of sources, they could be texts, images, or other kinds of media, when they do their analysis: something which would be near impossible without the use of computers. If historians can devise computational analysis’ which generate valuable insights into sources, they are no longer limited to working only with the most prominent works within a field.
 
 In the third, and last, part of my project I tried to provide a case study showing what a digital historiography project might look like. I decided to do a spatial analysis of the writings of Danish historians. Below is one of the visualisations I produced to describe which places Danish historians have written about during the past 150 years.
 
-![](img/history.png)
+![a visualisation of the places often mentioned in the primary sources analysedfor the case study.](img/history.png)

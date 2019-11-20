@@ -18,8 +18,8 @@ A Rust program which makes it possible to visualise midi notes with the HP7440A 
 
 Once finished I had a few different people try out the program. One friend started playing Partita by Bach: below is the pen plotter visualisation of her performance alongside the traditional representation of the piece: 
 
-![alt text](img/midi-plotter-eli-cropped.jpg)
+![a photo of a visualisation resulting from the program I made](img/midi-plotter-eli-cropped.jpg)
 
 When you perform with the pen plotter it almost becomes a second performer as the rhytmns and sounds the plotter makes as it draws merges with the notes you play on your instrument:
 
-![alt text](https://raw.githubusercontent.com/jskjott/midi-plotter/master/midi-plotter.gif)
+![a gif animation of the plotter drawing a visualisation](https://raw.githubusercontent.com/jskjott/midi-plotter/master/midi-plotter.gif)

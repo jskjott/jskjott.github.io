@@ -19,5 +19,5 @@ Many creative professions have no high quality version control systems. Film-mak
 
 This project seeks to provide a simple and powerful interface for filmmakers to visualise how their project files changed of time, do collaborative editing, and better document their projects.
 
-![alt text](img/git_for_filmmakers_aug21.png)
+![a GUI screenshot](img/git_for_filmmakers_aug21.png)
 

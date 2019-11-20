@@ -20,4 +20,4 @@ As a response to this realization I made [a webring](https://webring.recurse.com
 
 A webring is a collection of websites traditionally linked together by a circular structure. I thought that perhaps this structure would offer a fine way for us to link our online homes together.
 
-![webring](img/rc_webring.png)
+![a screenshot of the webring site](img/rc_webring.png)

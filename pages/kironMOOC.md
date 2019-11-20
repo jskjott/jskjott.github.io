@@ -28,7 +28,7 @@ It was hard for the refugee students at Kiron to succeed in the online studies w
 
 A team of five people, including me, decided to initiate this project. First thing I did together with another coworker was to organise a design sprint with a group of our students. In this design sprint, we identified many of the challenges which students were facing: refugee students often do not have a community who can support them, they were not used to being responsible for their academic learning, and they felt that they lacked essential tools.
 
-![alt text](img/kiron_photos.png)
+![a collage of photos showing the MOOC production process](img/kiron_photos.png)
 
 We decided to make a massive open online course (MOOC) specifically for our group of students, which would address the challenges the students were facing. Once work started, I was responsible for writing a fourth of the syllabi, and I had to coordinate my other team members as they were writing their parts.
 

@@ -17,7 +17,7 @@
 The ways that community is experienced online felt inadequate to one of my friends and me. We wanted to extend the experience of physically living in a community to the experience we had on the internet.
 We wanted to break the assumption that you are alone online when you are not on social media. Therefore, we decided that we wanted to make a browser extension for communities, aiming to make browsing more fun, exciting, and to create a stronger sense of communal presence online.
 
-![](img/trails_2.png)
+![an example of a notification provided by the extension](img/trails_2.png)
 
 For this project, I wrote roughly 40% of the code for the extension using JavaScript. I also created the visual identity of the project.
 
@@ -25,4 +25,4 @@ For this project, I wrote roughly 40% of the code for the extension using JavaSc
 
 - Alberto
 
-![](img/trails_poster.png)
+![an example poster from teh project.](img/trails_poster.png)

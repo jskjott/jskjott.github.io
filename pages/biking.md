@@ -4,4 +4,4 @@ _
 \\-/ '''' \\-/
 
 
-![](img/biking.jpg)
+![a picture of me biking](img/biking.jpg)

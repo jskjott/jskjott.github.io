@@ -43,7 +43,7 @@
         <template v-if="mainArea === 'projects'" v-for="item in items">
             <div v-bind:class="item.class">
                 <article @click="hashChange(item.contentLink)" v-bind:class="item.class">
-                    <img :src="item.image" style="border-radius: 2px; border: 1px solid;">
+                    <img :src="item.image" :alt="item.altText" style="border-radius: 2px; border: 1px solid;">
                     <main class="card__description">
                         <p style="font-family: 'Inter UI', sans-serif; margin-bottom: 0;">{{item.title}}</p> <p style="color: grey; margin-top: 0;">{{item.text}}</p>
                     </main>
@@ -164,10 +164,10 @@
         <span></span>
         <span class="footerItem"> (*^^*)♡</span>
         <a class="footerItem" href='https://webring.recurse.com'>
-            <img style="width: 100%;" src='https://webring.recurse.com/icon.png'/>
+            <img style="width: 100%;" src='https://webring.recurse.com/icon.png' alt="RC Webring Logo" />
         </a>
         <a href='https://webring.xxiivv.com' target='_blank'>
-            <img style="width: 100%;" src='https://webring.xxiivv.com/icon.black.svg'/>
+            <img style="width: 100%;" src='https://webring.xxiivv.com/icon.black.svg' alt="xxiivv Webring Logo"/>
         </a>
     </section>
 </body>

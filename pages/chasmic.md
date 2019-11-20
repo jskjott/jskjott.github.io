@@ -60,7 +60,7 @@ Blinry's project is written in Rust and seeing how straigtforward it can be I de
 
 I ended up creating a simple system which makes it possible for me to keep a list of the ideas which are currently on top of my head and a log system which makes it possible for me to log thoughts I have about certain ideas.
 
-![](../img/chasmic_log.png)
+![a screenshot of the UI](../img/chasmic_log.png)
 
 This system works decently well. I even made an ambient visualisation of the amount of log statements per topic over time (the lines in the bottom of the photo above).
 
@@ -76,6 +76,6 @@ When I heard of it I became incredibly excited and luckily there were many peopl
 
 After two days of learning and exploration I am starting to organise my life with org-mode. At the moment I mostly use the standard formatting together with the agenda and the capture interface.
 
-![](../img/org-mode.gif)
+![a screenshot of the org-mode tranformation](../img/org-mode.gif)
 A little sneak peak of my .org file
 

@@ -23,6 +23,6 @@ Collecting the data was a multi-year effort by a group of students. Having finis
 
 The biggest success they had by then was with a series of photos posted on facebook showing the network change over time: 
 
-<img src="img/old_network_visual.png" style="height: 400px;" />
+<img alt="the network visualisation used before this project" src="img/old_network_visual.png" style="height: 400px;" />
 
 We decided to build on this success by making a site which allows the visitar to filter any combination of any of the variables represented in the data. This gives the visitor a lot of freedom to explore the data and make their own conclusions. Part of the reason for this is that we did not want to bias visitors with out interpretations. At the time of writing we are still figuring out what the right balance between freedom and guidance is when it comes to creating interactive visualisation experiences.

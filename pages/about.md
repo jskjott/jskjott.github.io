@@ -1,4 +1,4 @@
-![](img/cropped_daerim.jpg)
+![a photo from Daerim-dong, Seoul](img/cropped_daerim.jpg)
 
 I am a media prototyper and design researcher who likes to explore and speculate. My projects span the fields of <a href="https://jskjott.com/#auto_rickshaw.md">documentary film-making</a>, <a href="https://jskjott.com/#git_for_filmmakers.md">experimental software</a>, and <a href="https://jskjott.com/#service_design.md">service design</a>.
 
@@ -12,4 +12,4 @@ ___
 Argentina, Costa Rica, Denmark, Germany, India, Kenya, South Korea, United Kingdom, United States
 
 
-![](img/presence.png)
+![a world map - the places where I have spent time are colored](img/presence.png)
