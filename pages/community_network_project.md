@@ -15,7 +15,7 @@
   </tr>
 </table>
 
-I created an <a href="http://community-network-project.surge.sh/">explorable</a> for people to engage with the network research conducted by a group of students at college. The project grew out of a desire to show different network representations of our student community.
+I created an <a href="https://community-network-project.surge.sh/">explorable</a> for people to engage with the network research conducted by a group of students at college. The project grew out of a desire to show different network representations of our student community.
 
 ![alt text](img/community_network_project.gif)
 

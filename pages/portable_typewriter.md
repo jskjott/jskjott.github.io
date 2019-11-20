@@ -24,4 +24,4 @@ I acquired all the necessary components (Arduino, battery, receipt printer, keyb
 
 ![](img/typewriter_two.png)
 
-My main inspiration for this project is Robert Ochshorn's wonderful [desert journalism](http://lowerquality.com/desertjournalism/) project.
+My main inspiration for this project is Robert Ochshorn's wonderful [desert journalism](https://lowerquality.com/desertjournalism/) project.
