@@ -1,19 +1,4 @@
-### How to Make Citizen Science more Participatory
-
- <table style="width:60%">
-  <tr>
-    <td><b>TIMELINE</b></td>
-    <td>Summer 2018</td>
-  </tr>
-  <tr>
-    <td><b>ROLE</b></td>
-    <td>Research Fellow</td>
-  </tr>
-  <tr>
-    <td><b>TOOLS</b></td>
-    <td>Pen & paper, Illustrator, </td>
-  </tr>
-</table>
+## How to Make Citizen Science More Participatory
 
 As one of two research fellows I joined Digital Creativity Labs, a research center focussing on interactive media, games, and play, and Bioversity, a global research-for-development NGO working to increase agricultural biodiversity and food security, to work on improving the experience of the farmers who choose to participate in Bioversity's agricultural research. This project pushed me to take charge of conducting the design process and deepened my understanding of service design.
 
@@ -67,5 +52,3 @@ The field work was a huge success: it triggered several changes to our designs a
 ![a collage of participants trying out our prototypes in the field](img/form_testing_2.png)
 
 During the last weeks of the project my co-worker and I annotated our prototypes with the observations which were made in the field and we wrote up reports for our parent organisations.
-
-<img src="img/project_done.jpg" style="width: 50%;" />

@@ -1,5 +1,3 @@
-## Targets
-
 *This section is dedicated to exploring values in relation to the future.*
 
 **Internal Targets** goals dealing with personal growth

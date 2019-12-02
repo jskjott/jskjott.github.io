@@ -3,5 +3,3 @@ _
 /-\	---	/-\\
 \\-/ '''' \\-/
 
-
-![a picture of me biking](img/biking.jpg)

@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "mononoki-bold";
+    src: url("fonts/mononoki-Bold.woff") format('woff'),
+    url("fonts/mononoki-Bold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "mononoki";
+    src: url("fonts/mononoki-BoldItalic.woff") format('woff'),
+    url("fonts/mononoki-BoldItalic.woff2") format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "mononoki";
+    src: url("fonts/mononoki-Italic.woff") format('woff'),
+    url("fonts/mononoki-Italic.woff2") format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "mononoki-reg";
+    src: url("fonts/mononoki-Regular.woff") format('woff'),
+    url("fonts/mononoki-Regular.woff2") format('woff2');
+    font-style: italic;
+}
+
+datalist {
+	position: top;
+}
+
+html, body {
+    max-width: 100%;
+}
+
+#header {
+	height: 75%;
+	display: grid;
+	grid-template-columns: 1fr 250px;
+	margin-bottom: 0.5em;
+}
+
+#main {
+	display: grid;
+	grid-template-columns: 250px 1fr 250px;
+}
+
+h2 {
+	margin-top: 0.45em;
+}
+
+#footer {
+	font-size: 0.8em;
+	margin-top: 3em;
+	background-color: #9FBCC2;
+	padding: 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerItem {
+	color: white;
+	max-width: 250px;
+}
+
+#headerImage {
+	height: 75vh;
+	overflow: hidden;
+	background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#meta {
+	position: relative;
+	background-color: #636f74;
+	word-break: break-all;
+	color: white;
+}
+
+#goto {
+	width: 250px;
+	font-family: mononoki-bold;
+	font-size: 2em;
+	background-color: #3f464a;
+	color: #C99D9D;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+}
+
+#content {
+	/*background:rgba(255,255,255,0.5);
+	padding: 0 1.5rem 1.5rem 1.5rem;*/
+}
+
+#sidebar {
+	margin: 1em 25px 25px 25px;
+}
+
+#sidebarElement {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 2rem;
+	margin: 0 0 1rem;
+}
+
+#bottomimg {
+	position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+#vertical {
+	top: 25px;
+	left: 25px;
+	padding: 40px 5px 5px 5px;
+	writing-mode: vertical-rl;
+	position: absolute;
+	color: #EAEBEF;
+	background: #C99D9D;
+}
+
+.sider {
+	/*border-bottom: 1px solid #EAEBEF;*/
+	/*padding: 5px;*/
+	color: #EAEBEF;
+	cursor: pointer;
+	font-family: mononoki-bold;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	background: #EAEBEF;
+	color: #527785;
+	background-size: 80px 80px;
+  	/*background-image:
+    linear-gradient(to right, #9FBCC2 1px, transparent 1px),
+    linear-gradient(to bottom right, #9FBCC2 1px, transparent 1px);*/
+    font-family: mononoki-reg;
+}
+
+hr {
+	border: 0.5px solid #9FBCC2;
+}
+
+#title {
+  font-size: 3.5rem;
+  writing-mode: vertical-rl;
+  color: #A4A4A4;
+  padding: 1rem;
+  font-family: mononoki-bold;
+  border-style: solid;
+  border-color: #A4A4A4;
+  border-width: 1rem;
+}
+
+a {
+	color: #A46666;
+	text-decoration: none;	
+}
+
+.content {
+	width: 800px;
+}
+
+td {
+	padding: 5px;
+}
+
+#projectGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15ch, 270px));
+}
+
+.projectEntry {
+	display: grid;
+	height: 5em;
+	padding: 2rem;
+}
+
+.inline {
+	cursor: pointer;
+}
+
+.tocH2 {
+	cursor: pointer;
+	color: #A46666;
+}
+
+.tocH3 {
+	margin-left: 10px;	
+	cursor: pointer;
+	color: #A46666;
+}
+
+.tocH4 {
+	margin-left: 20px;	
+	cursor: pointer;
+	color: #A46666;
+}
+
+#toc {
+	 margin-top: 0.5em;
+	 font-size: 0.7em;
+	 display: grid;
+	 grid-template-columns: 1fr 10px;
+}
+
+#caption {
+	color: #3F464A;
+	writing-mode: vertical-lr;
+	margin: 0.5rem 1rem 1rem 0.25rem;
+}
+
+@media (max-width: 1000px) {
+	#main {
+		display: grid;
+		grid-template-columns: 250px 1fr 25px;
+	}
+}
+
+@media (max-width: 700px) {
+	#main {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	#header {
+		height: 75%;
+		display: grid;
+		grid-template-columns: 1fr 25px;
+	}
+
+	#goto {
+		width: 100%;
+		font-family: mononoki-bold;
+		font-size: 2em;
+		background-color: #3f464a;
+		color: #C99D9D;
+	    border: none;
+	    position: static;
+	}
+
+	#goButton {
+		font-size: 2em;
+		text-align: center;
+		width: 50px;
+		background: grey;
+		color: #C99D9D;
+	}
+
+	#bar {
+		height: 2em;
+		margin: 0;
+		display: grid;
+	    grid-template-columns: 1fr 50px;
+	}
+}

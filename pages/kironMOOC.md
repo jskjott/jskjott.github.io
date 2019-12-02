@@ -1,20 +1,5 @@
 ### How to Introduce Refugees to Online Learning
 
- <table style="width:60%">
-  <tr>
-    <td><b>TIMELINE</b></td>
-    <td>Sep 2016 - Feb 2017</td>
-  </tr>
-  <tr>
-    <td><b>ROLE</b></td>
-    <td>MOOC Developer</td>
-  </tr>
-  <tr>
-    <td><b>TOOLS</b></td>
-    <td>Pen & paper, Illustrator, Premiere Pro </td>
-  </tr>
-</table> 
-
 It was hard for the refugee students at Kiron to succeed in the online studies which would give them access to European universities. In this project, we aimed to craft an experience which would set students up for success.
 
 #### Project Outcomes

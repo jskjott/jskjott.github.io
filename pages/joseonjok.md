@@ -1,13 +1,6 @@
-### Joseonjok of Daerim-dong, Seoul
+## Joseonjok of Daerim-dong, Seoul
 
- <table style="width:60%">
-  <tr>
-    <td><b>TIMELINE</b></td>
-    <td>Nov 2017</td>
-  </tr>
-</table>
-
-You can find a video of Daerim-dong <a href="https://www.youtube.com/watch?v=xNy6z63fLRQ">here</a>!
+You can find a video of Daerim-dong [here](https://www.youtube.com/watch?v=xNy6z63fLRQ)
 
 In determining which path to take my listeners on, I first thought about my first impressions of Daerim-dong. Secondly, I engaged in a quite thorough literature review of academic papers and news articles about the Joseonjok, Daerim- and Garibong-dong and the Korean diasporas. Thirdly, I went to Daerim-dong again and did a series of thorough observations of the social life and objects located at different potential paths that I could take my listeners on. Lastly, I found the ideal path in which I could tell an engaging story and connect my story to objects and people in the city all while staying focused on the key issues pertaining to the identity and historic challenges   experienced   by   Joseonjok   and   South   Koreans.
 

@@ -1,10 +1,8 @@
-![a photo from Daerim-dong, Seoul](img/cropped_daerim.jpg)
+I am a media prototyper and design researcher who likes to explore and speculate. My projects span the fields of <router-link to="/auto_rickshaw">documentary film-making</router-link>, <router-link to="/git_for_filmmakers">experimental software</router-link>, and <router-link to="/service_design">service design</router-link>.
 
-I am a media prototyper and design researcher who likes to explore and speculate. My projects span the fields of <a href="https://jskjott.com/#auto_rickshaw.md">documentary film-making</a>, <a href="https://jskjott.com/#git_for_filmmakers.md">experimental software</a>, and <a href="https://jskjott.com/#service_design.md">service design</a>.
+Previously I spent time at [The Recurse Center](https://www.recurse.com), did service design at [Digital Creativity Labs](https://www.digitalcreativity.ac.uk), played with hardware at [FabLab Seoul](https://www.fablab-seoul.org), and made a Massive Open Online Course (MOOC) with [Kiron Open Higher Education](https://www.kiron.ngo).
 
-Previously I spent time at <a href="https://www.recurse.com">The Recurse Center</a>, did service design at <a href="https://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware at <a href="https://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="https://www.kiron.ngo">Kiron Open Higher Education</a>.
-
-I studied History and Computater Science at <a href="https://www.minerva.kgi.edu">Minerva Schools at KGI</a>. Before then I went to UWC Costa Rica.
+I studied History and Computater Science at [Minerva Schools at KGI](https://www.minerva.kgi.edu). Before then I went to UWC Costa Rica.
 ___
 
 **Country Experience:**

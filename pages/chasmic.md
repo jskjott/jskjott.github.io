@@ -15,7 +15,7 @@ current events as they happen.
 
 > Deep work changes you so if you do deep work in any of these areas you are a different person at the end than you were at the beginning and you're better at what you do in a substantial way not just an incremental way but a way that is different in character another characteristic though aside from the fact that it changes you is that when you start out you don't know where you're going
 
-> demanding them to happen on time makes them not happen I don't want to put
+> demanding them to happen on time makes them not happen
 
 > one of the best things I can do for generating new ideas is to clear out the old ones. Force my way through make enough time that I'm just gonna go through that old list and try everything I was uncertain about decide yes or no am I really gonna try all these vague ideas and thoughts that are lined up and just crank through them and always as soon as I'm done cranking through those a new period of creativity starts
 
@@ -59,8 +59,6 @@ I have been really inspired by people who made their own time-tracking tools for
 Blinry's project is written in Rust and seeing how straigtforward it can be I decided to make my own little CLI time-tracker: Chasmic.
 
 I ended up creating a simple system which makes it possible for me to keep a list of the ideas which are currently on top of my head and a log system which makes it possible for me to log thoughts I have about certain ideas.
-
-![a screenshot of the UI](../img/chasmic_log.png)
 
 This system works decently well. I even made an ambient visualisation of the amount of log statements per topic over time (the lines in the bottom of the photo above).
 

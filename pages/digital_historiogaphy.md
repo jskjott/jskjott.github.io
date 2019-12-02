@@ -1,19 +1,5 @@
 ### Renewal, Silences and Computational Tools in History
 
-<table style="width:60%">
-  <tr>
-    <td><b>HONOR THESIS PROJECT</b></td>
-  </tr>
-  <tr>
-    <td><b>TIMELINE</b></td>
-    <td>Summer 2018 - April 2019</td>
-  </tr>
-  <tr>
-    <td><b>TOOLS</b></td>
-    <td>Python, Jupyter, Pandas</td>
-  </tr>
-</table> 
-
 In this project, I looked at how historians write about the history of their discipline. In history, the practice of working with the history of the history of something is referred to as historiography. 
 
 #### Project Outcomes:

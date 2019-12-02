@@ -1,181 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Jonathan Skjøtt</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+	<title>Jonathan Skjøtt</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://unpkg.com/vue-markdown@2.2.4/dist/vue-markdown.js"></script>
+	<script src="https://unpkg.com/vue-router"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
-
 <body>
-    <section class="titleContainer">
-        <section class="title">
-            <div id="yatraTitle" onclick="filterSelection('all')"> 
-                <b style="font-family: 'Yatra One', cursive; font-size: 2.1em;">JONATHAN SKJ&#216;TT</b>
-            </div>
-            <div id="oneLiner"> a media prototyper playing with film, history, and programming. </div> 
-        </section>    
-    </section>
 
-    <section class="header" id="header">
-        <span v-if="renderProjectMenu" style="color: white; background-color: black;">
-              <button class="btn active" onclick="filterSelection('programming')"> Programming</button>
-            /
-              <button class="btn" onclick="filterSelection('design')">Design</button>
-            /
-              <button class="btn" onclick="filterSelection('storytelling')">Storytelling</button>
-            /
-              <button class="btn" onclick="filterSelection('all')">All</button> 
-        </span> 
-        <span style="color: white; background-color: black;">
-            <div style="float: right; color: white; background-color: black;">
-            <button class="btn" onclick="filterSelection('media')" >Media Studies</button>
-            \
-            <button class="btn" onclick="filterSelection('manifestations')" >Manifestations</button>
-            \
-            <!-- <button class="btn" onclick="filterSelection('process')" >Process</button>
-            \ -->
-            <button class="btn" onclick="filterSelection('about')" >About</button>
-            </div>
-        </span>
-    </section>
+<div id="vue">
 
-    <section v-bind:class="mainArea" id="vue">
-        <template v-if="mainArea === 'projects'" v-for="item in items">
-            <div v-bind:class="item.class">
-                <article @click="hashChange(item.contentLink)" v-bind:class="item.class">
-                    <img :src="item.image" :alt="item.altText" style="border-radius: 2px; border: 1px solid;">
-                    <main class="card__description">
-                        <span style="font-family: 'Inter UI Bold', sans-serif; margin-bottom: 0;">{{item.title}}</span> <br> <span style="font-family: 'Inter UI' margin-top: 0; padding-top: -2rem;">{{item.text}}</span>
-                    </main>
-                </article>
-            </div>
-        </template>
-        <template v-if="mainArea === 'page' && !isProcessing">
-            <div id="page">
-                <vue-markdown> {{pageContent}} </vue-markdown>    
-            </div>
-        </template>
-        <div v-if="mainArea === 'media'">
-            <p>These studies are works in progress // please share comments on desired channels.</p>
-            <template v-for="medium in media">
-                <div class="medium">
-                    <div>
-                        <p><b>{{medium.title}}</b></p>
-                    </div>
-                    <div>
-                        <template v-for="page in medium.pages">
-                            <article @click="hashChange(page.contentLink)">
-                                <div class="study">
-                                    <p>{{page.title}}</p>
-                                </div>
-                            </article>
-                        </template>
-                    </div>
-                </div>
-            </template>
+	<div id="vertical">
+		<a style="color: #EAEBEF;" href="https://twitter.com/jskjott">@jskjott</a>
+	</div>
+
+	<div id="header">
+		<div id="headerImage" style="background-image: url('')">
+		</div>	
+		<div id="meta">
+			<span id="caption" style="font-size: 0.8em;" > {{ altText}} </span>
+
+			<input v-if="window.width > 700" list="select" id="goto" type="" name="" placeholder="jump to" :value="currentRoute" data-list-filter="^">
+			<datalist class="form-control" id="select">   
+			  <option v-for="page in pages" :value="page.title"/>
+			</datalist>
+
+		</div>
+	</div>
+	<span id="bar" v-if="window.width < 700">
+		<input id="goto" type="" name="" placeholder="jump to" :value="currentRoute"><span id="goButton" v-on:click="pushRoute" >></span>
+	</span>
+
+	<div id="main">
+		<div id="sidebar" v-if="window.width > 700">
+			<div id="sidebarElement" >
+				<hr>
+				<p v-if='toc.length > 0' >Page Contents</p>
+				<div id="toc" v-for='(header, index) in toc'>
+					<div :class="'toc' + header.tagName" v-on:click="document.getElementById('head' + index).scrollIntoView()" > {{header.textContent}} </div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<router-view></router-view>	
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="footerItem">
+			<p>© 2017 ~ 2019 Jonathan Skjøtt</p>
+			<br>
+			<p>Communities and Collaborators</p>
+
+			<div style="display: flex; align-items: center;">
+				<a class="footerItem" href='https://webring.recurse.com'>
+	            <img style="width: 30px;" src='https://webring.recurse.com/icon.png' alt="RC Webring Logo" />
+		        </a>
+		        <a href='https://webring.xxiivv.com' target='_blank'>
+		            <img style="width: 40px;" src='https://webring.xxiivv.com/icon.white.svg' alt="xxiivv Webring Logo"/>
+		        </a>
+		        (*^^*)♡
+			</div>
+		</div>
+        <div class="footerItem">
+        	<p>Details:</p>
+        	
+        	<p>this site was made with Vue by Jonathan Skjøtt - it is set in <a href="https://madmalik.github.io/mononoki/">Mononoki</a> by Matthias Tellen.</p>
+        	
+        	<p>Your data is not collected when you use this site.</p>
         </div>
-        <div v-if="mainArea === 'manifestations'">
-            <p> A collection of personal displays / demonstrations / professions / exhibitions / indications / illustrations / exemplifications / declarations / expressions </p>
-            <div id="index">
-                <div id="manifestationHeader">
-                    <b> MANIFESTATIONS </b>
-                </div>
-                <template  v-for="page in manifestations">
-                        <article @click="hashChange(`manifestations-${ page.contentLink}`)" class="entry">
-                            <div>
-                                <p style="margin: 0 5px 0 0"><b>{{page.title}}</b></p> <p style="color: grey; margin: 0">{{page.text}}</p>
-                            </div>
-                        </article>
-                </template>
-            </div>
-            <div v-if="pageContent" id="page">
-                <vue-markdown id="content"> {{ pageContent }} </vue-markdown>    
-            </div>
-        </div>
-        <template v-if="mainArea === 'about'" >
-            <div id="about">
-                <vue-markdown id="content"> {{pageContent}} </vue-markdown>    
-            </div>
-        </template>
-        <!-- <div v-if="mainArea === 'process'">
-            <p style="margin-left: 1.5rem;"> This section serves is my process scratchpad: this is where I track tasks, set goals, and document my knowledge. </p>
-            <div id="org">
-            </div>
-            <link rel="stylesheet" href="process/org-style.css">
-            <script type="module">
-              import init, { parse } from '/process/pkg/org_parser.js'
-              import { parseToDomElement } from '/process/parser.js'
+	</div>
+</div>
 
-              async function run() {
-                await init()
-
-                let text
-
-                await fetch('https://raw.githubusercontent.com/jskjott/process.org/master/process.org', {
-                  headers: new Headers({
-                    'User-agent': 'Mozilla/4.0 Custom User Agent'
-                  })
-                })
-                .then(response => response.text())
-                .then(data => {
-                  text = data
-                })
-                .catch(error => console.error(error))
-
-                const result = parse(text);
-
-                const dom = parseToDomElement(result.children.Projects, 0)
-
-                dom.className = "tree"
-
-                const space = document.querySelector('#org')
-
-                space.appendChild(dom)
-
-                if (space.childNodes.length == 2) {
-                    space.removeChild(space.childNodes[0])
-                }
-
-                const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
-
-                elements.forEach(node => {
-                  const childNodes = node.parentNode.childNodes
-                  node.addEventListener("click", () => {
-                    childNodes.forEach((childNode, i) => {
-                      if (i !== 0) {
-                        if (childNode.style.display === 'none') {
-                          childNode.style.display = 'block'
-                        } else {
-                          childNode.style.display = 'none'
-                        }
-                      }
-                    })
-                  })
-                })
-
-              }
-
-              run();
-            </script>
-        </div> -->
-    </section>
-
-    <section class="footer">
-        <span></span>
-        <span class="footerItem"> (*^^*)♡</span>
-        <a class="footerItem" href='https://webring.recurse.com'>
-            <img style="width: 100%;" src='https://webring.recurse.com/icon.png' alt="RC Webring Logo" />
-        </a>
-        <a href='https://webring.xxiivv.com' target='_blank'>
-            <img style="width: 100%;" src='https://webring.xxiivv.com/icon.black.svg' alt="xxiivv Webring Logo"/>
-        </a>
-    </section>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://unpkg.com/vue-markdown@2.2.4/dist/vue-markdown.js"></script>
+<script src="pages.js"></script>
 <script src="index.js"></script>
 
+</body>
 </html>
