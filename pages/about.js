@@ -5,7 +5,9 @@ I am a media prototyper and design researcher who likes to explore and speculate
 Previously I spent time at <a href="https://www.recurse.com">The Recurse Center</a>, did service design at <a href="https://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware at <a href="https://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="https://www.kiron.ngo">Kiron Open Higher Education</a>.
 </p>
 
+<p> 
 I studied History and Computater Science at <a href="https://www.minerva.kgi.edu">Minerva Schools at KGI</a>. Before then I went to UWC Costa Rica.
+</p>
 
 <hr>
 

@@ -1,15 +1,15 @@
-## Books Which Have Inspired Me
+### Books Which Have Inspired Me
 
 - Seeing Like a State - James C. Scott
 - The Visual Presentation of Quantitative Information - Edward Tufte
 - Silencing the Past: Power and the Production of History - Michel Trouillot
 - Understanding Media - Marshall Mcluhan
 - Mindstorms - Seymour Papert
-- The Field Study Handbook
+- The Field Study Handbook - Jan Chipchase
 
-## Reading List
+### Reading Lists
 
-2019:
+#### 2019
 
 - Heart of Darkness - Jospeh Conrad
 - The Color of Magic - Terry Pratchett
@@ -36,3 +36,8 @@
 - Speculative Everything - Anthony Dunne & Fiana Raby
 - Ser du Månen, Daniel - Puk Damsgård
 - The Field Study Handbook - Jan Chipchase
+- Learning from Las Vegas: The Forgotten Symbolism of Architectural Form - Robert Venturi
+- Design Research Through Practice: From the Lab, Field, and Showroom - Ilpo Koskinen
+- New Dark Age - James Bridle
+- Design as an Attitude - Alice Rawsthorne
+- The Uninhabitable Earth - David Wallace-Wells
