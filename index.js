@@ -15,13 +15,14 @@ const projects = [
 	"historiography",
 	"news",
 	"daerim_dong",
-	"modelling_color_in_film"
+	"modelling_color_in_film",
+	"writing_drawings"
 ]
 
 const sites = Promise.all(pages.map(site => {
 	return fetch(`pages/${site.source}`)
-        .then(response => response.text())
-        .then((data) => data)
+		.then(response => response.text())
+		.then((data) => data)
 	})).then(result => {
 
 	const routes = result.map((page, i) => {
@@ -36,8 +37,8 @@ const sites = Promise.all(pages.map(site => {
 	})
 
 	const router = new VueRouter({
-	  routes: routes,
-	  base: '/'
+		routes: routes,
+		base: '/'
 	})
 
 	const vueData = {}
@@ -47,22 +48,23 @@ const sites = Promise.all(pages.map(site => {
 
 	const vue = new Vue({
 		el: '#vue',
-	  	router: router,
-	  	data: {
-	  		pages,
-	  		projects,
-	  		toc: [],
-	  		currentRoute: '',
-	  		altText: '',
-	  		window: {
-		      width: 0,
-		      height: 0
-		    }
-	  	},
-	  	created: function(){
-         	this.currentRoute = this._router.currentRoute.path.replace('/', '')
-         	this.altText = vueData[this._router.currentRoute.path.replace('/', '')].altText
-         	const image = document.getElementById("headerImage")  
+		router: router,
+		data: {
+			pages,
+			projects,
+			toc: [],
+			currentRoute: '',
+			altText: '',
+			window: {
+				isTouch: false,
+				width: 0,
+				height: 0
+			}
+		},
+		created: function(){
+		 	this.currentRoute = this._router.currentRoute.path.replace('/', '')
+		 	this.altText = vueData[this._router.currentRoute.path.replace('/', '')].altText
+		 	const image = document.getElementById("headerImage")  
 			image.style.backgroundImage = `url(${vueData[this._router.currentRoute.path.replace('/', '')].img})`
 
 			Vue.nextTick(function () {
@@ -70,23 +72,34 @@ const sites = Promise.all(pages.map(site => {
 					vue.toc = toc
 
 					toc.forEach((header, index) => {
-			  			header.id = `head${index}`
-			  		})
+						header.id = `head${index}`
+					})
 			})
 
-		    window.addEventListener('resize', this.handleResize)
-		    this.handleResize()
-	    },
-	    methods: {
-		    handleResize() {
-		      this.window.width = window.innerWidth
-		      this.window.height = window.innerHeight
-		    },
-		    pushRoute() {
-		    	const input = document.getElementById("goto")
+			window.addEventListener('resize', this.handleResize)
+			this.handleResize()
+		},
+		methods: {
+			handleResize() {
+				this.window.width = window.innerWidth
+				this.window.height = window.innerHeight
+			},
+			pushRoute() {
+				const input = document.getElementById("goto")
 				router.push(input.value)
-		    }
-		  }
+			},
+			is_touch_device() {
+				var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+				var mq = function(query) {
+					return window.matchMedia(query).matches;
+				}
+				if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+					return true;
+				}
+				var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+				return mq(query);
+			}
+		}
 	})
 
 	router.afterEach((to, from) => {
@@ -98,10 +111,10 @@ const sites = Promise.all(pages.map(site => {
 		window.scrollTo(0, 0)
 
 		Vue.nextTick(function () {
-		  	const toc = Array(...document.querySelectorAll("h1, h2, h3, h4, h5, h6"))
-	  		toc.forEach((header, index) => {
-	  			header.id = `head${index}`
-	  		})
+			const toc = Array(...document.querySelectorAll("h1, h2, h3, h4, h5, h6"))
+			toc.forEach((header, index) => {
+				header.id = `head${index}`
+			})
 			vue.toc = toc
 		})
 	})
@@ -109,8 +122,8 @@ const sites = Promise.all(pages.map(site => {
 	const input = document.getElementById("goto")
 
 	input.addEventListener("keyup", function(event) {
-	  if (event.keyCode === 13) {
-	  	router.push(input.value)
-	  }
+		if (event.keyCode === 13) {
+			router.push(input.value)
+		}
 	})
 })

@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Jonathan Skjøtt</title>
-	<link rel="stylesheet" href="styles.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://unpkg.com/vue-markdown@2.2.4/dist/vue-markdown.js"></script>
 	<script src="https://unpkg.com/vue-router"></script>
@@ -20,21 +19,21 @@
 		<div id="headerImage" style="background-image: url('')">
 		</div>	
 		<div id="meta">
-			<span id="caption" style="font-size: 0.8em;" > {{ altText}} </span>
+			<span id="caption" > {{ altText}} </span>
 
-			<input v-if="window.width > 700" list="select" id="goto" type="" name="" placeholder="jump to" :value="currentRoute" data-list-filter="^">
+			<input v-if="window.width > 700 && !is_touch_device()" list="select" id="goto" type="" name="" placeholder="jump to" :value="currentRoute" data-list-filter="^">
 			<datalist class="form-control" id="select">   
 			  <option v-for="page in pages" :value="page.title"/>
 			</datalist>
 
 		</div>
 	</div>
-	<span id="bar" v-if="window.width < 700">
-		<input id="goto" type="" name="" placeholder="jump to" :value="currentRoute"><span id="goButton" v-on:click="pushRoute" >></span>
-	</span>
+	<div id="bar" v-if="window.width < 700 || is_touch_device()">
+		<input id="goto" type="" name="" placeholder="jump to" :value="currentRoute">
+	</div>
 
 	<div id="main">
-		<div id="sidebar" v-if="window.width > 700">
+		<div id="sidebar" v-if="window.width > 700 && !is_touch_device()">
 			<div id="sidebarElement" >
 				<hr>
 				<p v-if='toc.length > 0' >Page Contents</p>
@@ -76,6 +75,9 @@
 
 <script src="pages.js"></script>
 <script src="index.js"></script>
+
+<link rel='stylesheet' type='text/css' href='fonts.css'/>
+<link rel="stylesheet" type='text/css' href="main.css">
 
 </body>
 </html>

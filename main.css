@@ -1,29 +1,29 @@
-@font-face {
-    font-family: "mononoki-bold";
-    src: url("fonts/mononoki-Bold.woff") format('woff'),
-    url("fonts/mononoki-Bold.woff2") format('woff2');
+:root {
+	/*blues*/
+	--brightblue: #9FBCC2;
+	--darkblue: #527785;
+	/*reds*/
+	--brightred: #C99D9D;
+	--darkred: #A46666;
+
+	/*greys*/
+	--lighter: #EAEBEF;
+	--light: #A4A4A4;
+	--dark: #636f74;
+	--darker: #3f464a;
 }
 
-@font-face {
-    font-family: "mononoki";
-    src: url("fonts/mononoki-BoldItalic.woff") format('woff'),
-    url("fonts/mononoki-BoldItalic.woff2") format('woff2');
-    font-weight: bold;
+--f_reg: 'mononoki_regular';
+  --f_bold: 'mononoki_bold';
+  --f_italic: 'mononoki_italic';
+  --f_bold_italic: 'mononoki_bold_italic'; 
+
+p {
+	font-size: 1vw;
 }
 
-@font-face {
-    font-family: "mononoki";
-    src: url("fonts/mononoki-Italic.woff") format('woff'),
-    url("fonts/mononoki-Italic.woff2") format('woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "mononoki-reg";
-    src: url("fonts/mononoki-Regular.woff") format('woff'),
-    url("fonts/mononoki-Regular.woff2") format('woff2');
-    font-style: italic;
+li {
+	padding: 0.3em 0 0.3em 0;
 }
 
 datalist {
@@ -38,7 +38,6 @@ html, body {
 	height: 75%;
 	display: grid;
 	grid-template-columns: 1fr 250px;
-	margin-bottom: 0.5em;
 }
 
 #main {
@@ -53,7 +52,7 @@ h2 {
 #footer {
 	font-size: 0.8em;
 	margin-top: 3em;
-	background-color: #9FBCC2;
+	background-color: var(--brightblue);
 	padding: 1rem;
     display: grid;
     align-items: center;
@@ -75,26 +74,21 @@ h2 {
 
 #meta {
 	position: relative;
-	background-color: #636f74;
+	background-color: var(--dark);
 	word-break: break-all;
 	color: white;
 }
 
 #goto {
 	width: 250px;
-	font-family: mononoki-bold;
+	font-family: var(--f_reg);
 	font-size: 2em;
-	background-color: #3f464a;
-	color: #C99D9D;
+	background-color: var(--darker);
+	color: var(--brightred);
 	position: absolute;
     bottom: 0;
     left: 0;
     border: none;
-}
-
-#content {
-	/*background:rgba(255,255,255,0.5);
-	padding: 0 1.5rem 1.5rem 1.5rem;*/
 }
 
 #sidebar {
@@ -102,7 +96,7 @@ h2 {
 }
 
 #sidebarElement {
-	position: -webkit-sticky; /* Safari */
+	position: -webkit-sticky;
 	position: sticky;
 	top: 2rem;
 	margin: 0 0 1rem;
@@ -120,16 +114,14 @@ h2 {
 	padding: 40px 5px 5px 5px;
 	writing-mode: vertical-rl;
 	position: absolute;
-	color: #EAEBEF;
-	background: #C99D9D;
+	color: var(--lighter);
+	background: var(--brightred);
 }
 
 .sider {
-	/*border-bottom: 1px solid #EAEBEF;*/
-	/*padding: 5px;*/
-	color: #EAEBEF;
+	color: var(--lighter);
 	cursor: pointer;
-	font-family: mononoki-bold;
+	font-family: var(--f_bold);
 }
 
 input:focus,
@@ -145,32 +137,29 @@ img {
 
 body {
 	margin: 0;
-	background: #EAEBEF;
-	color: #527785;
+	background: var(--lighter);
+	color: var(--darkblue);
 	background-size: 80px 80px;
-  	/*background-image:
-    linear-gradient(to right, #9FBCC2 1px, transparent 1px),
-    linear-gradient(to bottom right, #9FBCC2 1px, transparent 1px);*/
-    font-family: mononoki-reg;
+    font-family: var(--f_reg);
 }
 
 hr {
-	border: 0.5px solid #9FBCC2;
+	border: 0.5px solid var(--brightblue);
 }
 
 #title {
   font-size: 3.5rem;
   writing-mode: vertical-rl;
-  color: #A4A4A4;
+  color: var(--light);
   padding: 1rem;
-  font-family: mononoki-bold;
+  font-family: var(--f_bold);
   border-style: solid;
-  border-color: #A4A4A4;
+  border-color: var(--light);
   border-width: 1rem;
 }
 
 a {
-	color: #A46666;
+	color: var(--darkred);
 	text-decoration: none;	
 }
 
@@ -199,19 +188,19 @@ td {
 
 .tocH2 {
 	cursor: pointer;
-	color: #A46666;
+	color: var(--darkred);
 }
 
 .tocH3 {
 	margin-left: 10px;	
 	cursor: pointer;
-	color: #A46666;
+	color: var(--darkred);
 }
 
 .tocH4 {
 	margin-left: 20px;	
 	cursor: pointer;
-	color: #A46666;
+	color: var(--darkred);
 }
 
 #toc {
@@ -222,38 +211,63 @@ td {
 }
 
 #caption {
-	color: #3F464A;
+	font-size: 0.8em;
+	color: var(--darker);
 	writing-mode: vertical-lr;
 	margin: 0.5rem 1rem 1rem 0.25rem;
 }
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
 	#main {
 		display: grid;
 		grid-template-columns: 250px 1fr 25px;
 	}
-}
+}*/
 
-@media (max-width: 700px) {
-	#main {
+@media (hover: none) and (pointer: coarse) {
+
+	p {font-size: 3vw;}
+	li {font-size: 3vw;}
+	a { font-size: 3vw; }
+
+	h2 { font-size: 6vw; }
+	h3 { font-size: 5vw; }
+	h4 { font-size: 4vw; }
+
+	#content {
+		margin: 4rem 2rem 2rem 2rem;
+		width: 100vw;
+	}
+
+    #main {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
 
+	#caption {
+		font-family: var(f_reg);
+		font-size: 4vw;
+	}
+
 	#header {
+		width: 100vw;
 		height: 75%;
 		display: grid;
-		grid-template-columns: 1fr 25px;
+		grid-template-columns: 1fr 6vw;
+	}
+
+	#bar {
+		width: 100vw;
 	}
 
 	#goto {
-		width: 100%;
-		font-family: mononoki-bold;
-		font-size: 2em;
-		background-color: #3f464a;
-		color: #C99D9D;
+		width: 100vw;
+		font-family: var(--f_bold);
+		font-size: 4vw;
+		background-color: var(--darker);
+		color: var(--brightred);
+		position: relative;
 	    border: none;
-	    position: static;
 	}
 
 	#goButton {
@@ -261,7 +275,7 @@ td {
 		text-align: center;
 		width: 50px;
 		background: grey;
-		color: #C99D9D;
+		color: var(--brightred);
 	}
 
 	#bar {
@@ -270,4 +284,16 @@ td {
 		display: grid;
 	    grid-template-columns: 1fr 50px;
 	}
+
+	#footer {
+	width: 100vw;
+	font-size: 2.5vw;
+	}
+
+	.footerItem {
+	color: white;
+	max-width: none;
+	margin: 2rem;
 }
+}
+
