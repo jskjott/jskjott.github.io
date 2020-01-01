@@ -173,5 +173,10 @@ const pages = [
 		source: "slitscan_experiments.md",
 		img: "img/slitscan_hands.png",
 		altText: "Glitch Hands",
+	},{ 
+		title: "writing drawings",
+		source: "writing_drawings.md",
+		img: "img/line_rhytmical_stick.jpg",
+		altText: "Line-rhytmical study of a stick",
 	}
 ]
