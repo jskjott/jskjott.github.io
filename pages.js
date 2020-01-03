@@ -36,7 +36,7 @@ const pages = [
 		altText: "Visualisation produced by playing Partita I. by Bach",
 		img: "img/midi-plotter-eli-cropped.jpg"
 	},{ 
-		title: "portable printing",
+		title: "portable_printing",
 		source: "portable_typewriter.md",
 		altText: "Receipt Printer Typerwriter prototype",
 		img: "img/typewriter_1.png"
@@ -79,7 +79,7 @@ const pages = [
 		source: "urgency.md",
 		img: "img/urgency_icon.png",
 	},{ 
-		title: "git for filmmakers",
+		title: "git_for_filmmakers",
 		source: "git_for_filmmakers.md",
 		cover: "img/git_for_filmmakers.png",
 		altText: "screenshot of prototype GUI",
@@ -91,19 +91,19 @@ const pages = [
         altText: "screenshot of the webring member directory",
 		img: "img/webring.png"
 	},{ 
-		title: "midi plotter",
+		title: "midi_plotter",
 		source: "midi_plotter.md",
 		cover: "img/midi-plotter.png",
         altText: "Visualisation produced by playing Partita I. by Bach",
         img: "img/midi-plotter-eli-cropped.jpg"
 	},{ 
-		title: "community network project",
+		title: "community_network_project",
 		source: "community_network_project.md",
 		cover: "img/community_network_project.png",
 		img: "img/community_network_project.gif",
 		altText: "a screenshot of the produced interactive data visualisation",
 	},{ 
-		title: "service design research",
+		title: "service_design_research",
 		source: "service_design.md",
 		img: "img/annotations_dc.jpg",
 		cover: "img/service_design_research.png",
@@ -115,7 +115,7 @@ const pages = [
 		altText: "a photo of the Kiron course leaders",
 		img: "img/kiron_drawing.png"
 	},{ 
-		title: "auto rickshaw",
+		title: "auto_rickshaw",
 		source: "auto_rickshaw.js",
 		cover: "img/auto_rickshaw.png",
 		altText: "a photo of an auto rickshaw with a driver and a passenger",
@@ -133,13 +133,13 @@ const pages = [
         altText: "the primary visual identity of the project",
 		img: "img/horizontal_trails-01.png"
 	},{ 
-		title: "my home",
+		title: "my_home",
 		source: "portfolio_site.md",
 		cover: "img/my_home.png",
         altText: "a graphic in the shape of a house",
 		img: "img/my_home.png"
 	},{ 
-		title: "portable typewriter",
+		title: "portable_typewriter",
 		source: "portable_typewriter.md",
 		cover: "img/portable_typewriter.png",
         altText: "Receipt Printer Typerwriter prototype",
@@ -157,24 +157,24 @@ const pages = [
         altText: "the visualisation used in the GUI",
 		img: "img/spatial_news.png"
 	},{ 
-		title: "daerim dong",
+		title: "daerim_dong",
 		source: "joseonjok.md",
 		cover: "img/daerim_dong.png",
         altText: "A photo of the street in Daerim-dong",
 		img: "img/postcard5-min.jpg"
 	},{ 
-		title: "modelling color in film",
+		title: "modelling_color",
 		source: "color_in_film.md",
 		cover: "img/modelling_color_in_film.png",
 		img: "img/color_in_film4.png",
         altText: "a visualisation showing the average color in feature films",
 	},{ 
-		title: "slitscan video",
+		title: "slitscan_video",
 		source: "slitscan_experiments.md",
 		img: "img/slitscan_hands.png",
 		altText: "Glitch Hands",
 	},{ 
-		title: "writing drawings",
+		title: "writing_drawings",
 		source: "writing_drawings.md",
 		img: "img/line_rhytmical_stick.jpg",
 		altText: "Line-rhytmical study of a stick",

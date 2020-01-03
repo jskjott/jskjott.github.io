@@ -22,7 +22,7 @@
     </thead>
     <tbody>
         <tr v-for="(any, index) in pages.slice(1)">
-            <td v-if="index % 3 === 0" v-for="(page) in pages.slice(1).slice(index, index + 3)"> <router-link :to="page.title" tag="a">{{ page.title }}</router-link> </td>
+            <td v-if="index % 3 === 0" v-for="(page) in pages.slice(1).slice(index, index + 3)"> <router-link :to="page.title" tag="a">{{ page.title.replace('_', ' ') }}</router-link> </td>
         </tr>
     </tbody>
 </table>
