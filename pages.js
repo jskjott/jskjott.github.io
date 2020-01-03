@@ -178,5 +178,10 @@ const pages = [
 		source: "writing_drawings.md",
 		img: "img/line_rhytmical_stick.jpg",
 		altText: "Line-rhytmical study of a stick",
+	},{ 
+		title: "2019_in_books",
+		source: "year_in_books_2019.md",
+		img: "img/some_readings_2019.png",
+		altText: "A few of the books I read in 2019",
 	}
 ]
