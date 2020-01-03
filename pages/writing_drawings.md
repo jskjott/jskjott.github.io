@@ -2,7 +2,7 @@
 
 I caught my dad mumbling this sentence in the atelier after a full day of him teaching sketching. 
 
-This piqued my interest. Here I was sitting and thinking that I had been drawing all day and now he was telling me that I might have been writing all along. It also sparked some fear. After spending years in college writing essays I felt like spending some time away from my usually writing saturated and symbol cluttered life. Maybe my dad's drawing class wasn't as clean of an escape as I had hoped it would be.
+This piqued my interest. Here I was sitting and thinking that I had been drawing all day and now he was telling me that I might have been writing all along. It also sparked some fear - after spending years in college writing essays I felt like spending some time away from my usually writing saturated and symbol cluttered life. Maybe my dad's drawing class wasn't as clean of an escape as I had hoped it would be.
 
 It did introduce me, however, to a way of thinking about drawing which helped explain why I find it so hard to draw with computers.
 
@@ -10,7 +10,7 @@ It did introduce me, however, to a way of thinking about drawing which helped ex
 
 People who write their drawings are heavily biased by their experience of being part of a literate culture - their style, technique, and way of approaching drawing is visibly influenced by them being literate.
 
-People who are new to drawing are usually not new to the tools used for drawing. Most likely they use pens and pencils on a daily basis. They too have, probably, lived a life engaging with a visual world.
+Individuals who are new to drawing are usually not new to the tools used for drawing. Most likely they use pens and pencils on a daily basis. They too have, probably, lived a life engaging with a visual world.
 
 When I first started drawing with pencils I had hundreds of hours of experience with using pencinls for writing, and I largely depended on this experience when I produced my drawings. For example, I would hold the pencil close to its tip and build up my drawing like I would letters, words, and sentences - by making single, discrete, strokes with the pencil. Because I heavily relied on my knowledge of writing to produce drawings one can say that I wrote my drawings.
 
