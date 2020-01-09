@@ -183,5 +183,10 @@ const pages = [
 		source: "year_in_books_2019.md",
 		img: "img/some_readings_2019.png",
 		altText: "A few of the books I read in 2019",
+	},{ 
+		title: "tools_for_expression",
+		source: "tools_for_expression.md",
+		img: "img/collage-min.jpg",
+		altText: "Detail from Victoria and Albert, London",
 	}
 ]
