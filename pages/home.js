@@ -3,7 +3,7 @@
 </h2>
 
 <p>
-	A knowledge-base featuring the <router-link to="projects" tag="a">projects</router-link>, <router-link to="manifestations" tag="a">manifestations</router-link>, and ongoing processes of Jonathan Skjøtt.
+	A knowledge-base featuring the <router-link to="projects" tag="a">projects</router-link>, <router-link to="manifestations" tag="a">manifestations</router-link>, <router-link to="studies" tag="a">studies</router-link>, and ongoing processes of Jonathan Skjøtt.
 </p>
 
 

@@ -49,5 +49,19 @@ const tree = {
 			title: 'deep work'
 		}
 	],
+	studies: [{
+			title: 'text'
+		},{
+			title: 'video'
+		},{
+			title: 'printing'
+		},{
+			title: 'annotation'
+		},{
+			title: 'writing_drawings'
+		},{
+			title: 'tools_for_expression'
+		},
+	],
 	'': pages
 }

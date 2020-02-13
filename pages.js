@@ -19,7 +19,12 @@ const pages = [
 		source: "manifestations.js",
 		altText: "Beehive houses in Daerim-dong",
 		img: "img/postcard5-min.jpg",
-	},
+	},{ 
+		title: "studies",
+		source: "studies.js",
+		img: "img/collage-min.jpg",
+		altText: "Detail from Victoria and Albert, London",
+	},	
 	{ 
 		title: "text",
 		source: "text.md",
@@ -188,5 +193,17 @@ const pages = [
 		source: "tools_for_expression.md",
 		img: "img/collage-min.jpg",
 		altText: "Detail from Victoria and Albert, London",
+	},{ 
+		title: "art",
+		source: "art.js",
+		cover: "img/glitch_hands.png",
+        altText: "frame from Glitch Hands",
+		img: "img/glitch_hands.png"
+	}, {
+		title: "fermentation",
+		source: "fermentation.md",
+		cover: "img/fermentation.png",
+		altText: "character design process illustration",
+		img: "img/fermentation.png"
 	}
 ]
