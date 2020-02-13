@@ -70,8 +70,8 @@ const pages = [
 		altText: "biking on Randalls and Wards Island",
 		img: "img/biking.jpg"
 	},{ 
-		title: "chasmic",
-		source: "chasmic.md",
+		title: "deep_work",
+		source: "deep_work.md",
 		altText: "a screenshot of the UI",
 		img: "img/chasmic_log.png"
 	},{ 

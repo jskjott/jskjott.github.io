@@ -50,7 +50,9 @@ const sites = Promise.all(pages.map(site => {
 		el: '#vue',
 		router: router,
 		data: {
+			deleted: false,
 			pages,
+			tree,
 			projects,
 			toc: [],
 			currentRoute: '',
@@ -99,6 +101,19 @@ const sites = Promise.all(pages.map(site => {
 				var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
 				return mq(query);
 			}
+		},
+		computed: {
+			routes: function() {
+				const terms = this.currentRoute.split('/')
+				const pathElements = terms.map((ele, i) => {
+					return({
+						term: ele,
+						path: terms.filter((term, index) => index < i).join('/')
+					})
+				})
+
+				return(pathElements)
+			}
 		}
 	})
 
@@ -108,6 +123,7 @@ const sites = Promise.all(pages.map(site => {
 		image.style.backgroundImage = `url(${vueData[to.path.replace('/','')].img})`
 		vue.currentRoute = vueData[to.path.replace('/','')].title
 		vue.altText = vueData[to.path.replace('/','')].altText
+		vue.deleted = false
 		window.scrollTo(0, 0)
 
 		Vue.nextTick(function () {
@@ -119,11 +135,26 @@ const sites = Promise.all(pages.map(site => {
 		})
 	})
 
-	const input = document.getElementById("goto")
+	const input = document.getElementById("navigatorInput")
+
+	input.addEventListener("input", function(event) {
+		const titles = new Set(pages.map(ele => ele.title))
+		if (titles.has(input.value)) {
+			router.push(input.value)
+			input.value = ''
+		}
+	})
 
 	input.addEventListener("keyup", function(event) {
 		if (event.keyCode === 13) {
-			router.push(input.value)
+			if (input.value === '') {
+				router.push('/')	
+			} else {
+				router.push(input.value)
+			}
+			input.value = ''
+		} else if (input.value === '' && event.keyCode === 8) {
+			vue.deleted = true
 		}
 	})
 })

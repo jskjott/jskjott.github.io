@@ -18,6 +18,8 @@
   --f_italic: 'mononoki_italic';
   --f_bold_italic: 'mononoki_bold_italic'; 
 
+
+
 p {
 	font-size: 1vw;
 }
@@ -74,7 +76,7 @@ h2 {
 
 #meta {
 	position: relative;
-	background-color: var(--dark);
+	background-color: var(--light);
 	word-break: break-all;
 	color: white;
 }
@@ -260,16 +262,6 @@ td {
 		width: 100vw;
 	}
 
-	#goto {
-		width: 100vw;
-		font-family: var(--f_bold);
-		font-size: 4vw;
-		background-color: var(--darker);
-		color: var(--brightred);
-		position: relative;
-	    border: none;
-	}
-
 	#goButton {
 		font-size: 2em;
 		text-align: center;
@@ -297,3 +289,21 @@ td {
 }
 }
 
+#navigator {
+	background-color: var(--dark);
+	width: 100vw;
+	height: 3em;
+	margin-bottom: 2rem;
+}
+
+.navigatorElement {
+	font-family: var(--f_reg);
+	font-size: 2.5em;
+	background-color: var(--dark);
+	color: var(--lighter);
+	cursor: pointer;
+}
+
+input::placeholder { 
+	color: var(--lighter);
+}

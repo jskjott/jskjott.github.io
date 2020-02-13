@@ -20,16 +20,28 @@
 		</div>	
 		<div id="meta">
 			<span id="caption" > {{ altText}} </span>
-
-			<input v-if="window.width > 700 && !is_touch_device()" list="select" id="goto" type="" name="" placeholder="jump to" :value="currentRoute" data-list-filter="^">
-			<datalist class="form-control" id="select">   
-			  <option v-for="page in pages" :value="page.title"/>
-			</datalist>
-
 		</div>
 	</div>
 	<div id="bar" v-if="window.width < 700 || is_touch_device()">
-		<input id="goto" type="" name="" placeholder="jump to" :value="currentRoute">
+	</div>
+
+	<div id="navigator">  
+		<div style="margin-left: 25px; display: grid; grid-template-columns: auto 1fr;">
+			<span>
+				<span v-on:click="$router.push('/').catch(err => {})" class="navigatorElement" > Home </span>
+				<span v-if="!deleted" v-for="(term, index) in routes"> 
+					<span class="navigatorElement" style="cursor: auto"> /&nbsp;</span> 
+					<span class="navigatorElement" v-if="index === routes.length - 2" v-on:click="$router.push(term.path).catch(err => {})"> {{ term.term }} </span> 
+					<span class="navigatorElement" v-if="index !== routes.length - 2" style="color: #9FBCC2;" v-on:click="$router.push(term.path).catch(err => {})"> {{ term.term }} </span> 
+				</span>
+				<span v-if="routes[0].term.length > 0" class="navigatorElement" style="cursor: auto"> /&nbsp; </span> 
+			</span>
+			<input id="navigatorInput" class="navigatorElement" list="select" style="cursor: auto; border: none; width: auto;" placeholder="..." data-list-filter="^">
+			<datalist class="form-control" id="select">   
+			  <option v-if="!deleted" v-for="page in tree[currentRoute]" :value="page.title"/>
+			  <option v-if="deleted" v-for="page in tree['']" :value="page.title"/>
+			</datalist>
+		</div>
 	</div>
 
 	<div id="main">
@@ -74,6 +86,7 @@
 </div>
 
 <script src="pages.js"></script>
+<script src="tree.js"></script>
 <script src="index.js"></script>
 
 <link rel='stylesheet' type='text/css' href='fonts.css'/>
