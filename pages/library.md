@@ -6,8 +6,16 @@
 - Understanding Media - Marshall Mcluhan
 - Mindstorms - Seymour Papert
 - The Field Study Handbook - Jan Chipchase
+- Discursive Design - Bruce M. Tharp & Stephanie M. Tharp
 
 ### Reading Lists
+
+#### 2020
+- Japansoft - Alex Wiltshire
+- Takram Design Engineering - Hisato Ogata and Kinya Tagawa
+- Discursive Design - Bruce M. Tharp & Stephanie M. Tharp
+- Are We Human? Notes on an Archeology of Design - Beatriz Colomina & Mark Wigley
+- Middlemarch - George Eliot
 
 #### 2019
 
