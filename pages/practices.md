@@ -1,0 +1,26 @@
+## informed, committed action ~
+
+A collection of processes of continous, long-term nature.
+
+***
+
+### Paper 
+the art of thinking with paper.
+
+### Media
+extensions of self ~ bidirectional shaping
+
+### Discursive
+the integrative meta-practice
+
+### Programming
+symbolic manipulation unleashed
+
+### Historiographical
+authenticity, power, public, foreign, exotic, glocal, historigraphy, legibility, truth, silences, everything is plural, historicities, dirty linen, private/public transcripts, intersectionality, against the grain, progress
+
+### Research
+ideas peripheral
+
+### Writing
+scaffold for ideas

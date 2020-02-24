@@ -24,8 +24,13 @@ const pages = [
 		source: "studies.js",
 		img: "img/collage-min.jpg",
 		altText: "Detail from Victoria and Albert, London",
-	},	
-	{ 
+	},{ 
+		title: "practice",
+		source: "practices.md",
+		img: "img/practice.JPG",
+		altText: "sketching process shot",
+	},
+	{
 		title: "text",
 		source: "text.md",
 		altText: "methods of constructing letterforms - Institutionum Geometricarum",
