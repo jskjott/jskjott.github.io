@@ -210,5 +210,10 @@ const pages = [
 		cover: "img/fermentation.png",
 		altText: "character design process illustration",
 		img: "img/fermentation.png"
+	}, { 
+		title: "visiweave",
+		source: "visiweave.md",
+		altText: "the VisiWeave interface ",
+		img: "img/visiweave_interface.png",
 	}
 ]

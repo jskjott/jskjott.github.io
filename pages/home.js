@@ -12,8 +12,12 @@
 </p>
 
 <h3>
-	Entries on This Site
+	A space dedicated to the long-term 
 </h3>
+
+<p> 
+    This space was created in 2018 to help Jonathan capture the ideas and thoughts which linger in the margins of his mind. 
+</p>
 
 <table>
     <thead>
