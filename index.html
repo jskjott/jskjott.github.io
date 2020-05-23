@@ -20,6 +20,14 @@
 		</div>	
 		<div id="meta">
 			<span id="caption" > {{ altText}} </span>
+			<div id="sidebarElement" >
+				<!-- <div>
+					<p v-if='toc.length > 0' >Page Contents</p>
+					<div id="toc" v-for='(header, index) in toc'>
+						<div :class="'toc' + header.tagName" v-on:click="document.getElementById('head' + index).scrollIntoView()" > {{header.textContent}} </div>
+					</div>	
+				</div> -->
+			</div>
 		</div>
 	</div>
 	<div id="bar" v-if="window.width < 700 || is_touch_device()">
@@ -45,17 +53,23 @@
 	</div>
 
 	<div id="main">
-		<div id="sidebar" v-if="window.width > 700 && !is_touch_device()">
-			<div id="sidebarElement" >
-				<hr>
-				<p v-if='toc.length > 0' >Page Contents</p>
-				<div id="toc" v-for='(header, index) in toc'>
-					<div :class="'toc' + header.tagName" v-on:click="document.getElementById('head' + index).scrollIntoView()" > {{header.textContent}} </div>
+		<div id="content">
+			<div class="page" style="height: auto; width: 700px;">
+				<router-view></router-view>
+				<div v-if="mentionedIn.length > 0" style="padding-bottom: 2rem;">
+					<p>Links to this entry:</p>
+					<span v-for="mention in mentionedIn">
+						<router-link :to="mention" tag="a">{{ mention }}</router-link>	
+					</span>
 				</div>
 			</div>
-		</div>
-		<div id="content">
-			<router-view></router-view>	
+			<div class="page" style="width: 250px;">
+				<p v-if="linkedPages.length > 0" style="text-align: right; margin-top: -0.5em;"> Mentioned entries <span style="font-size: 2em; ">⤳</span> </p>
+			</div>
+			<div v-for="page in linkedPages" class="mentionedPage">
+				<router-link :to="page.title" class="h3Link" tag="a">{{ page.title }}</router-link>	
+				<component :is="{template:page.component}"/>
+			</div>
 		</div>
 	</div>
 

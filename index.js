@@ -33,6 +33,8 @@ const sites = Promise.all(pages.map(site => {
 			`<div>${page}</div>`
 		}`
 
+		pages[i].component = template
+
 		return {path: `/${pages[i].title}`, component: { template }}
 	})
 
@@ -57,6 +59,10 @@ const sites = Promise.all(pages.map(site => {
 			toc: [],
 			currentRoute: '',
 			altText: '',
+			mentionedIn: [],
+			linkedPages: [],
+			mentionedPages: [],
+			connectedPages: [],
 			window: {
 				isTouch: false,
 				width: 0,
@@ -65,7 +71,19 @@ const sites = Promise.all(pages.map(site => {
 		},
 		created: function(){
 		 	this.currentRoute = this._router.currentRoute.path.replace('/', '')
-		 	this.altText = vueData[this._router.currentRoute.path.replace('/', '')].altText
+
+		 	const currentPage = vueData[this._router.currentRoute.path.replace('/', '')]
+
+		 	this.altText = currentPage.altText
+		 	this.mentionedIn = currentPage.mentionedIn
+
+		 	this.linkedPages = currentPage.mentionedPages.map(page => {
+		 		return {
+		 			title: vueData[page].title,
+		 			component: vueData[page].component
+		 		}
+		 	})
+
 		 	const image = document.getElementById("headerImage")  
 			image.style.backgroundImage = `url(${vueData[this._router.currentRoute.path.replace('/', '')].img})`
 
@@ -123,6 +141,12 @@ const sites = Promise.all(pages.map(site => {
 		image.style.backgroundImage = `url(${vueData[to.path.replace('/','')].img})`
 		vue.currentRoute = vueData[to.path.replace('/','')].title
 		vue.altText = vueData[to.path.replace('/','')].altText
+		vue.mentionedIn = vueData[to.path.replace('/','')].mentionedIn
+
+		vue.linkedPages = vueData[to.path.replace('/','')].mentionedPages.map(page => {
+	 		return vueData[page]
+	 	})
+
 		vue.deleted = false
 		window.scrollTo(0, 0)
 

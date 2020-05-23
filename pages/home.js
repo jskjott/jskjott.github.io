@@ -18,17 +18,3 @@
 <p> 
     This space was created in 2018 to help Jonathan capture the ideas and thoughts which linger in the margins of his mind. 
 </p>
-
-<table>
-    <thead>
-        <tr>
-        </tr>
-    </thead>
-    <tbody>
-        <tr v-for="(any, index) in pages.slice(1)">
-            <td v-if="index % 3 === 0" v-for="(page) in pages.slice(1).slice(index, index + 3)"> <router-link :to="page.title" tag="a">{{ page.title.replace('_', ' ') }}</router-link> </td>
-        </tr>
-    </tbody>
-</table>
-
-<hr style="margin: 3rem 0 1rem 0">

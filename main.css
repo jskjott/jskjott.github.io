@@ -55,14 +55,42 @@ blockquote > p {
 }
 
 #header {
-	height: 75%;
+	height: calc(100vh - 3em);
 	display: grid;
-	grid-template-columns: 1fr 250px;
+	grid-template-columns: 1fr 30px;
 }
 
 #main {
-	display: grid;
-	grid-template-columns: 250px 1fr 250px;
+	width: auto;
+	margin-left: calc(2rem + 1em);
+}
+
+#content {
+	width:100%;
+    height:100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.page {
+	vertical-align:top;
+	display: inline-block;
+	white-space: normal;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.mentionedPage {
+	opacity: 0.7;
+	vertical-align:top;
+	display: inline-block;
+	white-space: normal;
+	height: 70vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+    width: 500px;
+    margin: 0 1rem 1rem 1rem;
 }
 
 h2 {
@@ -85,7 +113,7 @@ h2 {
 }
 
 #headerImage {
-	height: 75vh;
+	height: calc(100vh - 3em);
 	overflow: hidden;
 	background-position: 50% 50%;
      background-repeat: no-repeat;
@@ -93,6 +121,8 @@ h2 {
 }
 
 #meta {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
 	position: relative;
 	background-color: var(--light);
 	word-break: break-all;
@@ -112,14 +142,26 @@ h2 {
 }
 
 #sidebar {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 	margin: 1em 25px 25px 25px;
 }
 
 #sidebarElement {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 2rem;
-	margin: 0 0 1rem;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	margin: 1em 25px 25px 25px;
+}
+
+span > a {
+	color: black;
+	background: white;
+	margin: 0.25rem; 
+	padding: 0.25rem; 
+	margin-left: 0;
+	border-radius: 0.25em;
+	border: 0.5px solid var(--brightblue);
+	cursor: pointer;
 }
 
 #bottomimg {
@@ -183,6 +225,10 @@ a {
 	text-decoration: none;	
 }
 
+.h3Link {
+	font-size: 2em;
+}
+
 .content {
 	width: 800px;
 }
@@ -231,7 +277,7 @@ td {
 }
 
 #caption {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	color: var(--darker);
 	writing-mode: vertical-lr;
 	margin: 0.5rem 1rem 1rem 0.25rem;
@@ -308,6 +354,9 @@ td {
 }
 
 #navigator {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 	background-color: var(--dark);
 	width: 100vw;
 	height: 3em;
