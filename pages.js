@@ -13,7 +13,7 @@ const pages = [
     altText: 'Morning in Daerim-dong',
     img: 'img/cropped_daerim.jpg',
     mentionedIn: [ '' ],
-    mentionedPages: [ 'auto_rickshaw', 'service_design', 'git_for_filmmakers' ]
+    mentionedPages: [ 'auto_rickshaw', 'visiweave', 'studies', 'service_design' ]
   },
   {
     title: 'projects',
@@ -56,14 +56,15 @@ const pages = [
     source: 'studies.js',
     img: 'img/collage-min.jpg',
     altText: 'Detail from Victoria and Albert, London',
-    mentionedIn: [ '' ],
+    mentionedIn: [ 'about', '' ],
     mentionedPages: [
       'text',
       'video',
       'The_Printing_Process_as_Time_based_Media',
       'annotation',
       'writing_drawings',
-      'tools_for_expression'
+      'tools_for_expression',
+      'intermediate_representations'
     ]
   },
   {
@@ -91,6 +92,38 @@ const pages = [
     mentionedPages: []
   },
   {
+    title: 'intermediate_representations',
+    source: 'intermediate_representations.md',
+    altText: 'Malraux, Museum without Walls',
+    img: 'img/a_book_museum_without_walls.jpeg',
+    mentionedIn: [ 'studies' ],
+    mentionedPages: [ 'pointers' ]
+  },
+  {
+    title: 'chasmic',
+    source: 'chasmic.md',
+    altText: 'the Chasmic interface',
+    img: 'img/chasmic_log.png',
+    mentionedIn: [ 'deep_work' ],
+    mentionedPages: []
+  },
+  {
+    title: 'org-mode',
+    source: 'org-mode.md',
+    altText: 'Malraux, Museum without Walls',
+    img: 'img/a_book_museum_without_walls.jpeg',
+    mentionedIn: [ 'deep_work' ],
+    mentionedPages: []
+  },
+  {
+    title: 'pointers',
+    source: 'pointers.md',
+    altText: 'methods of constructing letterforms - Institutionum Geometricarum',
+    img: 'img/Albrecht_Durer_letterforms.jpg',
+    mentionedIn: [ 'intermediate_representations', 'portable_typewriter' ],
+    mentionedPages: [ 'portable_typewriter', 'midi_plotter' ]
+  },
+  {
     title: 'video',
     source: 'slitscan_experiments.md',
     img: 'img/slitscan_hands.png',
@@ -103,15 +136,15 @@ const pages = [
     source: 'The_Printing_Process_as_Time_based_Media.md',
     altText: 'Visualisation produced by playing Partita I. by Bach',
     img: 'img/midi-plotter-eli-cropped.jpg',
-    mentionedIn: [ 'studies' ],
-    mentionedPages: []
+    mentionedIn: [ 'midi_plotter', 'portable_typewriter', 'studies' ],
+    mentionedPages: [ 'portable_printing' ]
   },
   {
     title: 'portable_printing',
     source: 'portable_typewriter.md',
     altText: 'Receipt Printer Typerwriter prototype',
     img: 'img/typewriter_1.png',
-    mentionedIn: [],
+    mentionedIn: [ 'The_Printing_Process_as_Time_based_Media' ],
     mentionedPages: []
   },
   {
@@ -164,10 +197,10 @@ const pages = [
   {
     title: 'deep_work',
     source: 'deep_work.md',
-    altText: 'a screenshot of the UI',
-    img: 'img/chasmic_log.png',
+    altText: 'forest in south England',
+    img: 'img/plant_deep_work.jpg',
     mentionedIn: [ 'manifestations' ],
-    mentionedPages: []
+    mentionedPages: [ 'chasmic', 'org-mode' ]
   },
   {
     title: 'urgency',
@@ -182,7 +215,7 @@ const pages = [
     cover: 'img/git_for_filmmakers.png',
     altText: 'screenshot of prototype GUI',
     img: 'img/git_for_filmmakers_aug21.png',
-    mentionedIn: [ 'about', 'projects' ],
+    mentionedIn: [ 'projects', 'tools_for_expression' ],
     mentionedPages: []
   },
   {
@@ -200,8 +233,8 @@ const pages = [
     cover: 'img/midi-plotter.png',
     altText: 'Visualisation produced by playing Partita I. by Bach',
     img: 'img/midi-plotter-eli-cropped.jpg',
-    mentionedIn: [ 'projects' ],
-    mentionedPages: []
+    mentionedIn: [ 'pointers', 'projects', 'tools_for_expression' ],
+    mentionedPages: [ 'The_Printing_Process_as_Time_based_Media' ]
   },
   {
     title: 'community_network_project',
@@ -246,7 +279,7 @@ const pages = [
     img: 'img/fraktur_progression.png',
     altText: 'illustration of different fraktur writing turorials',
     mentionedIn: [],
-    mentionedPages: []
+    mentionedPages: [ 'historiography' ]
   },
   {
     title: 'trails',
@@ -272,8 +305,8 @@ const pages = [
     cover: 'img/portable_typewriter.png',
     altText: 'Receipt Printer Typerwriter prototype',
     img: 'img/typewriter_1.png',
-    mentionedIn: [ 'projects' ],
-    mentionedPages: []
+    mentionedIn: [ 'pointers', 'projects' ],
+    mentionedPages: [ 'pointers', 'The_Printing_Process_as_Time_based_Media' ]
   },
   {
     title: 'historiography',
@@ -281,7 +314,7 @@ const pages = [
     cover: 'img/spatially_concious_news.png',
     altText: 'a visualisation of the prominent places found in my analysis',
     img: 'img/history.png',
-    mentionedIn: [],
+    mentionedIn: [ 'fraktur' ],
     mentionedPages: []
   },
   {
@@ -341,7 +374,7 @@ const pages = [
     img: 'img/collage-min.jpg',
     altText: 'Detail from Victoria and Albert, London',
     mentionedIn: [ 'studies' ],
-    mentionedPages: []
+    mentionedPages: [ 'visiweave', 'git_for_filmmakers', 'midi_plotter' ]
   },
   {
     title: 'art',
@@ -366,7 +399,7 @@ const pages = [
     source: 'visiweave.md',
     altText: 'the VisiWeave interface ',
     img: 'img/visiweave_interface.png',
-    mentionedIn: [],
+    mentionedIn: [ 'about', 'tools_for_expression' ],
     mentionedPages: []
   }
 ]

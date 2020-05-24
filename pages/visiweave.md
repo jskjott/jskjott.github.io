@@ -10,7 +10,7 @@ At my home the process of weaving a heart is a social and spatial affair. A proc
 
 VisiWeave resulted from a process situated in a cultural, communal, and historical context. It is part of a deep network of culture and history.
 
-In his book Tools for Conviviality (1973) Ivan Illich (1926 - 2002) talked of convivilaity as a communal practice existing in space “I choose the term 'conviviality' to designate the ... autonomous and creative intercourse among persons, and of persons with their environment.”
+In his book Tools for Conviviality (1973) Ivan Illich (1926 - 2002) talked of conviviality as a communal practice existing in space “I choose the term 'conviviality' to designate the ... autonomous and creative intercourse among persons, and of persons with their environment.”
 
 I feel that the conviviality of VisiWeave is directly tied to my ability to articulate the space and community the tool is embedded in and grew out of.
 

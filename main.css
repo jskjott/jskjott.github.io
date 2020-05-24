@@ -280,7 +280,7 @@ td {
 	font-size: 1.2em;
 	color: var(--darker);
 	writing-mode: vertical-lr;
-	margin: 0.5rem 1rem 1rem 0.25rem;
+	margin: 0.5rem 1rem 0.25rem 0.25rem;
 }
 
 /*@media (max-width: 1000px) {

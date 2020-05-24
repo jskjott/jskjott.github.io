@@ -1,8 +1,6 @@
-### Teach How To Read Old Typefaces
-
 There is a lack of good learning resources for people who need to learn to read old typefaces. The aim of this project was to use the affordances of the digital medium to more effectively teach the skill of reading different kinds of typefaces.
 
-This was a personal project. I first did a precedent analysis of the ways this skill was being taught digitally at the moment. Based on this analysis defined a list of criteria that my design should fulfil to make better use of the digital medium to provide a better learning experience:
+This project sprouted from my interest in [digital historiography](#historiography). I first did a precedent analysis of the ways this skill was being taught digitally at the moment. Based on this analysis defined a list of criteria that my design should fulfil to make better use of the digital medium to provide a better learning experience:
 
 1. The learner must receive instant feedback on how they are performing. 
 2. The learner’s degree of mastery must be legible.

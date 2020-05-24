@@ -1,12 +1,12 @@
 <p>
-I am a media prototyper and design researcher who likes to explore and speculate. My projects span the fields of <router-link to="auto_rickshaw">documentary film-making</router-link>, <router-link to="git_for_filmmakers">experimental software</router-link>, and <router-link to="service_design">service design research</router-link>.
+Jonathan Skjøtt is doing <router-link to="auto_rickshaw">field studies</router-link>, weaving <router-link to="visiweave">experimental software</router-link>, and thinking about <router-link to="studies">media</router-link>.
 </p>
 <p>
-I am currently designing/programming/writing/speculating at <a href="https://www.takram.com/">Takram</a> in London. Previously I spent time at <a href="https://www.recurse.com">The Recurse Center</a>, did service design at <a href="https://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware at <a href="https://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="https://www.kiron.ngo">Kiron Open Higher Education</a>.
+He is currently a researcher and technologist at <a href="https://www.takram.com/">Takram</a> in London. Previously Jonathan spent time at <a href="https://www.recurse.com">The Recurse Center</a>, did service design at <a href="https://www.digitalcreativity.ac.uk">Digital Creativity Labs</a>, played with hardware at <a href="https://www.fablab-seoul.org">FabLab Seoul</a>, and made a Massive Open Online Course (MOOC) with <a href="https://www.kiron.ngo">Kiron Open Higher Education</a>.
 </p>
 
 <p> 
-I studied History and Computater Science at <a href="https://www.minerva.kgi.edu">Minerva Schools at KGI</a>. Before then I went to UWC Costa Rica.
+Jonathan studied History and Computater Science at <a href="https://www.minerva.kgi.edu">Minerva Schools at KGI</a>. Before then Jonathan went to UWC Costa Rica.
 </p>
 
 <p>

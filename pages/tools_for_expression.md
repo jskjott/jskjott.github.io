@@ -2,7 +2,7 @@
 
 *A collection of speculative creative/expressive tools and media*
 
-### Heartweave - A tool for creating paper weaving patterns.
+### [VisiWeave](#visiweave) - A tool for creating paper weaving patterns.
 
 [github](https://github.com/jskjott/heartweave)
 
@@ -10,7 +10,7 @@ A domain-specific language is used to generate grids and spreadsheet style comma
 
 ![the tool work environment](img/environment.png)
 
-### Git for Filmmakers - A version control tool for filmmakers. 
+### [Git for Filmmakers](#git_for_filmmakers) - A version control tool for filmmakers. 
 
 [github](https://github.com/jskjott/git-for-filmmakers)
 
@@ -18,7 +18,7 @@ The lack of good quality version control has wrecked many a film-project. This p
 
 ![the git for filmmakers GUI](img/git_for_filmmakers_aug21.png)
 
-### Midi Plotter - A realtime midi visualisation tool.
+### [Midi Plotter](#midi_plotter) - A realtime midi visualisation tool.
 
 [github](https://github.com/jskjott/midi-plotter)
 

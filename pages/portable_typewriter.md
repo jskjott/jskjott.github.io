@@ -1,6 +1,6 @@
-## Portable Print Publishing
+I was frustrated with how current publishing processes force you to spend hours alone on the computer making layouts. 
 
-I was frustrated with how current publishing processes force you to spend hours alone on the computer making layouts. I wanted to make printing available in spaces where it currently isn’t and by doing that move away from the extensive and bulky infrastructure which is typically needed to create a printed page.
+Inspiration by Robert Ochshorn's wonderful [desert journalism](https://lowerquality.com/desertjournalism/) project I wanted to respond to these frustrations by making printing available in spaces where it currently isn’t and by doing that move away from the extensive and bulky infrastructure which is typically needed to create a printed page.
 
 This was a personal project. To fulfil my vision, I decided to make a portable, battery-operated receipt printer typewriter.
 
@@ -8,4 +8,4 @@ I acquired all the necessary components (Arduino, battery, receipt printer, keyb
 
 ![printed paper snippets](img/typewriter_two.png)
 
-My main inspiration for this project is Robert Ochshorn's wonderful [desert journalism](https://lowerquality.com/desertjournalism/) project.
+Doing this project resulted in deeper appreciation of printing as a medium - in many ways it became a [pointer](#pointers) towards a new media which could spring fourth from further exploring printing and portability. This is explored further in [the printing process as time-based media](#The_Printing_Process_as_Time_based_Media).

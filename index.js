@@ -181,4 +181,9 @@ const sites = Promise.all(pages.map(site => {
 			vue.deleted = true
 		}
 	})
+
+	window.addEventListener("hashchange", () => {
+		console.log(location.hash.slice(2))
+		vue.$router.push(location.hash.slice(2))
+	}, false)
 })

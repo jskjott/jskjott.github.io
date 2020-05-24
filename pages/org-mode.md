@@ -1,0 +1,8 @@
+Org-mode is a powerful environment for working with ideas, and for organising your projects.
+
+When I heard of it I became incredibly excited and luckily there were many people who were willing to teach me a bit about how to use emacs and org-mode.
+
+After two days of learning and exploration I am starting to organise my life with org-mode. At the moment I mostly use the standard formatting together with the agenda and the capture interface.
+
+![a screenshot of the org-mode tranformation](../img/org-mode.gif)
+A little sneak peak of my .org file
