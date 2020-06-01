@@ -4,9 +4,7 @@
 
 <router-link to="urgency" tag="a">urgency</router-link> |
 <router-link to="quotes" tag="a">quotes</router-link> |
-<router-link to="library" tag="a">library</router-link> |
 <router-link to="space" tag="a">space</router-link> |
 <router-link to="targets" tag="a">targets</router-link> |
 <router-link to="biking" tag="a">biking</router-link> |
-<router-link to="deep_work" tag="a">deep work</router-link> |
 <router-link to="fermentation" tag="a">fermentation</router-link>

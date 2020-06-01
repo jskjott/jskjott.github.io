@@ -1,5 +1,3 @@
-## Tools for Expression
-
 *A collection of speculative creative/expressive tools and media*
 
 ### [VisiWeave](#visiweave) - A tool for creating paper weaving patterns.
@@ -8,7 +6,7 @@
 
 A domain-specific language is used to generate grids and spreadsheet style commands are used to shape the cells in the grid. The core philosophy behind this project is that a good end-user programming experience is achieved through a tight coupling and co-presence of both code and data in the interface - the code is the interface is the code.
 
-![the tool work environment](img/environment.png)
+![the tool work environment](img/visiweave_interface.png)
 
 ### [Git for Filmmakers](#git_for_filmmakers) - A version control tool for filmmakers. 
 

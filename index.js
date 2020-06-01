@@ -85,7 +85,9 @@ const sites = Promise.all(pages.map(site => {
 		 	})
 
 		 	const image = document.getElementById("headerImage")  
-			image.style.backgroundImage = `url(${vueData[this._router.currentRoute.path.replace('/', '')].img})`
+			image.src = vueData[this._router.currentRoute.path.replace('/', '')].img
+
+
 
 			Vue.nextTick(function () {
 			  const toc = Array(...document.querySelectorAll("h1, h2, h3, h4, h5, h6"))
@@ -138,7 +140,7 @@ const sites = Promise.all(pages.map(site => {
 	router.afterEach((to, from) => {
 
 		const image = document.getElementById("headerImage")
-		image.style.backgroundImage = `url(${vueData[to.path.replace('/','')].img})`
+		image.src = vueData[to.path.replace('/','')].img
 		vue.currentRoute = vueData[to.path.replace('/','')].title
 		vue.altText = vueData[to.path.replace('/','')].altText
 		vue.mentionedIn = vueData[to.path.replace('/','')].mentionedIn
@@ -157,6 +159,9 @@ const sites = Promise.all(pages.map(site => {
 			})
 			vue.toc = toc
 		})
+
+		window.scrollTo(0,0)
+		document.getElementById('content').scrollTo(0,0)
 	})
 
 	const input = document.getElementById("navigatorInput")

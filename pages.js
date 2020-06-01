@@ -1,26 +1,143 @@
 const pages = [
   {
     title: '',
-    source: 'home.js',
-    altText: 'Beehive houses in Daerim-dong, Seoul',
-    img: 'img/postcard5-min.jpg',
+    source: 'home.md',
+    altText: 'foliage in south England',
+    img: 'img/plant01.jpg',
     mentionedIn: [],
-    mentionedPages: [ 'projects', 'manifestations', 'studies', 'about' ]
+    mentionedPages: [ 'tactile', 'mediums', 'research', 'about' ]
+  },
+  {
+    title: 'tactile',
+    source: 'tactile.md',
+    altText: 'Geraniums on the porch',
+    img: 'img/tactile.jpg',
+    mentionedIn: [ '' ],
+    mentionedPages: [ 'bricolage', 'craft' ]
+  },
+  {
+    title: 'bricolage',
+    source: 'bricolage.md',
+    altText: 'Collected items',
+    img: 'img/bricolage.jpg',
+    mentionedIn: [ 'tactile' ],
+    mentionedPages: []
+  },
+  {
+    title: 'craft',
+    source: 'craft.md',
+    altText: 'monkeys fist and macrame beads',
+    img: 'img/craft.jpg',
+    mentionedIn: [ 'tactile' ],
+    mentionedPages: [ 'fermentation', 'writing_drawings' ]
+  },
+  {
+    title: 'hints',
+    source: 'hints.md',
+    altText: 'Morning in Daerim-dong',
+    img: 'img/cropped_daerim.jpg',
+    mentionedIn: [],
+    mentionedPages: []
+  },
+  {
+    title: 'mediums',
+    source: 'mediums.md',
+    altText: 'Glitch Hands',
+    img: 'img/mediums.png',
+    mentionedIn: [ '', 'jonathan' ],
+    mentionedPages: [ 'time_based', 'documenting' ]
+  },
+  {
+    title: 'static',
+    source: 'static.md',
+    altText: 'Morning in Daerim-dong',
+    img: 'img/cropped_daerim.jpg',
+    mentionedIn: [],
+    mentionedPages: []
+  },
+  {
+    title: 'time_based',
+    source: 'time_based.md',
+    altText: 'creating a slitscan',
+    img: 'img/time-based.png',
+    mentionedIn: [ 'mediums' ],
+    mentionedPages: [
+      'git_for_filmmakers',
+      'slitscan_experiments',
+      'midi_plotter',
+      'The_Printing_Process_as_Time_based_Media',
+      'color_in_film',
+      'auto_rickshaw'
+    ]
+  },
+  {
+    title: 'documenting',
+    source: 'documenting.md',
+    altText: 'Morning in Daerim-dong',
+    img: 'img/cropped_daerim.jpg',
+    mentionedIn: [ 'jonathan', 'mediums' ],
+    mentionedPages: [ 'auto_rickshaw' ]
+  },
+  {
+    title: 'research',
+    source: 'research.md',
+    altText: 'paperwork',
+    img: 'img/paperwork_2-min.jpg',
+    mentionedIn: [ '' ],
+    mentionedPages: [ 'tools', 'studies' ]
+  },
+  {
+    title: 'tools',
+    source: 'tools.md',
+    altText: 'from Medium is the Message',
+    img: 'img/mcluhan.jpg',
+    mentionedIn: [ 'research' ],
+    mentionedPages: [ 'visiweave', 'git_for_filmmakers', 'midi_plotter' ]
   },
   {
     title: 'about',
-    source: 'about.js',
+    source: 'about.md',
     altText: 'Morning in Daerim-dong',
     img: 'img/cropped_daerim.jpg',
     mentionedIn: [ '' ],
-    mentionedPages: [ 'auto_rickshaw', 'visiweave', 'studies', 'service_design' ]
+    mentionedPages: [ 'resevoir', 'lifestyle', 'jonathan' ]
+  },
+  {
+    title: 'resevoir',
+    source: 'resevoir.md',
+    altText: 'Arno Schmidt`s notes for Zettels Traum',
+    img: 'img/Arno_Schmidt_Zettels_Traum.jpg',
+    mentionedIn: [ 'about', 'lifestyle' ],
+    mentionedPages: []
+  },
+  {
+    title: 'lifestyle',
+    source: 'lifestyle.md',
+    altText: 'Morning in Daerim-dong',
+    img: 'img/cropped_daerim.jpg',
+    mentionedIn: [ 'about' ],
+    mentionedPages: [ 'resevoir', 'deep_work' ]
+  },
+  {
+    title: 'jonathan',
+    source: 'jonathan.md',
+    altText: 'Jonathan',
+    img: 'img/jona_portrait.jpg',
+    mentionedIn: [ 'about' ],
+    mentionedPages: [
+      'documenting',
+      'visiweave',
+      'mediums',
+      'library',
+      'manifestations'
+    ]
   },
   {
     title: 'projects',
     source: 'projects.js',
     altText: 'Beehive houses in Daerim-dong',
     img: 'img/postcard5-min.jpg',
-    mentionedIn: [ '' ],
+    mentionedIn: [],
     mentionedPages: [
       'auto_rickshaw',
       'daerim_dong',
@@ -37,17 +154,15 @@ const pages = [
   {
     title: 'manifestations',
     source: 'manifestations.js',
-    altText: 'Beehive houses in Daerim-dong',
-    img: 'img/postcard5-min.jpg',
-    mentionedIn: [ '' ],
+    altText: 'transmutation',
+    img: 'img/manifestation.jpg',
+    mentionedIn: [ 'jonathan' ],
     mentionedPages: [
       'urgency',
       'quotes',
-      'library',
       'space',
       'targets',
       'biking',
-      'deep_work',
       'fermentation'
     ]
   },
@@ -56,14 +171,13 @@ const pages = [
     source: 'studies.js',
     img: 'img/collage-min.jpg',
     altText: 'Detail from Victoria and Albert, London',
-    mentionedIn: [ 'about', '' ],
+    mentionedIn: [ 'research' ],
     mentionedPages: [
       'text',
-      'video',
+      'slitscan_experiments',
       'The_Printing_Process_as_Time_based_Media',
       'annotation',
       'writing_drawings',
-      'tools_for_expression',
       'intermediate_representations'
     ]
   },
@@ -124,11 +238,11 @@ const pages = [
     mentionedPages: [ 'portable_typewriter', 'midi_plotter' ]
   },
   {
-    title: 'video',
+    title: 'slitscan_experiments',
     source: 'slitscan_experiments.md',
     img: 'img/slitscan_hands.png',
     altText: 'Glitch Hands',
-    mentionedIn: [ 'studies' ],
+    mentionedIn: [ 'studies', 'time_based' ],
     mentionedPages: []
   },
   {
@@ -136,7 +250,7 @@ const pages = [
     source: 'The_Printing_Process_as_Time_based_Media.md',
     altText: 'Visualisation produced by playing Partita I. by Bach',
     img: 'img/midi-plotter-eli-cropped.jpg',
-    mentionedIn: [ 'midi_plotter', 'portable_typewriter', 'studies' ],
+    mentionedIn: [ 'midi_plotter', 'portable_typewriter', 'studies', 'time_based' ],
     mentionedPages: [ 'portable_printing' ]
   },
   {
@@ -167,7 +281,7 @@ const pages = [
     title: 'library',
     source: 'library.md',
     img: 'img/books_graphic.png',
-    mentionedIn: [ 'manifestations' ],
+    mentionedIn: [ 'jonathan' ],
     mentionedPages: []
   },
   {
@@ -184,6 +298,14 @@ const pages = [
     img: 'img/Albrecht_Dürer_The_Large_Piece_of_Turf,_1503.jpg',
     altText: 'Albrecht Dürer, The Large Piece of Turf',
     mentionedIn: [ 'manifestations' ],
+    mentionedPages: [ 'EOY_2019' ]
+  },
+  {
+    title: 'EOY_2019',
+    source: 'EOY_2019.md',
+    img: 'img/Albrecht_Dürer_The_Large_Piece_of_Turf,_1503.jpg',
+    altText: 'Albrecht Dürer, The Large Piece of Turf',
+    mentionedIn: [ 'targets' ],
     mentionedPages: []
   },
   {
@@ -199,7 +321,7 @@ const pages = [
     source: 'deep_work.md',
     altText: 'forest in south England',
     img: 'img/plant_deep_work.jpg',
-    mentionedIn: [ 'manifestations' ],
+    mentionedIn: [ 'lifestyle' ],
     mentionedPages: [ 'chasmic', 'org-mode' ]
   },
   {
@@ -215,7 +337,7 @@ const pages = [
     cover: 'img/git_for_filmmakers.png',
     altText: 'screenshot of prototype GUI',
     img: 'img/git_for_filmmakers_aug21.png',
-    mentionedIn: [ 'projects', 'tools_for_expression' ],
+    mentionedIn: [ 'projects', 'time_based', 'tools' ],
     mentionedPages: []
   },
   {
@@ -233,7 +355,7 @@ const pages = [
     cover: 'img/midi-plotter.png',
     altText: 'Visualisation produced by playing Partita I. by Bach',
     img: 'img/midi-plotter-eli-cropped.jpg',
-    mentionedIn: [ 'pointers', 'projects', 'tools_for_expression' ],
+    mentionedIn: [ 'pointers', 'projects', 'time_based', 'tools' ],
     mentionedPages: [ 'The_Printing_Process_as_Time_based_Media' ]
   },
   {
@@ -248,10 +370,10 @@ const pages = [
   {
     title: 'service_design',
     source: 'service_design.md',
-    img: 'img/annotations_dc.jpg',
-    cover: 'img/service_design.png',
+    img: 'img/paperwork_1.jpg',
+    cover: 'img/paperwork_1.jpg',
     altText: 'our data wall',
-    mentionedIn: [ 'about', 'projects' ],
+    mentionedIn: [ 'projects' ],
     mentionedPages: []
   },
   {
@@ -269,7 +391,7 @@ const pages = [
     cover: 'img/auto_rickshaw.png',
     altText: 'a photo of an auto rickshaw with a driver and a passenger',
     img: 'img/tuktuk2.jpg',
-    mentionedIn: [ 'about', 'projects' ],
+    mentionedIn: [ 'documenting', 'projects', 'time_based' ],
     mentionedPages: []
   },
   {
@@ -336,12 +458,12 @@ const pages = [
     mentionedPages: []
   },
   {
-    title: 'modelling_color',
+    title: 'color_in_film',
     source: 'color_in_film.md',
     cover: 'img/modelling_color_in_film.png',
     img: 'img/color_in_film4.png',
     altText: 'a visualisation showing the average color in feature films',
-    mentionedIn: [],
+    mentionedIn: [ 'time_based' ],
     mentionedPages: []
   },
   {
@@ -357,7 +479,7 @@ const pages = [
     source: 'writing_drawings.md',
     img: 'img/line_rhytmical_stick.jpg',
     altText: 'Line-rhytmical study of a stick',
-    mentionedIn: [ 'studies' ],
+    mentionedIn: [ 'craft', 'studies' ],
     mentionedPages: []
   },
   {
@@ -373,8 +495,8 @@ const pages = [
     source: 'tools_for_expression.md',
     img: 'img/collage-min.jpg',
     altText: 'Detail from Victoria and Albert, London',
-    mentionedIn: [ 'studies' ],
-    mentionedPages: [ 'visiweave', 'git_for_filmmakers', 'midi_plotter' ]
+    mentionedIn: [],
+    mentionedPages: []
   },
   {
     title: 'art',
@@ -391,7 +513,7 @@ const pages = [
     cover: 'img/fermentation.png',
     altText: 'character design process illustration',
     img: 'img/fermentation.png',
-    mentionedIn: [ 'manifestations' ],
+    mentionedIn: [ 'craft', 'manifestations' ],
     mentionedPages: []
   },
   {
@@ -399,7 +521,7 @@ const pages = [
     source: 'visiweave.md',
     altText: 'the VisiWeave interface ',
     img: 'img/visiweave_interface.png',
-    mentionedIn: [ 'about', 'tools_for_expression' ],
+    mentionedIn: [ 'jonathan', 'tools' ],
     mentionedPages: []
   }
 ]

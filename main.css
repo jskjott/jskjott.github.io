@@ -1,10 +1,16 @@
 :root {
 	/*blues*/
-	--brightblue: #9FBCC2;
+	--brightblue: #1e52fe;
 	--darkblue: #527785;
 	/*reds*/
 	--brightred: #C99D9D;
 	--darkred: #A46666;
+	/*yellows*/
+	--brightyellow: #eedc82;
+	--darkyellow: #e1ad01;
+
+	/*greens*/
+	--brightgreen: #b2beb5;
 
 	/*greys*/
 	--lighter: #EAEBEF;
@@ -22,6 +28,7 @@
 
 p {
 	font-size: 1vw;
+	color: var(--light)
 }
 
 li {
@@ -46,7 +53,7 @@ blockquote {
 
 blockquote > p {
 	width: fit-content;
-	color: black;
+	color: #404046;
 	background: white;
 	padding-block-start: 1em;
     padding-block-end: 1em;
@@ -54,25 +61,44 @@ blockquote > p {
     padding-inline-end: 1em;
 }
 
+p > img {
+	margin-left: 25%;
+	width: 75%;
+}
+
 #header {
-	height: calc(100vh - 3em);
+	height: 40%;
 	display: grid;
-	grid-template-columns: 1fr 30px;
+	grid-template-columns: 30px 1fr;
 }
 
 #main {
+	min-height: calc(100vh - 4.5em);
 	width: auto;
-	margin-left: calc(2rem + 1em);
 }
 
 #content {
-	width:100%;
+	width: calc(100% - (2rem + 1em));
+	min-height: calc(100vh - 4.5em);
     height:100%;
+    padding-left: calc(2rem + 1em);
     overflow-x: scroll;
     white-space: nowrap;
 }
 
 .page {
+	vertical-align:top;
+	display: inline-block;
+	white-space: normal;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#page {
+	height: auto; 
+	width: calc(100% - (2rem + 1em) - 250px);
+	max-width: 700px;
 	vertical-align:top;
 	display: inline-block;
 	white-space: normal;
@@ -90,7 +116,7 @@ blockquote > p {
 	overflow-x: hidden;
 	overflow-y: scroll;
     width: 500px;
-    margin: 0 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 h2 {
@@ -99,8 +125,7 @@ h2 {
 
 #footer {
 	font-size: 0.8em;
-	margin-top: 3em;
-	background-color: var(--brightblue);
+	background: var(--light);
 	padding: 1rem;
     display: grid;
     align-items: center;
@@ -113,18 +138,15 @@ h2 {
 }
 
 #headerImage {
-	height: calc(100vh - 3em);
-	overflow: hidden;
-	background-position: 50% 50%;
-     background-repeat: no-repeat;
-     background-size: cover;
+	width: auto;
+	height: 350px;
 }
 
 #meta {
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 30px 5fr;
 	position: relative;
-	background-color: var(--light);
+	background-color: var(--lighter);
 	word-break: break-all;
 	color: white;
 }
@@ -154,13 +176,13 @@ h2 {
 }
 
 span > a {
-	color: black;
-	background: white;
+	color: white;
+	background: #c6c2b6;
 	margin: 0.25rem; 
-	padding: 0.25rem; 
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem; 
 	margin-left: 0;
 	border-radius: 0.25em;
-	border: 0.5px solid var(--brightblue);
+	/*border: 0.5px solid var(--brightblue);*/
 	cursor: pointer;
 }
 
@@ -193,14 +215,10 @@ button:focus {
     outline: none;
 }
 
-img {
-	width: 100%;
-}
-
 body {
 	margin: 0;
 	background: var(--lighter);
-	color: var(--darkblue);
+	color: var(--dark);
 	background-size: 80px 80px;
     font-family: var(--f_reg);
 }
@@ -221,8 +239,21 @@ hr {
 }
 
 a {
-	color: var(--darkred);
-	text-decoration: none;	
+	color: var(--dark);
+	/*text-decoration: none;	*/
+}
+
+a[href*="http"] {
+	color: var(--dark);
+	background: url('img/external_arrow.png') no-repeat 100% 0;
+	background-size: 16px 16px;
+	padding-right: 19px;
+}
+
+.footerItem > a[href*="http"] {
+	background: none;
+	background-size: 16px 16px;
+	padding-right: 19px;
 }
 
 .h3Link {
@@ -277,10 +308,10 @@ td {
 }
 
 #caption {
-	font-size: 1.2em;
-	color: var(--darker);
+	font-size: 0.75em;
+	color: #404046;
 	writing-mode: vertical-lr;
-	margin: 0.5rem 1rem 0.25rem 0.25rem;
+	margin: 1rem 1rem 0.25rem 0.25rem;
 }
 
 /*@media (max-width: 1000px) {
@@ -289,6 +320,28 @@ td {
 		grid-template-columns: 250px 1fr 25px;
 	}
 }*/
+
+#navigator {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #404046;
+	width: 100vw;
+	height: 3em;
+	z-index: 10;
+}
+
+.navigatorElement {
+	font-family: var(--f_reg);
+	font-size: 2.5em;
+	background-color: #404046;
+	color: var(--lighter);
+	cursor: pointer;
+}
+
+input::placeholder { 
+	color: var(--lighter);
+}
 
 @media (hover: none) and (pointer: coarse) {
 
@@ -300,11 +353,6 @@ td {
 	h3 { font-size: 5vw; }
 	h4 { font-size: 4vw; }
 
-	#content {
-		margin: 4rem 2rem 2rem 2rem;
-		width: 100vw;
-	}
-
     #main {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -312,14 +360,21 @@ td {
 
 	#caption {
 		font-family: var(f_reg);
-		font-size: 4vw;
+		width: 30px;
+		color: #404046;
+		writing-mode: vertical-lr;
+		margin: 0.5rem 0 0.25rem 0.25rem;
 	}
 
 	#header {
-		width: 100vw;
-		height: 75%;
+		width: auto;
+		height: 350px;
 		display: grid;
 		grid-template-columns: 1fr 6vw;
+	}
+
+	#headerimage {
+		float: left;
 	}
 
 	#bar {
@@ -343,6 +398,7 @@ td {
 
 	#footer {
 	width: 100vw;
+	padding: 0;
 	font-size: 2.5vw;
 	}
 
@@ -351,26 +407,4 @@ td {
 	max-width: none;
 	margin: 2rem;
 }
-}
-
-#navigator {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	background-color: var(--dark);
-	width: 100vw;
-	height: 3em;
-	margin-bottom: 2rem;
-}
-
-.navigatorElement {
-	font-family: var(--f_reg);
-	font-size: 2.5em;
-	background-color: var(--dark);
-	color: var(--lighter);
-	cursor: pointer;
-}
-
-input::placeholder { 
-	color: var(--lighter);
 }

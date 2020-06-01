@@ -10,29 +10,6 @@
 <body>
 
 <div id="vue">
-
-	<!-- <div id="vertical">
-		<a style="color: #EAEBEF;" href="https://twitter.com/jskjott">@jskjott</a>
-	</div> -->
-
-	<div id="header">
-		<div id="headerImage" style="background-image: url('')">
-		</div>	
-		<div id="meta">
-			<span id="caption" > {{ altText}} </span>
-			<div id="sidebarElement" >
-				<!-- <div>
-					<p v-if='toc.length > 0' >Page Contents</p>
-					<div id="toc" v-for='(header, index) in toc'>
-						<div :class="'toc' + header.tagName" v-on:click="document.getElementById('head' + index).scrollIntoView()" > {{header.textContent}} </div>
-					</div>	
-				</div> -->
-			</div>
-		</div>
-	</div>
-	<div id="bar" v-if="window.width < 700 || is_touch_device()">
-	</div>
-
 	<div id="navigator">  
 		<div style="padding-left: 25px; height: 3em; display: grid; grid-template-columns: auto 1fr; white-space: nowrap;">
 			<span>
@@ -40,7 +17,7 @@
 				<span v-if="!deleted" v-for="(term, index) in routes"> 
 					<span class="navigatorElement" style="cursor: auto"> /&nbsp;</span> 
 					<span class="navigatorElement" v-if="index === routes.length - 2" v-on:click="$router.push(term.path).catch(err => {})"> {{ term.term }} </span> 
-					<span class="navigatorElement" v-if="index !== routes.length - 2" style="color: #9FBCC2;" v-on:click="$router.push(term.path).catch(err => {})"> {{ term.term }} </span> 
+					<span class="navigatorElement" v-if="index !== routes.length - 2" v-on:click="$router.push(term.path).catch(err => {})"> {{ term.term }} </span> 
 				</span>
 				<span v-if="routes[0].term.length > 0" class="navigatorElement" style="cursor: auto"> /&nbsp; </span> 
 			</span>
@@ -53,10 +30,21 @@
 	</div>
 
 	<div id="main">
+		
 		<div id="content">
-			<div class="page" style="height: auto; width: 700px;">
-				<router-view></router-view>
-				<div v-if="mentionedIn.length > 0" style="padding-bottom: 2rem;">
+			<div id="page">
+				<div>
+					<div id="header">
+						<div id="meta">
+							<span id="caption" > {{ altText}} </span>
+							<img id="headerImage">
+						</div>
+						</div>	
+					<div style="margin-left: 30px;">
+						<router-view></router-view>
+					</div>
+				</div>
+				<div v-if="mentionedIn.length > 0" style="padding-bottom: 2rem; margin-left: 30px;">
 					<p>Links to this entry:</p>
 					<span v-for="mention in mentionedIn">
 						<router-link v-if=" mention === ''" to="/" tag="a">home</router-link>	
@@ -65,7 +53,7 @@
 				</div>
 			</div>
 			<div class="page" style="width: 250px;">
-				<p v-if="linkedPages.length > 0" style="text-align: right; margin-top: -0.5em;"> Mentioned entries <span style="font-size: 2em; ">⤳</span> </p>
+				<p v-if="linkedPages.length > 0" style="font-size: 16px; text-align: right; margin-top: 0.5rem;"> Mentioned entries <span style="font-size: 2em; ">⤳</span> </p>
 			</div>
 			<div v-for="page in linkedPages" class="mentionedPage">
 				<router-link :to="page.title" class="h3Link" tag="a">{{ page.title }}</router-link>	
@@ -80,7 +68,7 @@
 			<br>
 			<p>Communities and Collaborators</p>
 
-			<div style="display: flex; align-items: center;">
+			<div style="display: flex; align-items: center;" class="footerItem">
 				<a class="footerItem" href='https://webring.recurse.com'>
 	            <img style="width: 30px;" src='https://webring.recurse.com/icon.png' alt="RC Webring Logo" />
 		        </a>
@@ -102,7 +90,7 @@
             	<img style="width: 28px;" src='img/Twitter_Logo.png' alt="Twitter Logo" />
 	        </a>
 
-        	<p>This site was made by Jonathan Skjøtt - it is set in <a href="https://madmalik.github.io/mononoki/">Mononoki</a> by Matthias Tellen.</p>
+        	<p>This site was made by Jonathan Skjøtt - it is set in <a style="color: white;" href="https://madmalik.github.io/mononoki/">Mononoki</a> by Matthias Tellen.</p>
         	
         	<p>Your data is not collected when you use this site.</p>
         </div>

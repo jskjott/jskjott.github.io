@@ -22,8 +22,6 @@
 	</div>
 </div>
 
-<hr style="margin: 3rem 0 1rem 0">
-
 <!-- <div id="projectGrid">
 	<div class="projectEntry" v-if="project.cover" v-for="project in pages"> 
 		<div>
