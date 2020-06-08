@@ -1,0 +1,27 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<link type="text/css" id="dark-mode" rel="stylesheet" href=""/>
+	<style type="text/css" id="dark-mode-custom-style"/>
+	<channel>
+		<title>Resevoir</title>
+		<link>
+			<![CDATA[ https://resevoir.net ]]>
+		</link>
+		<description>The Resevoir Knowledge-base</description>
+		<item>
+			<title>The Resevoir Knowledge-base</title>
+			<link>https://resevoir.net/#/resevoir</link>
+			<guid isPermaLink="false">1</guid>
+			<pubDate>Mon, 8 June 2020</pubDate>
+			<dc:creator>
+			<![CDATA[ Jonathan Skjøtt ]]>
+			</dc:creator>
+			<description>
+			<![CDATA[ <p>Resevoir started as a blog-like site meant to to document and present already finished projects.
+
+			It has grown into a place which makes me feel at home on the internet while also providing a space for me to travel through the thoughts and ideas I have had over time.
+
+			The site is still very much in flux as a result of me experimenting with what structure makes me feel at home.</p> ]]>
+			</description>
+		</item>
+	</channel>
+</rss>
