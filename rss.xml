@@ -1,6 +1,4 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
-	<link type="text/css" id="dark-mode" rel="stylesheet" href=""/>
-	<style type="text/css" id="dark-mode-custom-style"/>
 	<channel>
 		<title>Resevoir</title>
 		<link>
@@ -11,10 +9,8 @@
 			<title>The Resevoir Knowledge-base</title>
 			<link>https://resevoir.net/#/resevoir</link>
 			<guid isPermaLink="false">1</guid>
-			<pubDate>Mon, 8 June 2020</pubDate>
-			<dc:creator>
-			<![CDATA[ Jonathan Skjøtt ]]>
-			</dc:creator>
+			<pubDate>Mon, 08 Jun 2020 21:00:00 +0000</pubDate>
+			<dc:creator>Jonathan Skjøtt</dc:creator>
 			<description>
 			<![CDATA[ <p>Resevoir started as a blog-like site meant to to document and present already finished projects.
 
