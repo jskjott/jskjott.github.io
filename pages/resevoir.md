@@ -1,5 +1,0 @@
-Resevoir started as a blog-like site meant to to document and present already finished projects.
-
-It has grown into a place which makes me feel at home on the internet while also providing a space for me to travel through the thoughts and ideas I have had over time. 
-
-The site is still very much in flux as a result of me experimenting with what structure makes me feel at home.

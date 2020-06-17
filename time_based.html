@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>resevoir・time based</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel='stylesheet' type='text/css' href='style/fonts.css'/>
+	<link rel="stylesheet" type='text/css' href="style/main.css">
+</head>
+<body>
+
+<div id="vue">
+	<div id="navigator">  
+		<div style="height: 3em; display: grid; grid-template-columns: auto 1fr; white-space: nowrap;">
+			<a href='index.html'>
+				<img src="img/resevoir.png" style="width: 25px; padding: 0.75rem;" >
+			</a>
+			<h2 style="color: white;"> time based </h2>
+		</div>
+	</div>
+
+	<div id="main">
+		
+		<div id="content">
+			<div id="page">
+				<div>
+					<div id="header">
+						<div id="meta">
+							<span id="caption" > creating a slitscan </span>
+							<img src="img/time-based.png" id="headerImage">
+						</div>
+						</div>	
+					<div style="margin-left: 30px;">
+						<p>The timed-based sector is for temporal experiments.</p>
+<p><a href="git_for_filmmakers.html">Git For Filmmakers</a>
+Making a powerful version-control system accessible to filmmakers.</p>
+<p><a href="slitscan_experiments.html">Slitschan Experiments</a>
+Explorations of alternative temporal spaces inside videos.</p>
+<p><a href="midi_plotter.html">Midi Plotter</a>
+<a href="The_Printing_Process_as_Time_based_Media.html">Printing-process as Time-based Media</a>
+Printing as timed-based media.</p>
+<p><a href="color_in_film.html">Color in film</a>
+<a href="auto_rickshaw.html">Auto-rickshaw documentary</a></p>
+
+					</div>
+				</div>
+				
+<div style="padding-bottom: 2rem; margin-left: 30px;">
+	<p>Links to this entry:</p>
+	
+<span>
+	<a href="mediums.html"> mediums </a>
+</span>
+
+</div>
+
+			</div>
+			
+<div class="page" style="width: 250px;">
+	<p style="font-size: 16px; text-align: right; margin-top: 0.5rem;"> linked entries <span style="font-size: 2em; ">⤳</span> </p>
+</div>
+
+<div class="mentionedPage">
+	<a href="git_for_filmmakers.html" class="h3Link">git for_filmmakers</a>
+		<p><a href="https://github.com/jskjott/git-for-filmmakers">github</a></p>
+<p>Many creative professions have no high quality version control systems. Film-making is one profession in which the majority of practitioners use only very limited systems for version control. The lack of version control makes collaboration hard as there are many barriers to share, explore, and merge projects.</p>
+<p>This project seeks to provide a simple and powerful interface for filmmakers to visualise how their project files changed of time, do collaborative editing, and better document their projects.</p>
+
+</div>
+
+<div class="mentionedPage">
+	<a href="slitscan_experiments.html" class="h3Link">slitscan experiments</a>
+		<h1 id="static-representions-of-time-based-media">Static Representions of Time-based Media</h1>
+<p>Some media like text and images provide the entirety of their state in their static form. The piece of text or a picture we put on our wall is glanceable. This does not mean that we can experience the media fully with a glance - we must actually read the text or look at the picture. However, with a glance we can observe the full state of the medium.</p>
+<p>An example of a media where this is not the case is video - as a time-based medium one can only experience the full state by directing our attention continously to the media. For a long time I have been interested in trying to craft a static representation of video. A representation which captures the dimension of time in a tangible way.</p>
+<p>One way of statically representing a video is by creating a slitscan of it. In a slitscan every column of pixels is taken from a different frame of the source video. The resulting image is a collage of pixels taken from varying timestamps and varying visual coordinates. However, this representation of the time-based medium is rather coarse:</p>
+<p><img src="img/slitscan_video.png" alt="an example slitscan photograph created from a video"></p>
+
+</div>
+
+<div class="mentionedPage">
+	<a href="midi_plotter.html" class="h3Link">midi plotter</a>
+		<h2 id="midi-plotter">Midi Plotter</h2>
+<p><a href="https://github.com/jskjott/midi-plotter">github</a></p>
+<p>A Rust program which makes it possible to visualise midi notes with the HP7440A pen plotter as they are received. This project grew out of my fascination with printing technologies and a desire to explore whether printing can be seen as a time-based media. I wrote a reflection on what it means for printing to be a time-based <a href="The_Printing_Process_as_Time_based_Media.html">elsewhere</a> on this site.</p>
+<p>Once finished I had a few different people try out the program. One friend started playing Partita by Bach: above is the pen plotter visualisation of her performance alongside the traditional representation of the piece.</p>
+<p>When you perform with the pen plotter it almost becomes a second performer as the rhytmns and sounds the plotter makes as it draws merges with the notes you play on your instrument:</p>
+<p><img src="https://raw.githubusercontent.com/jskjott/midi-plotter/master/midi-plotter.gif" alt="a gif animation of the plotter drawing a visualisation"></p>
+
+</div>
+
+<div class="mentionedPage">
+	<a href="The_Printing_Process_as_Time_based_Media.html" class="h3Link">The Printing_Process_as_Time_based_Media</a>
+		
+</div>
+
+<div class="mentionedPage">
+	<a href="color_in_film.html" class="h3Link">color in_film</a>
+		<h3 id="modeling-color-in-film">Modeling Color in Film</h3>
+<p>I always liked thinking about how color is used to generate various experieces in film. Based on this interest, a friend and I decided to try to model the change of color in feature films. Our model&#39;s output was a colour timeline like the one seen below. Each point in a colour timeline represent the average colour of the film at that point. The point approximately covers a 10 second window.</p>
+<p><img src="img/color_in_film1.png" alt="">
+(From the movie Insidious, (2010))</p>
+<p>The colour seen at each point in the timeline above is composed of a particular, hue, saturation and lightness. If these variables are separated and graphed independently then you get a timeline which looks like the one seen below.</p>
+<p><img src="img/color_in_film2.png" alt="">
+(From the movie Insidious (2010))</p>
+<p>In this visualisation the hue is shown at the background of the plot, the saturation shown as a black line, and the lightness as a white line. Hue is a cyclical data type which makes it inappropriate in the line plot form that saturation and lightness take. Therefore we plot it as the background.</p>
+<p>In our model, hue, saturation and lightness change slightly most of the time, and change greatly quite rarely. The small changes seeks to capture the gradual changes happening within a scene or arc of a movie. The large changes represent either a mood or scene change in the movie. We decided to have the concepts of a slight change and a major change because the scale of change and the frequency of these two are very different. For a scene change the hue might jump thirty values in the 360 values wide space between two frame, a change that might take thousands of steps with small changes. This is similar when looking at saturation or lightness.</p>
+<h4 id="the-models-state-consists-of">The model’s state consists of:</h4>
+<ul>
+<li>The average colour of the frame, broken down into ​hue ​(angle in degrees), ​saturation
+(from 0 to 1), and ​lightness​ (from 0 to 1)</li>
+<li>The ​steps_since_direction_change​ (integer)</li>
+<li>The ​saturation_gradient​ (angle in radians), which the saturation will follow</li>
+<li>The ​independent_lightness ​(from 0 to 1), which is combined with the inverse of
+saturation to calculate lightness</li>
+</ul>
+<p>We did some validation of the model by comparing with indepedently chosen movies. Example of such comparison is below: the blue dots represent the controls and the red dots the generated movies.</p>
+<p><img src="img/color_in_film3.png" alt="example color timeline"></p>
+
+</div>
+
+<div class="mentionedPage">
+	<a href="auto_rickshaw.html" class="h3Link">auto rickshaw</a>
+		<p>
+There is a lack of documentaries which do not exoticise rickshaw drivers nor depict them as inferior or poor. Our documentary project aimed to capture the lives of rickshaw driver families in an honest way. 
+</p>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/334602993?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<p>
+This project was conducted by three filmmakers (including me) and two Hyderabadi locals. We did not immediately define what the documentary would be about but focused on building good relationships with four rickshaw driver families. I was one of the cameramen capturing the environment whenever we went out to visit one of the families. I also supported our local collaborators when we were conducting interviews. By going through this process, we were able to capture the unique stories of each family: their backstories, duties, and dreams.
+</p>
+
+<img src="img/auto_rickshaw_four.png" alt="a collage with images from the production process">
+
+<p>
+During post-production, I was part of the three-person core team responsible for finding the story and editing everything together.
+</p>
+</div>
+
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="footerItem">
+			<p>2017 ~ 2020 Jonathan Skjøtt</p>
+			<br>
+			<p>Communities and Collaborators</p>
+
+			<div style="display: flex; align-items: center;" class="footerItem">
+				<a class="footerItem" href='https://webring.recurse.com'>
+	            <img style="width: 30px;" src='https://webring.recurse.com/icon.png' alt="RC Webring Logo" />
+		        </a>
+		        <a href='https://webring.xxiivv.com' target='_blank'>
+		            <img style="width: 40px;" src='https://webring.xxiivv.com/icon.white.svg' alt="xxiivv Webring Logo"/>
+		        </a>
+		        <a class="footerItem" href='https://www.are.na/pickle-partisans'>
+	            <img style="width: 60px;" src='img/pickle-partisan_v2.png' alt="Daikon" />
+		        </a>
+
+		        (*^^*)♡
+			</div>
+		</div>
+        <div class="footerItem">
+        	<a class="footerItem" href='https://github.com/jskjott'>
+            	<img style="width: 30px; filter: invert(1);" src='img/github.png' alt="Github Logo" />
+	        </a>
+			<a class="footerItem" href='https://twitter.com/jskjott'>
+            	<img style="width: 28px;" src='img/Twitter_Logo.png' alt="Twitter Logo" />
+	        </a>
+
+        	<p>This site was made by Jonathan Skjøtt - it is set in <a style="color: white;" href="https://madmalik.github.io/mononoki/">Mononoki</a> by Matthias Tellen.</p>
+        	
+        	<p>Your data is not collected when you use this site.</p>
+        </div>
+	</div>
+</div>
+
+</body>
+</html>
